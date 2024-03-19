@@ -1,0 +1,22 @@
+!! Global
+*.font: azukifontB:size=14:weight=regular
+
+!! Font
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+
+!! Urxvt
+URxvt.font:	xft:azukifontB:size=14:weight=regular
+URxvt.geometry: 96x32
+URxvt.scrollBar: false
+URxvt.scrollBar_right: true
+URxvt.cursorUnderline: false
+URxvt.cursorBlink: true
+URxvt.saveLines: 4096
+URxvt.internalBorder: 0
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard

@@ -1,0 +1,29 @@
+import = [ "~/.config/alacritty/colors/breakfast.toml" ]
+
+[font]
+size = 8.0
+
+[window]
+opacity = 1.0
+title = 'たーみなる'
+dynamic_title = false
+
+[window.padding]
+x = 16
+y = 16
+
+[window.dimensions]
+lines = 32
+columns = 96
+
+[cursor.style]
+shape = "block"
+
+[font.normal]
+family = "azukifontB"
+
+[font.bold]
+family = "azukifontB"
+
+[font.italic]
+family = "azukifontB"
