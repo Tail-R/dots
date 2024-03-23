@@ -1,12 +1,41 @@
+!! colors
+*.foreground: #aa0000
+*.background: #ffffdd
+
+*.color0: #aa0000
+*.color8: #aa0000
+
+*.color1: #ee8888
+*.color9: #ee8888
+
+*.color2:  #ee8888
+*.color10: #ee8888
+
+*.color3:  #ffcccc
+*.color11: #ffcccc
+
+*.color4:  #ffaaaa
+*.color12: #ffaaaa
+
+*.color5:  #ffaaaa
+*.color13: #ffaaaa
+
+*.color6:  #ffaaaa
+*.color14: #ffaaaa
+
+*.color7:  #ffffdd
+*.color15: #ffffdd
+
+
 !! Urxvt
 URxvt.font:	xft:azukifontB:size=14:weight=regular
 URxvt.geometry: 96x32
-URxvt.scrollBar: true
+URxvt.scrollBar: false
 URxvt.scrollBar_right: true
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
 URxvt.saveLines: 4096
-URxvt.internalBorder: 16
+URxvt.internalBorder: 0
 URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 

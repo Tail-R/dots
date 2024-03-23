@@ -40,7 +40,7 @@ set laststatus=2 " show always
 
 " set user highlight group to User{N} [N must be 1 ~ 9]
 " :h statusline to see more details
-hi User1 ctermfg=white ctermbg=NONE cterm=NONE " normal item
+hi User1 ctermfg=black ctermbg=yellow cterm=NONE " normal item
 hi User2 ctermfg=white ctermbg=black cterm=bold " active item
 
 set statusline=%2*\ %{GetCurrentMode()}\ %1*\ %{GetCurrentFileName()}%=%2*\ R\ %l\ C\ %c\ 

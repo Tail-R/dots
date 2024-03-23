@@ -44,7 +44,11 @@ precmd() {
         estat=$(pad black)
     fi
 
-    cdir=$(ch_fg black "～$(get_cdir)")
+    # hsym='HOME'
+    # hsym='いえ'
+    # hsym='★ '
+    hsym='～'
+    cdir=$(ch_fg black "$hsym$(get_cdir)")
     cdir=$(ch_bg yellow $cdir)
     
     PS1=$'\n'
@@ -99,6 +103,7 @@ alias rice='try_cd ~/.config'
 alias coffee='try_cd ~/Documents/workspaces'
 alias walls='try_cd ~/Pictures/wallpapers'
 
+alias fet='neofetch'
 alias ncmp='ncmpcpp'
 
 #
