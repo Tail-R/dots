@@ -1,3 +1,4 @@
-# xsetroot -solid '#808080' &
+xrdb merge ~/.Xresources &
+# xsetroot -solid '#ffdddd' &
 ~/.fehbg &
 fcitx5 &

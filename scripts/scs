@@ -2,18 +2,19 @@
 
 # dependencies: maim
 
-path=$HOME/Pictures/screenshots
+IMGDIR=$HOME/Pictures/screenshot
+Q=10
 
 mkdir -p $HOME/Pictures
-mkdir -p $path
+mkdir -p $IMGDIR
 
 name=$(date "+%Y%m%d_%H%M%S.png")
 
 case "$1" in
     "-s" )
-        maim -u -m 10 -s $path/$name
+        maim -u -m $Q -s $IMGDIR/$name
         ;;
     "-f" )
-        maim -u -m 10 $path/$name
+        maim -u -m $Q $IMGDIR/$name
         ;;
 esac

@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+CDIR=$(pwd)
+
+ln -fns $CDIR/.vimrc ~/.vimrc
+ln -fns $CDIR/.zshrc ~/.zshrc
+ln -fns $CDIR/.Xresources ~/.Xresources

@@ -49,7 +49,7 @@
 </placement>
 
 <theme>
-  <name>Breakfast</name>
+  <name>Shortcake</name>
   <titleLayout>LIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -83,9 +83,9 @@
   </font>
   <font place="MenuHeader">
     <name>azukifontB</name>
-    <size>14</size>
+    <size>16</size>
     <!-- font size in points -->
-    <weight>normal</weight>
+    <weight>bold</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
@@ -131,10 +131,10 @@
   <number>4</number>
   <firstdesk>1</firstdesk>
   <names>
-    <!-- set names up here if you want to, like this:
     <name>desktop 1</name>
     <name>desktop 2</name>
-    -->
+    <name>desktop 3</name>
+    <name>desktop 4</name>
   </names>
   <popupTime>875</popupTime>
   <!-- The number of milliseconds to show the popup for when switching

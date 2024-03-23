@@ -1,7 +1,7 @@
 !! Urxvt
 URxvt.font:	xft:azukifontB:size=14:weight=regular
 URxvt.geometry: 96x32
-URxvt.scrollBar: false
+URxvt.scrollBar: true
 URxvt.scrollBar_right: true
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true

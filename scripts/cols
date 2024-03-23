@@ -10,4 +10,3 @@ cyan='\033[0;106m'
 white='\033[0;107m'
 
 echo -e "$black   $red   $yellow   $green   $blue   $magenta   $cyan   $white   "
-echo -e "$black   $red   $yellow   $green   $blue   $magenta   $cyan   $white   "
