@@ -9,10 +9,10 @@ try_cd() {
 #
 # Extend PATH
 #
-export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/scripts
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/scripts
 
-try_source ~/.cargo/env
+try_source $HOME/.cargo/env
 try_source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export EDITOR=vim
@@ -24,6 +24,7 @@ export BROWSER=firefox
 setopt AUTO_CD
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
+
 
 #
 # history
@@ -46,7 +47,6 @@ precmd() {
 
     # hsym='HOME'
     # hsym='いえ'
-    # hsym='★ '
     hsym='～'
     cdir=$(ch_fg black "$hsym$(get_cdir)")
     cdir=$(ch_bg yellow $cdir)
@@ -56,9 +56,7 @@ precmd() {
 }
 
 get_cdir() {
-    if [[ $PWD != $HOME ]]; then
-        echo "$PWD" | sed -e 's/\/home\/tailr//g'
-    fi
+    [[ $PWD != $HOME ]] && echo "$PWD" | sed -e "s@$HOME@@g"
 } 
 
 ch_fg() {
@@ -85,6 +83,11 @@ alias ls='ls --color=auto'
 alias l='ls -l --color=auto'
 alias la='ls -la --color=auto'
 
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+
 alias v='vim'
 alias r='yazi'
 alias xmrg='xrdb merge ~/.Xresources'
@@ -103,7 +106,6 @@ alias rice='try_cd ~/.config'
 alias coffee='try_cd ~/Documents/workspaces'
 alias walls='try_cd ~/Pictures/wallpapers'
 
-alias fet='neofetch'
 alias ncmp='ncmpcpp'
 
 #
