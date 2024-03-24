@@ -1,31 +1,48 @@
+#define FG #aa0000
+#define BG #ffffdd
+#define C0 #aa0000
+#define C1 #ee8888
+#define C2 #ee8888
+#define C3 #ffcccc
+#define C4 #ffaaaa
+#define C5 #ffaaaa
+#define C6 #ffaaaa
+#define C7 #ffffdd
+
 !! colors
-*.foreground: #aa0000
-*.background: #ffffdd
+*.foreground: FG
+*.background: BG
 
-*.color0: #aa0000
-*.color8: #aa0000
+*.color0: C0
+*.color8: C0
 
-*.color1: #ee8888
-*.color9: #ee8888
+*.color1: C1
+*.color9: C1
 
-*.color2:  #ee8888
-*.color10: #ee8888
+*.color2:  C2
+*.color10: C2
 
-*.color3:  #ffcccc
-*.color11: #ffcccc
+*.color3:  C3
+*.color11: C3
 
-*.color4:  #ffaaaa
-*.color12: #ffaaaa
+*.color4:  C4
+*.color12: C4
 
-*.color5:  #ffaaaa
-*.color13: #ffaaaa
+*.color5:  C5
+*.color13: C5
 
-*.color6:  #ffaaaa
-*.color14: #ffaaaa
+*.color6:  C6
+*.color14: C6
 
-*.color7:  #ffffdd
-*.color15: #ffffdd
+*.color7:  C7
+*.color15: C7
 
+!! Xterm
+XTerm.vt100.faceName: monospace
+XTerm.vt100.faceNameDoublesize: azukifontB
+XTerm.vt100.faceSize: 12
+XTerm.vt100.scrollBar: false
+XTerm.vt100.saveLines: 4096
 
 !! Urxvt
 URxvt.font:	xft:azukifontB:size=14:weight=regular
@@ -41,3 +58,8 @@ URxvt.underlineURLs: true
 
 URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+
+!! Sxiv
+Sxiv.font: azukifontB-16
+Sxiv.foreground: C5
+Sxiv.background: BG

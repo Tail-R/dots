@@ -6,6 +6,12 @@ try_cd() {
     [ -d $1 ] && cd $1
 }
 
+# Set title for specific terminal
+case $TERM in
+xterm*|rxvt*) print -Pn "\e]0;たーみなる\a"
+;;
+esac
+
 #
 # Extend PATH
 #
@@ -24,7 +30,6 @@ export BROWSER=firefox
 setopt AUTO_CD
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
-
 
 #
 # history
@@ -78,10 +83,16 @@ pad() {
 #
 # aliases
 #
+alias update='sudo pacman -Syu'
+alias lspkgs='pacman -Q'
+alias install='sudo pacman -S'
+alias remove='sudo pacman -Rs'
+
 alias c='clear'
 alias ls='ls --color=auto'
 alias l='ls -l --color=auto'
 alias la='ls -la --color=auto'
+alias t='tree -C'
 
 alias gs='git status'
 alias ga='git add'
@@ -107,6 +118,7 @@ alias coffee='try_cd ~/Documents/workspaces'
 alias walls='try_cd ~/Pictures/wallpapers'
 
 alias ncmp='ncmpcpp'
+alias zat='zathura'
 
 #
 # custom commands

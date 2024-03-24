@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+# dependencies: maim
+
+SSDIR=$HOME/Pictures/screenshot
+TYPE='png'
+Q=10 # quality: 1 ~ 10
+
+mkdir -p $HOME/Pictures
+mkdir -p $SSDIR
+
+name=$(date "+%Y%m%d_%H%M%S.$TYPE")
+
+case "$1" in
+    "-s" )
+        maim -u -m $Q -s $SSDIR/$name
+        ;;
+    "-f" )
+        maim -u -m $Q $SSDIR/$name
+        ;;
+esac

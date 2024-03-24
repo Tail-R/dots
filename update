@@ -5,3 +5,5 @@ CDIR=$(pwd)
 ln -fns $CDIR/.vimrc ~/.vimrc
 ln -fns $CDIR/.zshrc ~/.zshrc
 ln -fns $CDIR/.Xresources ~/.Xresources
+ln -fns $CDIR/.themes $HOME
+ln -fns $CDIR/scripts $HOME
