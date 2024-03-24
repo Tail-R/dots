@@ -1,10 +1,14 @@
 #! /usr/bin/env bash
 
-# dependencies: maim
+# dependencies: maim dunst
 
 SSDIR=$HOME/Pictures/screenshot
 TYPE='png'
 Q=10 # quality: 1 ~ 10
+
+notify() {
+    notify-send "screenshot taken $1"
+}
 
 mkdir -p $HOME/Pictures
 mkdir -p $SSDIR
@@ -13,9 +17,11 @@ name=$(date "+%Y%m%d_%H%M%S.$TYPE")
 
 case "$1" in
     "-s" )
+        notify $name
         maim -u -m $Q -s $SSDIR/$name
         ;;
     "-f" )
+        notify $name
         maim -u -m $Q $SSDIR/$name
         ;;
 esac

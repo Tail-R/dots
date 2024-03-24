@@ -6,23 +6,23 @@ try_cd() {
     [ -d $1 ] && cd $1
 }
 
+try_source $HOME/.cargo/env
+try_source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Set title for specific terminal
 case $TERM in
 xterm*|rxvt*) print -Pn "\e]0;たーみなる\a"
 ;;
 esac
 
+export EDITOR=vim
+export BROWSER=firefox
+
 #
 # Extend PATH
 #
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/scripts
-
-try_source $HOME/.cargo/env
-try_source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-export EDITOR=vim
-export BROWSER=firefox
 
 #
 # options

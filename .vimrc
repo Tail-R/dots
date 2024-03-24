@@ -40,10 +40,10 @@ set laststatus=2 " show always
 
 " set user highlight group to User{N} [N must be 1 ~ 9]
 " :h statusline to see more details
-hi User1 ctermfg=black ctermbg=yellow cterm=NONE " normal item
-hi User2 ctermfg=white ctermbg=black cterm=bold " active item
+hi User1 ctermfg=red ctermbg=white cterm=bold " normal item
+hi User2 ctermfg=black ctermbg=yellow cterm=bold " active item
 
-set statusline=%2*\ %{GetCurrentMode()}\ %1*\ %{GetCurrentFileName()}%=%2*\ R\ %l\ C\ %c\ 
+set statusline=%2*\ MODE\ %1*\ %{GetCurrentMode()}\ %1*%=\ %{GetCurrentFileName()}\ %2*\ R\ %l\ C\ %c\ 
 set noshowmode
 
 set showtabline=1
@@ -88,19 +88,20 @@ function! ToggleTypoHighlight()
     endif
 endfunction
 
-" i'm not sure how the vim renders the statusline but
-" this function will invoked when it's supposed
 function! GetCurrentMode()
     let l:Mode = mode()
 
     if l:Mode ==# 'n'
-        let b:CurrentMode = 'NORMAL'
-    elseif l:Mode ==# 'v'
-        let b:CurrentMode = 'VISUAL'
+        " let b:CurrentMode = 'NORMAL'
+        let b:CurrentMode = 'のーまる'
+    elseif l:Mode == 'v'
+        " let b:CurrentMode = 'VISUAL'
+        let b:CurrentMode = 'びじゅある'
     elseif l:Mode ==# 'i'
-        let b:CurrentMode = 'INSERT'
+        " let b:CurrentMode = 'INSERT'
+        let b:CurrentMode = 'いんさーと'
     elseif l:Mode ==# 'c'
-        let b:CurrentMode = 'COMMAND'
+        let b:CurrentMode = 'こまんど'
     else
         let b:CurrentMode = l:Mode
     endif
