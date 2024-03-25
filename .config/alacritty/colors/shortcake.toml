@@ -1,6 +1,6 @@
 [colors.cursor]
-text = "#aa0000"
-cursor = "#ffdddd"
+text = "#ffffff"
+cursor = "#aa0000"
 
 [colors.primary]
 foreground = "#aa0000"
@@ -14,7 +14,7 @@ yellow  = "#ffcccc"
 blue    = "#ffaaaa"
 magenta = "#ffaaaa"
 cyan    = "#ffaaaa"
-white   = "#ffffdd"
+white   = "#ffffff"
 
 [colors.bright]
 black   = "#aa0000"
@@ -24,4 +24,4 @@ yellow  = "#ffcccc"
 blue    = "#ffaaaa"
 magenta = "#ffaaaa"
 cyan    = "#ffaaaa"
-white   = "#ffffdd"
+white   = "#ffffff"

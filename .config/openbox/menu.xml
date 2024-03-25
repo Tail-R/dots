@@ -2,7 +2,7 @@
 
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
-<menu id="apps-term-menu" label="terminal">
+<menu id="apps-term-menu" label="Terminal">
   <item label="alacritty">
     <action name="Execute"><command>alacritty</command></action>
   </item>
@@ -14,17 +14,29 @@
   </item>
 </menu>
 
-<menu id="custom-scripts" label="scripts">
+<menu id="screenshot-menu" label="Screenshot">
+  <item label="full screen">
+    <action name="Execute"><command>~/scripts/screenshot -f</command></action>
+  </item>
+  <item label="select a region">
+    <action name="Execute"><command>~/scripts/screenshot -s</command></action>
+  </item>
+  <item label="primary monitor">
+    <action name="Execute"><command>~/scripts/screenshot -p</command></action>
+  </item>
+  <item label="empty screenshot dir">
+    <action name="Execute"><command>~/scripts/screenshot -c</command></action>
+  </item>
 </menu>
 
-<menu id="system-menu" label="openbox">
-  <item label="Reconfigure Openbox">
+<menu id="openbox-menu" label="Openbox">
+  <item label="reconfigure">
     <action name="Reconfigure" />
   </item>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
-  <separator label="あぷり"/>
+  <separator label="よくつかう"/>
   <menu id="apps-term-menu"/>
   <item label="firefox">
     <action name="Execute"><command>firefox</command></action>
@@ -32,13 +44,25 @@
   <item label="nemo">
     <action name="Execute"><command>nemo</command></action>
   </item>
+  <item label="geany">
+    <action name="Execute"><command>geany</command></action>
+  </item>
   <item label="gimp">
     <action name="Execute"><command>gimp</command></action>
   </item>
-  <menu id="custom-scripts"/>
+  <menu id="screenshot-menu"/>
+  <separator label="たまにつかう"/>
+  <item label="pavucontrol">
+    <action name="Execute"><command>pavucontrol</command></action>
+  </item>
+  <item label="fcitx5-configtool">
+    <action name="Execute"><command>fcitx5-configtool</command></action>
+  </item>
   <separator label="しすてむ"/>
-  <menu id="system-menu"/>
-  <separator />
+  <menu id="openbox-menu"/>
+  <item label="restart">
+    <action name="Restart"><prompt>yes</prompt></action>
+  </item>
   <item label="logout">
     <action name="Exit"><prompt>yes</prompt></action>
   </item>

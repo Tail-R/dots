@@ -284,7 +284,7 @@
   <!-- Keybindings for running applications -->
   <keybind key="W-d">
     <action name="Execute">
-      <command>dmenu_run</command>
+      <command>~/scripts/run</command>
     </action>
   </keybind>
   <keybind key="W-Return">
