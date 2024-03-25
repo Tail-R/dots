@@ -35,6 +35,10 @@ set background=light
 " colorscheme
 syntax on
 
+hi clear 
+hi LineNr ctermfg=red ctermbg=NONE cterm=NONE
+hi SpecialKey ctermfg=red ctermbg=NONE cterm=NONE
+
 " statusbar
 set noshowmode
 set laststatus=2 " Show always
