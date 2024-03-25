@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 300
+    width = (0, 420)
 
     # The maximum height of a single notification, excluding the frame.
     height = 300
@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 16x16
+    offset = 32x32
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -128,7 +128,7 @@
 
     ### Text ###
 
-    font = azukifontB 16
+    font = azukifontB 14
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.

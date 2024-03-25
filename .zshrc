@@ -50,19 +50,29 @@ precmd() {
         estat=$(pad black)
     fi
 
-    # hsym='HOME'
-    # hsym='いえ'
-    hsym='～'
-    cdir=$(ch_fg black "$hsym$(get_cdir)")
-    cdir=$(ch_bg yellow $cdir)
-    
-    PS1=$'\n'
-    PS1+="$estat$(pad yellow)$cdir$(pad yellow) "
+    if [[ $TERM != 'linux' ]]; then
+        # hsym='HOME'
+        # hsym='いえ'
+        hsym='～'
+        cdir=$(ch_fg black "$hsym$(get_cdir)")
+        cdir=$(ch_bg yellow $cdir)
+        
+        PS1=$'\n'
+        PS1+="$estat$(pad yellow)$cdir$(pad yellow) "
+    else
+        # Simple prompt for tty
+        PS1=$'\n'
+        PS1+="$USER@$HOST %~ %# "
+    fi
 }
 
 get_cdir() {
     [[ $PWD != $HOME ]] && echo "$PWD" | sed -e "s@$HOME@@g"
-} 
+}
+
+get_date() {
+    date +'%H:%M'
+}
 
 ch_fg() {
     echo "%F{$1}$2%f"

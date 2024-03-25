@@ -1,14 +1,10 @@
 #! /usr/bin/env bash
 
-# dependencies: maim dunst
+# dependencies: maim, xrandr, dunst
 
 SSDIR=$HOME/Pictures/screenshot
 TYPE='png'
 Q=10 # quality: 1 ~ 10
-
-notify() {
-    notify-send "screenshot taken $1"
-}
 
 mkdir -p $HOME/Pictures
 mkdir -p $SSDIR
@@ -16,12 +12,21 @@ mkdir -p $SSDIR
 name=$(date "+%Y%m%d_%H%M%S.$TYPE")
 
 case "$1" in
-    "-s" )
-        notify $name
-        maim -u -m $Q -s $SSDIR/$name
-        ;;
-    "-f" )
-        notify $name
-        maim -u -m $Q $SSDIR/$name
-        ;;
+-s)
+    maim -u -m $Q -s $SSDIR/$name
+    notify-send -i $SSDIR/$name "taking a screenshot! saved to $name"
+;;
+-f)
+    maim -u -m $Q $SSDIR/$name
+    notify-send -i $SSDIR/$name "taking a screenshot! saved to $name"
+;;
+-p)
+    geo=$(xrandr | grep primary | cut -d ' ' -f4)
+    maim -g $geo -u -m $Q $SSDIR/$name
+    notify-send -i $SSDIR/$name "taking a screenshot! saved to $name"
+;;
+-c)
+    [[ $(ls $SSDIR) ]] && rm $SSDIR/*
+    notify-send "Screenshot directory is empty"
+;;
 esac

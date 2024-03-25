@@ -36,15 +36,30 @@ set background=light
 syntax on
 
 " statusbar
-set laststatus=2 " show always
+set noshowmode
+set laststatus=2 " Show always
 
 " set user highlight group to User{N} [N must be 1 ~ 9]
 " :h statusline to see more details
-hi User1 ctermfg=red ctermbg=white cterm=bold " normal item
-hi User2 ctermfg=black ctermbg=yellow cterm=bold " active item
 
-set statusline=%2*\ MODE\ %1*\ %{GetCurrentMode()}\ %1*%=\ %{GetCurrentFileName()}\ %2*\ R\ %l\ C\ %c\ 
-set noshowmode
+" normal items
+hi User1 ctermfg=black ctermbg=white cterm=bold
+
+" active items
+hi User2 ctermfg=red ctermbg=white cterm=bold
+hi User3 ctermfg=black ctermbg=yellow cterm=bold
+
+
+" left
+set statusline=%3*\ %{GetCurrentFileName()}\ 
+set statusline+=%2*\ 【\ %l\ 行\ %c\ 列\ 】\   
+" set statusline+=%2*\ 【\ Total\ %L\ L\ 】\ 
+
+" jump to right
+set statusline+=%1*%=
+
+" right
+set statusline+=%3*\ %{GetCurrentMode()}\ 
 
 set showtabline=1
 
@@ -94,13 +109,20 @@ function! GetCurrentMode()
     if l:Mode ==# 'n'
         " let b:CurrentMode = 'NORMAL'
         let b:CurrentMode = 'のーまる'
-    elseif l:Mode == 'v'
+    elseif l:Mode ==# 'v'
         " let b:CurrentMode = 'VISUAL'
         let b:CurrentMode = 'びじゅある'
+    elseif l:Mode ==# 'V'
+        " let b:CurrentMode = 'LINE'
+        let b:CurrentMode = 'らいん'
+    elseif l:Mode ==# "\<C-v>"
+        " let b:CurrentMode = 'BLOCK'
+        let b:CurrentMode = 'ぶろっく'
     elseif l:Mode ==# 'i'
         " let b:CurrentMode = 'INSERT'
         let b:CurrentMode = 'いんさーと'
     elseif l:Mode ==# 'c'
+        " let b:CurrentMode = 'COMMAND'
         let b:CurrentMode = 'こまんど'
     else
         let b:CurrentMode = l:Mode
@@ -111,6 +133,10 @@ endfunction
 
 function! GetCurrentFileName()
     let l:FileName = expand('%:t')
-
-    return l:FileName
+    
+    if l:FileName == ''
+        return 'ななしふぁいる'
+    else
+        return l:FileName
+    endif
 endfunction

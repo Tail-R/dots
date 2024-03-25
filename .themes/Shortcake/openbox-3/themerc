@@ -86,7 +86,7 @@ menu.separator.color: #ee8888
 menu.items.bg: Solid
 menu.items.bg.color: #ffffdd
 menu.items.active.bg: Flat
-menu.items.active.bg.color: #ffdddd
+menu.items.active.bg.color: #ffcccc
 menu.title.bg: Gradient Vertical Solid
 menu.title.bg.color: #ffffff
 menu.title.bg.colorTo: #ffffff
