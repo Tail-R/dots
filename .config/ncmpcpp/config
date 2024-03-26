@@ -7,7 +7,7 @@ mpd_connection_timeout = 5
 
 # general
 ncmpcpp_directory = ~/.config/ncmpcpp
-lyrics_directory = ~/.lyrics
+lyrics_directory = ~/.config/ncmpcpp/lyrics
 
 mouse_support = "yes"
 

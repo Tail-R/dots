@@ -25,29 +25,29 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/scripts
 
 #
-# options
+# Options
 #
 setopt AUTO_CD
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 #
-# history
+# History
 #
 HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
 
 #
-# prompt
+# Prompt
 #
 
-# precmd() is a special function to redraw the prompt
+# Precmd() is a special function to redraw the prompt
 precmd() {
     if [[ $? == 0 ]]; then
         estat=$(pad blue)
     else
-        estat=$(pad black)
+        estat=$(pad red)
     fi
 
     if [[ $TERM != 'linux' ]]; then
@@ -91,7 +91,7 @@ pad() {
 }
 
 #
-# aliases
+# Aliases
 #
 alias update='sudo pacman -Syu'
 alias lspkgs='pacman -Q'
@@ -131,7 +131,7 @@ alias ncmp='ncmpcpp'
 alias zat='zathura'
 
 #
-# custom commands
+# Custom commands
 #
 gg() {
     xdg-open "https://www.google.com/search?q=$1"

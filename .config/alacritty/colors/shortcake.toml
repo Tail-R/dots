@@ -8,7 +8,7 @@ background = "#ffffdd"
 
 [colors.normal]
 black   = "#aa0000"
-red     = "#ee8888"
+red     = "#aa0000"
 green   = "#ee8888"
 yellow  = "#ffcccc"
 blue    = "#ffaaaa"
@@ -18,7 +18,7 @@ white   = "#ffffff"
 
 [colors.bright]
 black   = "#aa0000"
-red     = "#ee8888"
+red     = "#aa0000"
 green   = "#ee8888"
 yellow  = "#ffcccc"
 blue    = "#ffaaaa"

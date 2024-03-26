@@ -41,7 +41,7 @@
 XTerm.vt100.faceName: monospace
 XTerm.vt100.faceNameDoublesize: azukifontB
 XTerm.vt100.faceSize: 12
-XTerm.vt100.scrollBar: false
+XTerm.vt100.scrollBar: true
 XTerm.vt100.saveLines: 4096
 
 !! Urxvt

@@ -1,4 +1,4 @@
-" settings
+" Settings
 set encoding=UTF-8
 
 set nobackup
@@ -11,7 +11,7 @@ set novisualbell
 
 set number
 set norelativenumber
-set nocursorline
+set cursorline
 set nocursorcolumn
 
 set nowrap
@@ -32,42 +32,37 @@ set ignorecase
 set spell
 set background=light
 
-" colorscheme
 syntax on
+colorscheme light-theme
 
-hi clear 
-hi LineNr ctermfg=red ctermbg=NONE cterm=NONE
-hi SpecialKey ctermfg=red ctermbg=NONE cterm=NONE
-
-" statusbar
+" Statusbar
 set noshowmode
 set laststatus=2 " Show always
 
-" set user highlight group to User{N} [N must be 1 ~ 9]
+" Set user highlight group to User{N} [N must be 1 ~ 9]
 " :h statusline to see more details
 
-" normal items
+" Normal items
 hi User1 ctermfg=black ctermbg=white cterm=bold
 
-" active items
-hi User2 ctermfg=red ctermbg=white cterm=bold
-hi User3 ctermfg=black ctermbg=yellow cterm=bold
+" Active items
+hi User2 ctermfg=magenta ctermbg=white cterm=bold
+hi User3 ctermfg=black ctermbg=cyan cterm=bold
 
+" Left
+set statusline=%3*\ %{GetCurrentMode()}\ 
+set statusline+=%2*\ %l\ 行\ %c\ 列\ 
 
-" left
-set statusline=%3*\ %{GetCurrentFileName()}\ 
-set statusline+=%2*\ 【\ %l\ 行\ %c\ 列\ 】\   
-" set statusline+=%2*\ 【\ Total\ %L\ L\ 】\ 
-
-" jump to right
+" Jump to right
 set statusline+=%1*%=
 
-" right
-set statusline+=%3*\ %{GetCurrentMode()}\ 
+" Right
+set statusline+=%2*\ 合計\ %L\ 行\ 
+set statusline+=%3*\ %{GetCurrentFileName()}\ 
 
 set showtabline=1
 
-" remap
+" Remap
 nnoremap <C-t> :tabnew<CR>
 nnoremap <C-w> :tabclose<CR>
 nnoremap <C-l> :tabnext<CR>
@@ -76,10 +71,10 @@ nnoremap <C-h> :tabprev<CR>
 nnoremap s ^ " jump tp start of line
 nnoremap e $ " jump to end of line
 
-" disable highlighting until next search
+" Disable highlighting until next search
 nnoremap <C-n> :noh<CR>
 
-" toggle typo highlighting
+" Toggle typo highlighting
 nnoremap <C-s> :call ToggleTypoHighlight()<CR>
 
 inoremap ( ()<left>
@@ -96,7 +91,7 @@ augroup MyXML
     autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
 augroup END
 
-" functions
+" Functions
 function! ToggleTypoHighlight()
     let l:State = &spell
 
@@ -144,3 +139,18 @@ function! GetCurrentFileName()
         return l:FileName
     endif
 endfunction
+
+" Auto run commands
+augroup xmlIndent
+    autocmd!
+    autocmd FileType xml set expandtab
+    autocmd FileType xml set tabstop=2
+    autocmd FileType xml set shiftwidth=2
+augroup END
+
+augroup autoShebang
+    autocmd!
+    autocmd BufNewFile *.sh call append(0, '#! /usr/bin/env bash')
+    autocmd BufNewFile *.py call append(0, '#! /usr/bin/env python3')
+    autocmd BufNewFile *.lua call append(0, '#! /usr/bin/env lua')
+augroup END
