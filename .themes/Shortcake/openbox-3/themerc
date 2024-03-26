@@ -41,38 +41,28 @@ window.inactive.button.toggled.pressed.image.color: #ffcccc
 window.inactive.button.toggled.hover.image.color: #ffaaaa
 
 # Active window textures
-window.active.title.bg: Gradient Vertical Solid
+window.active.title.bg: Solid
 window.active.title.bg.color: #ffffff
-window.active.title.bg.colorTo: #ffffff
 window.active.label.bg: Parentrelative
-# window.active.label.bg.color: #ffffff
-window.active.handle.bg: Gradient Vertical Solid
+window.active.handle.bg: Solid
 window.active.handle.bg.color: #ffffff
-window.active.handle.bg.colorTo: #ffffff
-window.active.grip.bg: Gradient Vertical Solid
+window.active.grip.bg: Solid
 window.active.grip.bg.color: #ffffff
-window.active.grip.bg.colorTo: #ffffff
 
 # Inactive window textures
-window.inactive.title.bg: Gradient Vertical Solid
+window.inactive.title.bg: Solid
 window.inactive.title.bg.color: #ffffff
-window.inactive.title.bg.colorTo: #ffffff
 window.inactive.label.bg: Parentrelative
-# window.inactive.label.bg.color: #ffffff
-window.inactive.handle.bg: Gradient Vertical Solid
+window.inactive.handle.bg: Solid
 window.inactive.handle.bg.color: #ffffff
-window.inactive.handle.bg.colorTo: #ffffff
-window.inactive.grip.bg: Gradient Vertical Solid
+window.inactive.grip.bg: Solid
 window.inactive.grip.bg.color: #ffffff
-window.inactive.grip.bg.colorTo: #ffffff
 
 # Active window button textures
 window.*.active.button.*.bg: Parentrelative
-# window.*.active.button.*.bg.color: #000000
 
 # Inactive window button textures
 window.*.inactive.button.*.bg: Parentrelative
-# window.*.inactive.button.*.bg.color: #000000
 
 # Menu colors
 menu.title.text.color: #aa0000
@@ -87,15 +77,13 @@ menu.items.bg: Solid
 menu.items.bg.color: #ffffdd
 menu.items.active.bg: Flat
 menu.items.active.bg.color: #ffcccc
-menu.title.bg: Gradient Vertical Solid
+menu.title.bg: Solid
 menu.title.bg.color: #ffffff
-menu.title.bg.colorTo: #ffffff
 
 # OSD textures
 osd.bg: Solid
 osd.bg.color: #ffffff
 osd.label.bg: Parentrelative
-# osd.label.bg.color: #ffffff
 osd.hilight.bg: Flat
 osd.hilight.bg.color: #aa0000
 osd.unhilight.bg: Flat

@@ -24,9 +24,6 @@
   <item label="primary monitor">
     <action name="Execute"><command>~/scripts/screenshot -p</command></action>
   </item>
-  <item label="empty screenshot dir">
-    <action name="Execute"><command>~/scripts/screenshot -c</command></action>
-  </item>
 </menu>
 
 <menu id="openbox-menu" label="Openbox">

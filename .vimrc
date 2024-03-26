@@ -51,18 +51,23 @@ hi User3 ctermfg=black ctermbg=cyan cterm=bold
 
 " Left
 set statusline=%3*\ %{GetCurrentMode()}\ 
-set statusline+=%2*\ %l\ 行\ %c\ 列\ 
+" set statusline+=%2*\ R\ %l\ C\ %c\  
 
 " Jump to right
 set statusline+=%1*%=
 
 " Right
-set statusline+=%2*\ 合計\ %L\ 行\ 
+set statusline+=%2*\ 合計\ %L\ L\ 
 set statusline+=%3*\ %{GetCurrentFileName()}\ 
 
 set showtabline=1
 
+set cmdheight=1
+
 " Remap
+map <space> /
+map <C-space> ?
+
 nnoremap <C-t> :tabnew<CR>
 nnoremap <C-w> :tabclose<CR>
 nnoremap <C-l> :tabnext<CR>
@@ -112,10 +117,10 @@ function! GetCurrentMode()
         " let b:CurrentMode = 'VISUAL'
         let b:CurrentMode = 'びじゅある'
     elseif l:Mode ==# 'V'
-        " let b:CurrentMode = 'LINE'
+        " let b:CurrentMode = 'V-LINE'
         let b:CurrentMode = 'らいん'
     elseif l:Mode ==# "\<C-v>"
-        " let b:CurrentMode = 'BLOCK'
+        " let b:CurrentMode = 'V-BLOCK'
         let b:CurrentMode = 'ぶろっく'
     elseif l:Mode ==# 'i'
         " let b:CurrentMode = 'INSERT'
@@ -134,7 +139,7 @@ function! GetCurrentFileName()
     let l:FileName = expand('%:t')
     
     if l:FileName == ''
-        return 'ななしふぁいる'
+        return 'ななし'
     else
         return l:FileName
     endif
@@ -154,3 +159,6 @@ augroup autoShebang
     autocmd BufNewFile *.py call append(0, '#! /usr/bin/env python3')
     autocmd BufNewFile *.lua call append(0, '#! /usr/bin/env lua')
 augroup END
+
+" Return to last edit position. Just working lol
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
