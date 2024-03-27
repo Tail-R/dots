@@ -1,0 +1,16 @@
+# ignore all
+/*
+/.*
+
+!.zshrc
+!.vimrc
+!.Xresources
+
+!.config
+!.themes
+!.vim
+!scripts
+
+!README.md
+!.gitignore
+
