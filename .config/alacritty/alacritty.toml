@@ -16,6 +16,9 @@ y = 16
 lines = 32
 columns = 96
 
+[scrolling]
+history = 4096
+
 [cursor.style]
 shape = "block"
 

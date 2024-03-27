@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/tailr/Pictures/wallpapers'
+let g:netrw_dirhist_5='/home/tailr/Pictures/screenshot'
+let g:netrw_dirhist_4='/home/tailr/dots/.config/yazi'
+let g:netrw_dirhist_3='/home/tailr/.cache'
 let g:netrw_dirhist_2='/home/tailr/dots/.themes/Shortcake/openbox-3'
 let g:netrw_dirhist_1='/home/tailr/dots/.themes/Shortcake'

@@ -55,10 +55,10 @@ precmd() {
         # hsym='いえ'
         hsym='～'
         cdir=$(ch_fg black "$hsym$(get_cdir)")
-        cdir=$(ch_bg yellow $cdir)
+        cdir=$(ch_bg cyan $cdir)
         
         PS1=$'\n'
-        PS1+="$estat$(pad yellow)$cdir$(pad yellow) "
+        PS1+="$estat$(pad cyan)$cdir$(pad cyan) "
     else
         # Simple prompt for tty
         PS1=$'\n'

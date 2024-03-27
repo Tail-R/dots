@@ -1,13 +1,4 @@
 #
-# Gradients
-#
-
-# 1
-gradient = horizontal
-start_color = #ffffff 100
-end_color = #ffffff 100
-
-#
 # Background and borders
 #
 
@@ -17,7 +8,6 @@ border_width = 2
 border_sides = R
 background_color = #ffffff 100
 border_color = #ffcccc 100
-# gradient_id = 1
 
 #
 # Panel

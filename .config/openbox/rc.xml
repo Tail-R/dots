@@ -218,6 +218,9 @@
   <keybind key="W-i">
     <action name="Iconify"/>
   </keybind>
+  <keybind key="W-g">
+    <action name="GrowToFill"/>
+  </keybind>
 
   <!-- Keybindings for menus -->
   <keybind key="W-m">
@@ -253,40 +256,54 @@
   </keybind>
 
   <!-- Volume -->
-  <keybind key="F1">
+  <keybind key="W-F1">
     <action name="Execute">
       <command>pamixer --toggle-mute</command>
     </action>
   </keybind>
-  <keybind key="F2">
+  <keybind key="W-F2">
     <action name="Execute">
       <command>pamixer --decrease 2</command>
     </action>
   </keybind>
-  <keybind key="F3">
+  <keybind key="W-F3">
     <action name="Execute">
       <command>pamixer --increase 2</command>
     </action>
   </keybind>
  
   <!-- Brightness --> 
-  <keybind key="F5">
+  <keybind key="W-F5">
     <action name="Execute">
       <command>brightnessctl set 2-%</command>
     </action>
   </keybind>
-  <keybind key="F6">
+  <keybind key="W-F6">
     <action name="Execute">
       <command>brightnessctl set +2%</command>
     </action>
   </keybind>
 
-  <!-- Keybindings for running applications -->
+  <!-- Launcher -->
   <keybind key="W-d">
     <action name="Execute">
-      <command>~/scripts/run</command>
+      <command>~/scripts/run.sh</command>
     </action>
   </keybind>
+  
+  <!-- Screenshot -->
+  <keybind key="W-s">
+    <action name="Execute">
+      <command>~/scripts/screenshot.sh -p</command>
+    </action>
+  </keybind>
+  <keybind key="W-S-s">
+    <action name="Execute">
+      <command>~/scripts/screenshot.sh -s</command>
+    </action>
+  </keybind>
+  
+  <!-- Keybindings for running applications -->
   <keybind key="W-Return">
     <action name="Execute">
       <command>alacritty</command>
@@ -616,7 +633,7 @@
        entry.
        if this is a negative value, then the delay is infinite and the
        submenu will not be shown until it is clicked on -->
-  <submenuHideDelay>400</submenuHideDelay>
+  <submenuHideDelay>100</submenuHideDelay>
   <!-- time to delay before hiding a submenu when selecting another
        entry in parent menu
        if this is a negative value, then the delay is infinite and the

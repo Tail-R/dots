@@ -1,68 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
 
-<openbox_menu xmlns="http://openbox.org/3.4/menu">
+  <menu id="root-menu" label="Openbox 3">
 
-<menu id="apps-term-menu" label="Terminal">
-  <item label="alacritty">
-    <action name="Execute"><command>alacritty</command></action>
-  </item>
-  <item label="urxvt">
-    <action name="Execute"><command>urxvt</command></action>
-  </item>
-  <item label="xterm">
-    <action name="Execute"><command>xterm</command></action>
-  </item>
-</menu>
-
-<menu id="screenshot-menu" label="Screenshot">
-  <item label="full screen">
-    <action name="Execute"><command>~/scripts/screenshot -f</command></action>
-  </item>
-  <item label="select a region">
-    <action name="Execute"><command>~/scripts/screenshot -s</command></action>
-  </item>
-  <item label="primary monitor">
-    <action name="Execute"><command>~/scripts/screenshot -p</command></action>
-  </item>
-</menu>
-
-<menu id="openbox-menu" label="Openbox">
-  <item label="reconfigure">
-    <action name="Reconfigure" />
-  </item>
-</menu>
-
-<menu id="root-menu" label="Openbox 3">
-  <separator label="よくつかう"/>
-  <menu id="apps-term-menu"/>
-  <item label="firefox">
-    <action name="Execute"><command>firefox</command></action>
-  </item>
-  <item label="nemo">
-    <action name="Execute"><command>nemo</command></action>
-  </item>
-  <item label="geany">
-    <action name="Execute"><command>geany</command></action>
-  </item>
-  <item label="gimp">
-    <action name="Execute"><command>gimp</command></action>
-  </item>
-  <menu id="screenshot-menu"/>
-  <separator label="たまにつかう"/>
-  <item label="pavucontrol">
-    <action name="Execute"><command>pavucontrol</command></action>
-  </item>
-  <item label="fcitx5-configtool">
-    <action name="Execute"><command>fcitx5-configtool</command></action>
-  </item>
-  <separator label="しすてむ"/>
-  <menu id="openbox-menu"/>
-  <item label="restart">
-    <action name="Restart"><prompt>yes</prompt></action>
-  </item>
-  <item label="logout">
-    <action name="Exit"><prompt>yes</prompt></action>
-  </item>
-</menu>
+    <separator label="Openbox"/>
+ 
+    <item label="Reconfigure">
+      <action name="Reconfigure"/>
+    </item>
+    <item label="Restart">
+      <action name="Restart"/>
+    </item>
+    <item label="Exit">
+      <action name="Exit"/>
+    </item>
+    
+  </menu>
 
 </openbox_menu>

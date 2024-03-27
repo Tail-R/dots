@@ -33,6 +33,7 @@ set spell
 set background=light
 
 syntax on
+
 colorscheme light-theme
 
 " Statusbar
@@ -65,9 +66,6 @@ set showtabline=1
 set cmdheight=1
 
 " Remap
-map <space> /
-map <C-space> ?
-
 nnoremap <C-t> :tabnew<CR>
 nnoremap <C-w> :tabclose<CR>
 nnoremap <C-l> :tabnext<CR>

@@ -1,27 +1,31 @@
+[colors.primary]
+foreground = "#aa0000"
+background = "#ffffdd"
+
 [colors.cursor]
 text = "#ffffff"
 cursor = "#aa0000"
 
-[colors.primary]
-foreground = "#aa0000"
-background = "#ffffdd"
+[colors.selection]
+text = "#aa0000"
+background = "#ffaaaa"
 
 [colors.normal]
 black   = "#aa0000"
 red     = "#aa0000"
 green   = "#ee8888"
-yellow  = "#ffcccc"
+yellow  = "#ffeeee"
 blue    = "#ffaaaa"
 magenta = "#ffaaaa"
-cyan    = "#ffaaaa"
+cyan    = "#ffcccc"
 white   = "#ffffff"
 
 [colors.bright]
 black   = "#aa0000"
 red     = "#aa0000"
 green   = "#ee8888"
-yellow  = "#ffcccc"
+yellow  = "#ffeeee"
 blue    = "#ffaaaa"
 magenta = "#ffaaaa"
-cyan    = "#ffaaaa"
+cyan    = "#ffcccc"
 white   = "#ffffff"

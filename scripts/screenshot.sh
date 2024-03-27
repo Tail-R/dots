@@ -14,18 +14,23 @@ name=$(date "+%Y%m%d_%H%M%S.$TYPE")
 case "$1" in
 -s)
     maim -u -m $Q -s $SSDIR/$name
-    notify-send -i $SSDIR/$name "taking a screenshot!
+
+    if [[ ! $? ]]; then
+    notify-send -i $SSDIR/$name "Taking a screenshot!
 saved to $name"
+    else
+        notify-send "Screenshot has been aborted!"
+    fi
 ;;
 -f)
     maim -u -m $Q $SSDIR/$name
-    notify-send -i $SSDIR/$name "taking a screenshot!
+    notify-send -i $SSDIR/$name "Taking a screenshot!
 saved to $name"
 ;;
 -p)
     geo=$(xrandr | grep primary | cut -d ' ' -f4)
     maim -g $geo -u -m $Q $SSDIR/$name
-    notify-send -i $SSDIR/$name "taking a screenshot!
+    notify-send -i $SSDIR/$name "Taking a screenshot!
 saved to $name"
 ;;
 -c)
