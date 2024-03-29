@@ -1,16 +1,10 @@
-# ignore all
-/*
-/.*
+# ignore all under the .config
+.config/
 
-!.zshrc
-!.vimrc
-!.Xresources
-
-!.config
-!.themes
-!.vim
-!scripts
-
-!README.md
-!.gitignore
-
+!.config/alacritty
+!.config/dunst
+!.config/mpd
+!.config/ncmpcpp
+!.config/openbox
+!.config/tint2
+!.config/yazi

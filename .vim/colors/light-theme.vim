@@ -3,9 +3,7 @@ hi clear
 
 let g:colors_name='light-theme'
 
-let s:t_Co = has('gui_running') ? -1 : (&t_Co ?? 0)
-
-if s:t_Co >= 16
+if (&t_Co ?? 0) >= 16
     " General
     hi Normal ctermfg=black ctermbg=NONE cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -13,9 +11,9 @@ if s:t_Co >= 16
     hi CursorLineNr ctermfg=red ctermbg=NONE cterm=bold
     hi LineNr ctermfg=cyan ctermbg=NONE cterm=NONE
     hi EndOfBuffer ctermfg=yellow ctermbg=NONE cterm=NONE
-    hi StatusLine ctermfg=NONE ctermbg=blue cterm=NONE
-    hi StatusLineNC ctermfg=NONE ctermbg=yellow cterm=NONE
-    hi VertSplit ctermfg=yellow ctermbg=yellow cterm=NONE
+    hi StatusLine ctermfg=magenta ctermbg=white cterm=bold
+    hi StatusLineNC ctermfg=magenta ctermbg=NONE cterm=bold
+    hi VertSplit ctermfg=yellow ctermbg=NONE cterm=NONE
     hi Tabline ctermfg=NONE ctermbg=white cterm=NONE
     hi TablineFill ctermfg=NONE ctermbg=NONE cterm=NONE
     hi TablineSel ctermfg=black ctermbg=yellow cterm=bold
@@ -38,6 +36,5 @@ if s:t_Co >= 16
     hi Underlined ctermfg=cyan ctermbg=NONE cterm=bold cterm=italic
     hi Error ctermfg=white ctermbg=red cterm=NONE
     
-    unlet s:t_Co
     finish
 endif

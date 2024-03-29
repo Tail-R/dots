@@ -1,9 +1,0 @@
-# GIMP action-history
-
-(history-item "layers-scale" 1)
-(history-item "image-new" 0)
-(history-item "file-open-as-layers" 1)
-(history-item "layers-resize-to-image" 0)
-(history-item "file-export-as" 1)
-
-# end of action-history

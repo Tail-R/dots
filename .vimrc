@@ -1,25 +1,23 @@
+"
 " Settings
+"
 set encoding=UTF-8
 
 set nobackup
 set noswapfile
 
-set mouse=a " enable mouse
-
-set noerrorbells
-set novisualbell
+set mouse=a " enable the mouse
 
 set number
-set norelativenumber
+set relativenumber
 set cursorline
 set nocursorcolumn
 
 set nowrap
 set virtualedit=onemore
-set noautoindent
 set smartindent
-set smarttab
-set expandtab
+set smarttab " delete multiple spaces as a single tab
+set expandtab " use space instead of tab
 set tabstop=4
 set shiftwidth=4
 
@@ -36,65 +34,73 @@ syntax on
 
 colorscheme light-theme
 
-" Statusbar
+"
+" Status Line
+"
 set noshowmode
-set laststatus=2 " Show always
+set laststatus=2 " show always
 
-" Set user highlight group to User{N} [N must be 1 ~ 9]
-" :h statusline to see more details
+if (&t_Co ?? 0) > 16
+    " set user highlight group to User{N} [The N must be 1 ~ 9]
+    " :h statusline to see more details
+    
+    hi User1 ctermfg=magenta ctermbg=white cterm=bold
+    hi User2 ctermfg=black ctermbg=cyan cterm=bold
+    
+    " left items
+    set statusline=%2*\ %{GetCurrentMode()}\ 
+    
+    " jump to right
+    set statusline+=%*%=
+    
+    " right items
+    set statusline+=合計\ %L\ L\ 
+    set statusline+=%2*\ R\ %l\ C\ %c\  
+    " "set statusline+=%2*\ %{GetCurrentFileName()}\ 
+endif
 
-" Normal items
-hi User1 ctermfg=black ctermbg=white cterm=bold
+"
+" Tab Line
+"
+set showtabline=2 " show always
+set tabline=%!MyTabLine()
 
-" Active items
-hi User2 ctermfg=magenta ctermbg=white cterm=bold
-hi User3 ctermfg=black ctermbg=cyan cterm=bold
+" enable the undo-redo permanently
+set undofile
+set undodir=~/.vim/undodir
 
-" Left
-set statusline=%3*\ %{GetCurrentMode()}\ 
-" set statusline+=%2*\ R\ %l\ C\ %c\  
-
-" Jump to right
-set statusline+=%1*%=
-
-" Right
-set statusline+=%2*\ 合計\ %L\ L\ 
-set statusline+=%3*\ %{GetCurrentFileName()}\ 
-
-set showtabline=1
-
-set cmdheight=1
-
+"
 " Remap
+"
 nnoremap <C-t> :tabnew<CR>
-nnoremap <C-w> :tabclose<CR>
-nnoremap <C-l> :tabnext<CR>
-nnoremap <C-h> :tabprev<CR>
+
+nnoremap <Space> /
+
+" move between windows
+nnoremap <C-h> <C-W>h
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-l> <C-W>l
 
 nnoremap s ^ " jump tp start of line
 nnoremap e $ " jump to end of line
 
-" Disable highlighting until next search
+" disable highlighting until next search
 nnoremap <C-n> :noh<CR>
 
-" Toggle typo highlighting
+" toggle typo highlighting
 nnoremap <C-s> :call ToggleTypoHighlight()<CR>
 
 inoremap ( ()<left>
 inoremap { {}<left>
 inoremap [ []<left>
 inoremap < <><left>
-inoremap ' ''<left>
+" inoremap ' ''<left>
 inoremap " ""<left>
 
-" xml tag autocomplete
-set omnifunc=xmlcomplete#CompleteTags
-augroup MyXML
-    autocmd!
-    autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
-augroup END
-
+"
 " Functions
+"
 function! ToggleTypoHighlight()
     let l:State = &spell
 
@@ -143,7 +149,33 @@ function! GetCurrentFileName()
     endif
 endfunction
 
-" Auto run commands
+" simple implementation of the tabline
+" copied and edited from https://vim-jp.org/vimdoc-ja/tabpage.html
+function MyTabLine()
+    let s = ''
+    for i in range(tabpagenr('$'))
+        let s..= i + 1 == tabpagenr() ? '%#TabLineSel#': '%#TabLine#'
+        
+        let s ..= '%' .. (i + 1) .. 'T'
+        let s ..= ' %{MyTabLabel(' .. (i + 1) .. ')} '
+    endfor
+    
+    let s ..= '%#TabLineFill#%T'
+    
+    return s
+endfunction
+
+" it will be invoked to get tabname
+function MyTabLabel(n)
+    let buflist = tabpagebuflist(a:n)
+    let winnr = tabpagewinnr(a:n)
+    
+    return bufname(buflist[winnr - 1])
+endfunction
+
+"
+" Startup commands
+"
 augroup xmlIndent
     autocmd!
     autocmd FileType xml set expandtab
@@ -158,5 +190,18 @@ augroup autoShebang
     autocmd BufNewFile *.lua call append(0, '#! /usr/bin/env lua')
 augroup END
 
-" Return to last edit position. Just working lol
+" return to last edit position. Just working lol
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+"
+" Callback commands
+"
+autocmd ModeChanged *:i* set norelativenumber
+autocmd ModeChanged i*:* set relativenumber
+
+" xml tag auto completion
+set omnifunc=xmlcomplete#CompleteTags
+augroup MyXML
+    autocmd!
+    autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
+augroup END
