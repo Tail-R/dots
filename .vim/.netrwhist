@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/tailr/dots/scripts'
 let g:netrw_dirhist_6='/home/tailr/Pictures/wallpapers'
 let g:netrw_dirhist_5='/home/tailr/Pictures/screenshot'
 let g:netrw_dirhist_4='/home/tailr/dots/.config/yazi'

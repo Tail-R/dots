@@ -6,6 +6,12 @@ set encoding=UTF-8
 set nobackup
 set noswapfile
 
+" enable the undo-redo permanently
+set undofile
+set undodir=~/.vim/undodir
+
+set shell=zsh
+
 set mouse=a " enable the mouse
 
 set number
@@ -34,13 +40,14 @@ syntax on
 
 colorscheme light-theme
 
+set wildmenu
+
 "
 " Status Line
 "
-set noshowmode
 set laststatus=2 " show always
 
-if (&t_Co ?? 0) > 16
+if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
     
@@ -55,26 +62,30 @@ if (&t_Co ?? 0) > 16
     
     " right items
     set statusline+=合計\ %L\ L\ 
-    set statusline+=%2*\ R\ %l\ C\ %c\  
-    " "set statusline+=%2*\ %{GetCurrentFileName()}\ 
+    " set statusline+=%2*\ R\ %l\ C\ %c\  
+    set statusline+=%2*\ %{GetCurrentFileName()}\ 
 endif
 
 "
 " Tab Line
 "
-set showtabline=2 " show always
+set showtabline=1 " don't show always
 set tabline=%!MyTabLine()
 
-" enable the undo-redo permanently
-set undofile
-set undodir=~/.vim/undodir
+set noshowmode
 
 "
 " Remap
 "
-nnoremap <C-t> :tabnew<CR>
+let mapleader = ' '
 
-nnoremap <Space> /
+nnoremap <C-c> :call CopyVisualSelection()<CR>
+
+" move between tabs
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>w :tabclose<CR>
+nnoremap <Leader>h :tabprev<CR>
+nnoremap <Leader>l :tabnext<CR>
 
 " move between windows
 nnoremap <C-h> <C-W>h
@@ -95,8 +106,10 @@ inoremap ( ()<left>
 inoremap { {}<left>
 inoremap [ []<left>
 inoremap < <><left>
-" inoremap ' ''<left>
 inoremap " ""<left>
+
+inoremap /* /*  */<left><left><left>
+inoremap <!-- <!--  --><left><left><left><left>
 
 "
 " Functions
@@ -140,19 +153,16 @@ function! GetCurrentMode()
 endfunction
 
 function! GetCurrentFileName()
-    let l:FileName = expand('%:t')
+    let fileName = expand('%:t')
     
-    if l:FileName == ''
-        return 'ななし'
-    else
-        return l:FileName
-    endif
+    return fileName == '' ? 'ななし' : fileName
 endfunction
 
 " simple implementation of the tabline
 " copied and edited from https://vim-jp.org/vimdoc-ja/tabpage.html
 function MyTabLine()
     let s = ''
+    
     for i in range(tabpagenr('$'))
         let s..= i + 1 == tabpagenr() ? '%#TabLineSel#': '%#TabLine#'
         
@@ -160,8 +170,7 @@ function MyTabLine()
         let s ..= ' %{MyTabLabel(' .. (i + 1) .. ')} '
     endfor
     
-    let s ..= '%#TabLineFill#%T'
-    
+    let s ..= '%#TabLineFill#%T' 
     return s
 endfunction
 
@@ -169,8 +178,28 @@ endfunction
 function MyTabLabel(n)
     let buflist = tabpagebuflist(a:n)
     let winnr = tabpagewinnr(a:n)
+    let bufname = bufname(buflist[winnr - 1])
     
-    return bufname(buflist[winnr - 1])
+    return bufname == '' ? 'ななし' : bufname
+endfunction
+
+function CopyVisualSelection()
+    call system('echo ' . GetVisualSelection() .' | xclip -sel clip')
+endfunction
+
+function! GetVisualSelection()
+    let [line_start, column_start] = getpos("'<")[1:2]
+    let [line_end, column_end] = getpos("'>")[1:2]
+    let lines = getline(line_start, line_end)
+    
+    if len(lines) == 0
+        return ''
+    endif
+    
+    let lines[-1] = lines[-1][: column_end - (&selection == 'inclusive' ? 1 : 2)]
+    let lines[0] = lines[0][column_start - 1:]
+    
+    return join(lines, "\n")
 endfunction
 
 "

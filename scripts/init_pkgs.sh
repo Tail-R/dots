@@ -21,6 +21,7 @@ brightnessctl
 pamixer
 dunst
 dmenu
+xclip
 "
 
 echo $pkgs | while read -r pkg; do

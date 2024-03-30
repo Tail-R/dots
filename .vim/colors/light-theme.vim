@@ -3,20 +3,22 @@ hi clear
 
 let g:colors_name='light-theme'
 
-if (&t_Co ?? 0) >= 16
+if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " General
     hi Normal ctermfg=black ctermbg=NONE cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi CursorColumn ctermfg=NONE ctermbg=white cterm=NONE
     hi CursorLineNr ctermfg=red ctermbg=NONE cterm=bold
-    hi LineNr ctermfg=cyan ctermbg=NONE cterm=NONE
+    hi LineNr ctermfg=magenta ctermbg=NONE cterm=NONE
     hi EndOfBuffer ctermfg=yellow ctermbg=NONE cterm=NONE
     hi StatusLine ctermfg=magenta ctermbg=white cterm=bold
-    hi StatusLineNC ctermfg=magenta ctermbg=NONE cterm=bold
+    hi StatusLineNC ctermfg=magenta ctermbg=white cterm=bold
+    hi StatusLineTerm ctermfg=magenta ctermbg=white cterm=bold
+    hi StatusLineTermNC ctermfg=magenta ctermbg=white cterm=bold
     hi VertSplit ctermfg=yellow ctermbg=NONE cterm=NONE
-    hi Tabline ctermfg=NONE ctermbg=white cterm=NONE
+    hi Tabline ctermfg=yellow ctermbg=white cterm=bold
     hi TablineFill ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi TablineSel ctermfg=black ctermbg=yellow cterm=bold
+    hi TablineSel ctermfg=red ctermbg=yellow cterm=bold
     hi Visual ctermfg=red ctermbg=blue cterm=NONE
     
     " Search
