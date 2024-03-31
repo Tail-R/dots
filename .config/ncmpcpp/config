@@ -28,7 +28,6 @@ statusbar_visibility = "no"
 titles_visibility = "no"
 enable_window_title = "yes"
 
-# progressbar_look = "━━━"
 progressbar_look = "▃▃▃"
 progressbar_elapsed_color = "2"
 progressbar_color = "4"
@@ -36,11 +35,7 @@ progressbar_color = "4"
 statusbar_color = "1"
 
 # custom UI options
-# now_playing_prefix = "$2>"
-# now_playing_suffix = ""
 current_item_prefix = "$3>"
 current_item_suffix = ""
 
-song_status_format="$1%t"
-song_list_format = "$1%t"
 song_columns_list_format = "(64)[1]{tl} (28)[3]{ar}(8)[5]{lr}"

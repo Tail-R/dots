@@ -52,3 +52,9 @@ Mar 26 23:09 : player: played "spotifydown.com - ただ君に晴れ.mp3"
 Mar 26 23:13 : player: played "spotifydown.com - ただ君に晴れ.mp3"
 Mar 26 23:16 : player: played "spotifydown.com - ただ君に晴れ.mp3"
 Mar 26 23:53 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Mar 30 17:40 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Mar 30 17:41 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Mar 30 17:41 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Mar 30 17:41 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Mar 30 17:43 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Mar 30 17:43 : player: played "spotifydown.com - ただ君に晴れ.mp3"

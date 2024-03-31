@@ -2,7 +2,6 @@
 
 pkgs="
 vim
-helix
 yazi
 unzip
 openbox

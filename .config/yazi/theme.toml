@@ -41,7 +41,7 @@ count_cut      = { fg = "white", bg = "red" }
 count_selected = { fg = "white", bg = "blue" }
 
 # Border
-border_symbol = "│"
+border_symbol = " "
 border_style  = { fg = "gray" }
 
 # Highlighting

@@ -256,29 +256,29 @@
   </keybind>
 
   <!-- Volume -->
-  <keybind key="F1">
+  <keybind key="XF86AudioMute">
     <action name="Execute">
       <command>pamixer --toggle-mute</command>
     </action>
   </keybind>
-  <keybind key="F2">
+  <keybind key="XF86AudioLowerVolume">
     <action name="Execute">
       <command>pamixer --decrease 2</command>
     </action>
   </keybind>
-  <keybind key="F3">
+  <keybind key="XF86AudioRaiseVolume">
     <action name="Execute">
       <command>pamixer --increase 2</command>
     </action>
   </keybind>
  
   <!-- Brightness --> 
-  <keybind key="F5">
+  <keybind key="XF86MonBrightnessDown">
     <action name="Execute">
       <command>brightnessctl set 2-%</command>
     </action>
   </keybind>
-  <keybind key="F6">
+  <keybind key="XF86MonBrightnessUp">
     <action name="Execute">
       <command>brightnessctl set +2%</command>
     </action>

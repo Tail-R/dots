@@ -33,7 +33,7 @@ set hlsearch
 set smartcase
 set ignorecase
 
-set spell
+set nospell
 set background=light
 
 syntax on
@@ -79,19 +79,23 @@ set noshowmode
 "
 let mapleader = ' '
 
-nnoremap <C-c> :call CopyVisualSelection()<CR>
-
 " move between tabs
 nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>w :tabclose<CR>
+nnoremap <Leader>c :tabclose<CR>
 nnoremap <Leader>h :tabprev<CR>
 nnoremap <Leader>l :tabnext<CR>
 
 " move between windows
-nnoremap <C-h> <C-W>h
-nnoremap <C-j> <C-W>j
-nnoremap <C-k> <C-W>k
-nnoremap <C-l> <C-W>l
+nnoremap <S-h> <C-w>h
+nnoremap <S-j> <C-w>j
+nnoremap <S-k> <C-w>k
+nnoremap <S-l> <C-w>l
+
+" resize the current windows
+nnoremap <C-h> :vertical resize -2<CR>
+nnoremap <C-j> :resize +2<CR>
+nnoremap <C-k> :resize -2<CR>
+nnoremap <C-l> :vertical resize +2<CR>
 
 nnoremap s ^ " jump tp start of line
 nnoremap e $ " jump to end of line
@@ -102,14 +106,19 @@ nnoremap <C-n> :noh<CR>
 " toggle typo highlighting
 nnoremap <C-s> :call ToggleTypoHighlight()<CR>
 
+" some useful completions
 inoremap ( ()<left>
 inoremap { {}<left>
 inoremap [ []<left>
 inoremap < <><left>
 inoremap " ""<left>
-
 inoremap /* /*  */<left><left><left>
 inoremap <!-- <!--  --><left><left><left><left>
+
+" copy the latest selection to the system clipboard via xclip command
+" make sure that you have xclip on your system
+nnoremap <C-c> :call CopyVisualSelection()<CR>
+vnoremap <C-c> :call CopyVisualSelection()<CR>
 
 "
 " Functions
@@ -119,35 +128,45 @@ function! ToggleTypoHighlight()
 
     if l:State == '0'
         set spell
-    elseif l:State == '1'
+    else    
         set nospell
     endif
 endfunction
 
 function! GetCurrentMode()
     let l:Mode = mode()
-
+    
     if l:Mode ==# 'n'
-        " let b:CurrentMode = 'NORMAL'
-        let b:CurrentMode = 'のーまる'
+        let b:CurrentMode = 'Normal'
     elseif l:Mode ==# 'v'
-        " let b:CurrentMode = 'VISUAL'
-        let b:CurrentMode = 'びじゅある'
+        let b:CurrentMode = 'Visual'
     elseif l:Mode ==# 'V'
-        " let b:CurrentMode = 'V-LINE'
-        let b:CurrentMode = 'らいん'
+        let b:CurrentMode = 'V-Line'
     elseif l:Mode ==# "\<C-v>"
-        " let b:CurrentMode = 'V-BLOCK'
-        let b:CurrentMode = 'ぶろっく'
+        let b:CurrentMode = 'V-Block'
     elseif l:Mode ==# 'i'
-        " let b:CurrentMode = 'INSERT'
-        let b:CurrentMode = 'いんさーと'
+        let b:CurrentMode = 'Insert'
     elseif l:Mode ==# 'c'
-        " let b:CurrentMode = 'COMMAND'
-        let b:CurrentMode = 'こまんど'
+        let b:CurrentMode = 'Command'
     else
         let b:CurrentMode = l:Mode
     endif
+
+    " if l:Mode ==# 'n'
+    "     let b:CurrentMode = 'のーまる'
+    " elseif l:Mode ==# 'v'
+    "     let b:CurrentMode = 'びじゅある'
+    " elseif l:Mode ==# 'V'
+    "     let b:CurrentMode = 'らいん'
+    " elseif l:Mode ==# "\<C-v>"
+    "     let b:CurrentMode = 'ぶろっく'
+    " elseif l:Mode ==# 'i'
+    "     let b:CurrentMode = 'いんさーと'
+    " elseif l:Mode ==# 'c'
+    "     let b:CurrentMode = 'こまんど'
+    " else
+    "     let b:CurrentMode = l:Mode
+    " endif
 
     return b:CurrentMode
 endfunction
@@ -155,11 +174,11 @@ endfunction
 function! GetCurrentFileName()
     let fileName = expand('%:t')
     
-    return fileName == '' ? 'ななし' : fileName
+    " return fileName == '' ? 'ななし' : fileName
+    return fileName == '' ? 'New File' : fileName
 endfunction
 
 " simple implementation of the tabline
-" copied and edited from https://vim-jp.org/vimdoc-ja/tabpage.html
 function MyTabLine()
     let s = ''
     
@@ -170,7 +189,12 @@ function MyTabLine()
         let s ..= ' %{MyTabLabel(' .. (i + 1) .. ')} '
     endfor
     
-    let s ..= '%#TabLineFill#%T' 
+    let s ..= '%#TabLineFill#%T'
+
+    " if tabpagenr('$') > 1
+    "     let s ..= '%=%#TabLine#%999X とじる '
+    " endif
+    
     return s
 endfunction
 
@@ -180,7 +204,8 @@ function MyTabLabel(n)
     let winnr = tabpagewinnr(a:n)
     let bufname = bufname(buflist[winnr - 1])
     
-    return bufname == '' ? 'ななし' : bufname
+    " return bufname == '' ? 'ななし' : bufname
+    return bufname == '' ? 'New File' : bufname
 endfunction
 
 function CopyVisualSelection()
