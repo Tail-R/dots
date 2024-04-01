@@ -73,10 +73,10 @@ menu.items.active.disabled.text.color: #ee8888
 menu.separator.color: #ee8888
 
 # Menu textures
-menu.items.bg: Solid
+menu.items.bg: Flat
 menu.items.bg.color: #ffffdd
 menu.items.active.bg: Flat
-menu.items.active.bg.color: #ffeeee
+menu.items.active.bg.color: #ffdddd
 menu.title.bg: Solid
 menu.title.bg.color: #ffffff
 

@@ -1,4 +1,6 @@
 xrdb merge ~/.Xresources &
+# xsetroot -solid #ffeeee &
+
 ~/.fehbg &
 tint2 -c ~/.config/tint2/shortcake/tint2rc &
 fcitx5 &

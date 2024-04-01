@@ -21,7 +21,7 @@ set nocursorcolumn
 
 set nowrap
 set virtualedit=onemore
-set smartindent
+set nosmartindent
 set smarttab " delete multiple spaces as a single tab
 set expandtab " use space instead of tab
 set tabstop=4
@@ -61,8 +61,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     set statusline+=%*%=
     
     " right items
-    set statusline+=合計\ %L\ L\ 
-    " set statusline+=%2*\ R\ %l\ C\ %c\  
+    set statusline+=%l,%c\ /\ %L\ L\ 
     set statusline+=%2*\ %{GetCurrentFileName()}\ 
 endif
 
@@ -77,7 +76,7 @@ set noshowmode
 "
 " Remap
 "
-let mapleader = ' '
+let mapleader = ' ' "  use space as leaderkey
 
 " move between tabs
 nnoremap <Leader>t :tabnew<CR>
@@ -91,7 +90,7 @@ nnoremap <S-j> <C-w>j
 nnoremap <S-k> <C-w>k
 nnoremap <S-l> <C-w>l
 
-" resize the current windows
+" resize the current window
 nnoremap <C-h> :vertical resize -2<CR>
 nnoremap <C-j> :resize +2<CR>
 nnoremap <C-k> :resize -2<CR>
@@ -107,13 +106,13 @@ nnoremap <C-n> :noh<CR>
 nnoremap <C-s> :call ToggleTypoHighlight()<CR>
 
 " some useful completions
-inoremap ( ()<left>
-inoremap { {}<left>
-inoremap [ []<left>
-inoremap < <><left>
-inoremap " ""<left>
-inoremap /* /*  */<left><left><left>
-inoremap <!-- <!--  --><left><left><left><left>
+inoremap ( ()<Left>
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap < <><Left>
+inoremap " ""<Left>
+inoremap /* /*  */<Left><Left><Left>
+inoremap <!-- <!--  --><Left><Left><Left><Left>
 
 " copy the latest selection to the system clipboard via xclip command
 " make sure that you have xclip on your system
@@ -124,9 +123,9 @@ vnoremap <C-c> :call CopyVisualSelection()<CR>
 " Functions
 "
 function! ToggleTypoHighlight()
-    let l:State = &spell
+    let spell_is_enable = &spell
 
-    if l:State == '0'
+    if spell_is_enable == '0'
         set spell
     else    
         set nospell
@@ -134,47 +133,30 @@ function! ToggleTypoHighlight()
 endfunction
 
 function! GetCurrentMode()
-    let l:Mode = mode()
+    let mode = mode()
     
-    if l:Mode ==# 'n'
-        let b:CurrentMode = 'Normal'
-    elseif l:Mode ==# 'v'
-        let b:CurrentMode = 'Visual'
-    elseif l:Mode ==# 'V'
-        let b:CurrentMode = 'V-Line'
-    elseif l:Mode ==# "\<C-v>"
-        let b:CurrentMode = 'V-Block'
-    elseif l:Mode ==# 'i'
-        let b:CurrentMode = 'Insert'
-    elseif l:Mode ==# 'c'
-        let b:CurrentMode = 'Command'
+    if mode ==# 'n'
+        let current_mode = 'NORMAL'
+    elseif mode ==# 'v'
+        let current_mode = 'VISUAL'
+    elseif mode ==# 'V'
+        let current_mode = 'V-LINE'
+    elseif mode ==# "\<C-v>"
+        let current_mode = 'V-BLOCK'
+    elseif mode ==# 'i'
+        let current_mode = 'INSERT'
+    elseif mode ==# 'c'
+        let current_mode = 'COMMAND'
     else
-        let b:CurrentMode = l:Mode
+        let current_mode = mode
     endif
 
-    " if l:Mode ==# 'n'
-    "     let b:CurrentMode = 'のーまる'
-    " elseif l:Mode ==# 'v'
-    "     let b:CurrentMode = 'びじゅある'
-    " elseif l:Mode ==# 'V'
-    "     let b:CurrentMode = 'らいん'
-    " elseif l:Mode ==# "\<C-v>"
-    "     let b:CurrentMode = 'ぶろっく'
-    " elseif l:Mode ==# 'i'
-    "     let b:CurrentMode = 'いんさーと'
-    " elseif l:Mode ==# 'c'
-    "     let b:CurrentMode = 'こまんど'
-    " else
-    "     let b:CurrentMode = l:Mode
-    " endif
-
-    return b:CurrentMode
+    return current_mode
 endfunction
 
 function! GetCurrentFileName()
     let fileName = expand('%:t')
     
-    " return fileName == '' ? 'ななし' : fileName
     return fileName == '' ? 'New File' : fileName
 endfunction
 
@@ -186,25 +168,19 @@ function MyTabLine()
         let s..= i + 1 == tabpagenr() ? '%#TabLineSel#': '%#TabLine#'
         
         let s ..= '%' .. (i + 1) .. 'T'
-        let s ..= ' %{MyTabLabel(' .. (i + 1) .. ')} '
+        let s ..= ' %{GetTabLabel(' .. (i + 1) .. ')} '
     endfor
     
     let s ..= '%#TabLineFill#%T'
-
-    " if tabpagenr('$') > 1
-    "     let s ..= '%=%#TabLine#%999X とじる '
-    " endif
-    
+ 
     return s
 endfunction
 
-" it will be invoked to get tabname
-function MyTabLabel(n)
+function GetTabLabel(n)
     let buflist = tabpagebuflist(a:n)
     let winnr = tabpagewinnr(a:n)
     let bufname = bufname(buflist[winnr - 1])
     
-    " return bufname == '' ? 'ななし' : bufname
     return bufname == '' ? 'New File' : bufname
 endfunction
 

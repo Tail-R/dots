@@ -8,7 +8,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi Normal ctermfg=black ctermbg=NONE cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=NONE
     hi CursorColumn ctermfg=NONE ctermbg=white cterm=NONE
-    hi CursorLineNr ctermfg=red ctermbg=NONE cterm=NONE
+    hi CursorLineNr ctermfg=black ctermbg=NONE cterm=bold
     hi LineNr ctermfg=magenta ctermbg=NONE cterm=NONE
     hi EndOfBuffer ctermfg=yellow ctermbg=NONE cterm=NONE
     hi StatusLine ctermfg=magenta ctermbg=white cterm=bold

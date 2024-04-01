@@ -5,7 +5,7 @@ size = 8.0
 
 [window]
 opacity = 1.0
-# title = 'たーみなる'
+title = 'たーみなる'
 # title = 'AraAratty'
 dynamic_title = false
 
@@ -24,10 +24,10 @@ history = 4096
 shape = "block"
 
 [font.normal]
-family = "azukifontB"
+family = "Comic Shanns"
 
 [font.bold]
-family = "azukifontB"
+family = "Comic Shanns"
 
 [font.italic]
-family = "azukifontB"
+family = "Comic Shanns"

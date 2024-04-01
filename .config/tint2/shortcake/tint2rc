@@ -86,49 +86,49 @@ battery_tooltip_enabled = 0
 # Button
 #
 
-# Terminal
+# 1
 button = new
 button_icon = ~/.config/tint2/shortcake/icons/cake.png
-button_tooltip = Terminal :3
+button_tooltip = あるぼ :3
 button_background_id = 0
 button_padding = 8 8 0
 button_max_icon_size = 0
-button_lclick_command = alacritty
-button_rclick_command = alacritty
-button_mclick_command = alacritty
+button_lclick_command = xdg-open https://www.chukyo-u.ac.jp/student-staff/it/cubics/
+button_rclick_command = xdg-open https://www.chukyo-u.ac.jp/student-staff/it/cubics/
+button_mclick_command = xdg-open https://www.chukyo-u.ac.jp/student-staff/it/cubics/
 
-# Browser
+# 2
 button = new
 button_icon = ~/.config/tint2/shortcake/icons/cake.png
-button_tooltip = Browser :3
+button_tooltip = まなぼ :3
 button_background_id = 0
 button_padding = 8 8 0
 button_max_icon_size = 0
-button_lclick_command = firefox
-button_rclick_command = firefox
-button_mclick_command = firefox
+button_lclick_command = xdg-open https://manabo.cnc.chukyo-u.ac.jp/auth/shibboleth/
+button_rclick_command = xdg-open https://manabo.cnc.chukyo-u.ac.jp/auth/shibboleth/
+button_mclick_command = xdg-open https://manabo.cnc.chukyo-u.ac.jp/auth/shibboleth/
 
-# Text editor
+# 3
 button = new
 button_icon = ~/.config/tint2/shortcake/icons/cake.png
-button_tooltip = Text editor :3
+button_tooltip = ようつべ :3
 button_background_id = 0
 button_padding = 8 8 0
 button_max_icon_size = 0
-button_lclick_command = geany
-button_rclick_command = geany
-button_mclick_command = geany
+button_lclick_command = xdg-open https://www.youtube.com/
+button_rclick_command = xdg-open https://www.youtube.com/
+button_mclick_command = xdg-open https://www.youtube.com/
 
-# File manager
+# 4
 button = new
 button_icon = ~/.config/tint2/shortcake/icons/cake.png
-button_tooltip = File manager :3
+button_tooltip = GitHub :3
 button_background_id = 0
 button_padding = 8 8 0
 button_max_icon_size = 0
-button_lclick_command = nemo
-button_rclick_command = nemo
-button_mclick_command = nemo
+button_lclick_command = xdg-open https://github.com/
+button_rclick_command = xdg-open https://github.com/ 
+button_mclick_command = xdg-open https://github.com/
 
 #
 # Separator
