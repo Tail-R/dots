@@ -4,7 +4,7 @@
 
 # panel background
 rounded = 0
-border_width = 2
+border_width = 1
 border_sides = R
 background_color = #ffffff 100
 border_color = #ffcccc 100

@@ -7,7 +7,7 @@
 #define C4 #ffaaaa
 #define C5 #ffaaaa
 #define C6 #ffaaaa
-#define C7 #ffffdd
+#define C7 #ffffff
 
 !! colors
 *.foreground: FG
@@ -62,4 +62,4 @@ URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 !! Sxiv
 Sxiv.font: azukifontB-16
 Sxiv.foreground: C5
-Sxiv.background: BG
+Sxiv.background: C7

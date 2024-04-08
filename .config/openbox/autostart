@@ -1,8 +1,9 @@
 xrdb merge ~/.Xresources &
-# xsetroot -solid #ffeeee &
+xsetroot -solid '#fadee1' &
 
-~/.fehbg &
-tint2 -c ~/.config/tint2/shortcake/tint2rc &
-fcitx5 &
-dunst -c ~/.config/dunst/dunstrc &
-~/scripts/start_mpd &
+# ~/.fehbg &
+# tint2 -c ~/.config/tint2/shortcake/tint2rc &
+pastry &
+(sleep 1s && fcitx5) &
+(sleep 1s && dunst -c ~/.config/dunst/dunstrc) &
+(sleep 2s && ~/scripts/start_mpd.sh) &

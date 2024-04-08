@@ -33,7 +33,7 @@ set hlsearch
 set smartcase
 set ignorecase
 
-set nospell
+set spell
 set background=light
 
 syntax on
@@ -51,7 +51,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
     
-    hi User1 ctermfg=magenta ctermbg=white cterm=bold
+    hi User1 ctermfg=green ctermbg=white cterm=bold
     hi User2 ctermfg=black ctermbg=cyan cterm=bold
     
     " left items
@@ -61,14 +61,14 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     set statusline+=%*%=
     
     " right items
-    set statusline+=%l,%c\ /\ %L\ L\ 
+    set statusline+=%1*\ %l,%c\ /\ %L\ L\ 
     set statusline+=%2*\ %{GetCurrentFileName()}\ 
 endif
 
 "
 " Tab Line
 "
-set showtabline=1 " don't show always
+set showtabline=1
 set tabline=%!MyTabLine()
 
 set noshowmode
@@ -134,7 +134,7 @@ endfunction
 
 function! GetCurrentMode()
     let mode = mode()
-    
+     
     if mode ==# 'n'
         let current_mode = 'NORMAL'
     elseif mode ==# 'v'
@@ -162,7 +162,7 @@ endfunction
 
 " simple implementation of the tabline
 function MyTabLine()
-    let s = ''
+    let s = '   '
     
     for i in range(tabpagenr('$'))
         let s..= i + 1 == tabpagenr() ? '%#TabLineSel#': '%#TabLine#'
@@ -185,7 +185,7 @@ function GetTabLabel(n)
 endfunction
 
 function CopyVisualSelection()
-    call system('echo ' . GetVisualSelection() .' | xclip -sel clip')
+    call system("echo -e '" . GetVisualSelection() . "' | xclip -sel clip")
 endfunction
 
 function! GetVisualSelection()
@@ -220,7 +220,7 @@ augroup autoShebang
     autocmd BufNewFile *.lua call append(0, '#! /usr/bin/env lua')
 augroup END
 
-" return to last edit position. Just working lol
+" return to last edit position. just working lol
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 "

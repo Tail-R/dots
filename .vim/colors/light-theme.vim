@@ -16,11 +16,11 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi StatusLineTerm ctermfg=magenta ctermbg=white cterm=bold
     hi StatusLineTermNC ctermfg=magenta ctermbg=white cterm=bold
     hi VertSplit ctermfg=yellow ctermbg=NONE cterm=NONE
-    hi Tabline ctermfg=green ctermbg=white cterm=NONE
-    hi TablineFill ctermfg=NONE ctermbg=white cterm=NONE
-    hi TablineSel ctermfg=black ctermbg=white cterm=NONE
+    hi Tabline ctermfg=blue ctermbg=NONE cterm=bold
+    hi TablineFill ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi TablineSel ctermfg=black ctermbg=NONE cterm=bold
     hi WildMenu ctermfg=black ctermbg=yellow cterm=NONE
-    hi Visual ctermfg=red ctermbg=blue cterm=NONE
+    hi Visual ctermfg=black ctermbg=cyan cterm=NONE
     
     " Search
     hi MatchParen ctermfg=NONE ctermbg=magenta cterm=NONE
@@ -31,9 +31,9 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     
     " Coding
     hi Comment ctermfg=green ctermbg=NONE cterm=italic
-    hi Constant ctermfg=black ctermbg=NONE cterm=NONE
-    hi Identifier ctermfg=green ctermbg=NONE cterm=NONE
-    hi Statement ctermfg=black ctermbg=NONE cterm=NONE
+    hi Constant ctermfg=magenta ctermbg=NONE cterm=NONE
+    hi Identifier ctermfg=black ctermbg=NONE cterm=NONE
+    hi Statement ctermfg=green ctermbg=NONE cterm=NONE
     hi PreProc ctermfg=magenta ctermbg=NONE cterm=NONE
     hi Type ctermfg=blue ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=cyan ctermbg=NONE cterm=italic

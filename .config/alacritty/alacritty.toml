@@ -1,4 +1,4 @@
-import = [ "~/.config/alacritty/colors/shortcake.toml" ]
+import = [ "~/.config/alacritty/colors/lavender.toml" ]
 
 [font]
 size = 8.0

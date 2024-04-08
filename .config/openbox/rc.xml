@@ -24,7 +24,7 @@
 </placement>
 
 <theme>
-  <name>Shortcake</name>
+  <name>Lavender</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
   <titleLayout>LIMC</titleLayout>
@@ -94,22 +94,9 @@
 <margins>
   <top>0</top>
   <bottom>0</bottom>
-  <left>0</left>
+  <left>50</left>
   <right>0</right>
 </margins>
-
-<dock>
-  <position>CenterLeft</position>
-  <floatingX>0</floatingX>
-  <floatingY>0</floatingY>
-  <noStrut>no</noStrut>
-  <stacking>Above</stacking>
-  <direction>Vertical</direction>
-  <autoHide>no</autoHide>
-  <hideDelay>300</hideDelay>
-  <showDelay>300</showDelay>
-  <moveButton>Middle</moveButton>
-</dock>
 
 <keyboard>
   <keybind key="W-r">
@@ -542,6 +529,7 @@
   <manageDesktops>yes</manageDesktops>
 </menu>
 
-<applications></applications>
+<applications>
+</applications>
 
 </openbox_config>

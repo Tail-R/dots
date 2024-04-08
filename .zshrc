@@ -51,11 +51,7 @@ precmd() {
     fi
 
     if [[ $TERM != 'linux' ]]; then
-        # hsym='HOME'
-        # hsym='いえ'
-        hsym='～'
-        cdir=$(ch_fg black "$hsym$(get_cdir)")
-        cdir=$(ch_bg cyan $cdir)
+        cdir=$(bold $(ch_bg cyan $(ch_fg black $(get_cdir))))
         
         PS1=$'\n'
         PS1+="$estat$(pad cyan)$cdir$(pad cyan) "
@@ -67,7 +63,14 @@ precmd() {
 }
 
 get_cdir() {
-    [[ $PWD != $HOME ]] && echo "$PWD" | sed -e "s@$HOME@@g"
+    hsym='～'
+    # hsym='HOME'
+    
+    if [[ $PWD != $HOME ]]; then
+        echo "%c" 
+    else
+        echo $hsym
+    fi
 }
 
 get_date() {
@@ -120,7 +123,6 @@ alias zshrc='vim ~/.zshrc'
 alias rc.xml='vim ~/.config/openbox/rc.xml'
 alias menu.xml='vim ~/.config/openbox/menu.xml'
 alias autostart='vim ~/.config/openbox/autostart'
-alias tint2rc='vim ~/.config/tint2/tint2rc'
 
 alias dots='try_cd ~/dots'
 alias rice='try_cd ~/.config'
@@ -130,6 +132,10 @@ alias walls='try_cd ~/Pictures/wallpapers'
 alias ncmp='ncmpcpp'
 alias zat='zathura'
 
+alias cr='cargo run'
+alias cb='cargo build'
+alias pastry='cd ~/Documents/workspaces/rust/pastry/src'
+
 #
 # Custom commands
 #
@@ -137,12 +143,12 @@ gg() {
     xdg-open "https://www.google.com/search?q=$1"
 }
 
-cols() {
-    for ((i = 30; i <= 37; i++)); do
-        echo -e "\033[1;${i}mあいうえお"
+socks() {
+    echo -e "\e[0m"
+
+    for ((i = 0; i <= 7; i++)); do
+        echo -e "\e[1;4${i}m    \e[0m    \e[1;10${i}m    "
     done
-    
-    for ((i = 90; i <= 97; i++)); do
-        echo -e "\033[1;${i}mアイウエオ"
-    done
+
+    echo -e "\e[0m"
 }

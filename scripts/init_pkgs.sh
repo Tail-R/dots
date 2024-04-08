@@ -21,6 +21,7 @@ pamixer
 dunst
 dmenu
 xclip
+inotify-tools
 "
 
 echo $pkgs | while read -r pkg; do
