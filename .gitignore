@@ -1,11 +1,10 @@
 # ignore all under the .config
-.config/
-
-!.config/alacritty/
-!.config/alacritty/colors/
-!.config/dunst
-!.config/mpd
-!.config/ncmpcpp
-!.config/openbox
-!.config/tint2
-!.config/yazi
+# .config/
+# 
+# !.config/alacritty/
+# !.config/dunst
+# !.config/mpd
+# !.config/ncmpcpp
+# !.config/openbox
+# !.config/tint2
+# !.config/yazi
