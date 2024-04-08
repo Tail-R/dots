@@ -2,6 +2,7 @@
 .config/
 
 !.config/alacritty
+!.config/alacritty/colors
 !.config/dunst
 !.config/mpd
 !.config/ncmpcpp
