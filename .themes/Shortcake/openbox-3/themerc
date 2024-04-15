@@ -2,7 +2,7 @@
 border.width: 1
 menu.border.width: 1
 menu.separator.width: 1
-menu.separator.padding.width: 4
+menu.separator.padding.width: 0
 osd.border.width: 1
 window.client.padding.width: 0
 window.client.padding.height: 0
@@ -70,7 +70,7 @@ menu.items.text.color: #aa0000
 menu.items.disabled.text.color: #ee8888
 menu.items.active.text.color: #aa0000
 menu.items.active.disabled.text.color: #ee8888
-menu.separator.color: #ee8888
+menu.separator.color: #ffcccc
 
 # Menu textures
 menu.items.bg: Flat
