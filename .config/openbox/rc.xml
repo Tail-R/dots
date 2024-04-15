@@ -24,10 +24,10 @@
 </placement>
 
 <theme>
-  <name>Lavender</name>
+  <name>Shortcake</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
-  <titleLayout>LIMC</titleLayout>
+  <titleLayout>NLIMC</titleLayout>
   
   <keepBorder>yes</keepBorder>
   <animateIconify>no</animateIconify>
@@ -495,7 +495,7 @@
 
   <context name="Root">
     <!-- Menus -->
-    <mousebind button="Middle" action="Press">
+    <mousebind button="Left" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
     </mousebind> 
     <mousebind button="Right" action="Press">
@@ -508,12 +508,6 @@
       <action name="GoToDesktop"><to>previous</to></action>
     </mousebind>
     <mousebind button="Down" action="Click">
-      <action name="GoToDesktop"><to>next</to></action>
-    </mousebind>
-    <mousebind button="A-Up" action="Click">
-      <action name="GoToDesktop"><to>previous</to></action>
-    </mousebind>
-    <mousebind button="A-Down" action="Click">
       <action name="GoToDesktop"><to>next</to></action>
     </mousebind>
   </context>

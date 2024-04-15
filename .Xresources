@@ -1,13 +1,26 @@
 #define FG #aa0000
-#define BG #ffffdd
+#define BG #ffffee
+
 #define C0 #aa0000
-#define C1 #ee8888
+#define C1 #cc4444
 #define C2 #ee8888
-#define C3 #ffcccc
-#define C4 #ffaaaa
+#define C3 #ffdddd
+#define C4 #ffbbbb
 #define C5 #ffaaaa
-#define C6 #ffaaaa
+#define C6 #ffcccc
 #define C7 #ffffff
+
+! #define FG #775566
+! #define BG #ffffff
+
+! #define C0 #775566
+! #define C1 #aa77aa
+! #define C2 #bb99cc
+! #define C3 #eeddee
+! #define C4 #aa99cc
+! #define C5 #ddbbdd
+! #define C6 #ccbbdd
+! #define C7 #faf2fa
 
 !! colors
 *.foreground: FG
@@ -38,15 +51,17 @@
 *.color15: C7
 
 !! Xterm
-XTerm.vt100.faceName: monospace
+XTerm.vt100.faceName: ComicShanns
 XTerm.vt100.faceNameDoublesize: azukifontB
-XTerm.vt100.faceSize: 12
+XTerm.vt100.faceSize: 14
+XTerm.vt100.geometry: 88x32
 XTerm.vt100.scrollBar: true
 XTerm.vt100.saveLines: 4096
+XTerm.vt100.internalBorder: 24
 
 !! Urxvt
 URxvt.font:	xft:azukifontB:size=14:weight=regular
-URxvt.geometry: 96x32
+URxvt.geometry: 64x32
 URxvt.scrollBar: false
 URxvt.scrollBar_right: true
 URxvt.cursorUnderline: false

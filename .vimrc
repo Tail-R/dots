@@ -51,17 +51,17 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
     
-    hi User1 ctermfg=green ctermbg=white cterm=bold
+    " hi User1 ctermfg=green ctermbg=white cterm=bold
     hi User2 ctermfg=black ctermbg=cyan cterm=bold
     
     " left items
-    set statusline=%2*\ %{GetCurrentMode()}\ 
+    set statusline=\ ▼\ \ %{GetCurrentMode()}\ 
     
     " jump to right
-    set statusline+=%*%=
+    set statusline+=%=
     
     " right items
-    set statusline+=%1*\ %l,%c\ /\ %L\ L\ 
+    set statusline+=\ %l\ 行\ %c\ 列\ 
     set statusline+=%2*\ %{GetCurrentFileName()}\ 
 endif
 
@@ -147,6 +147,8 @@ function! GetCurrentMode()
         let current_mode = 'INSERT'
     elseif mode ==# 'c'
         let current_mode = 'COMMAND'
+    elseif mode ==# 't'
+        let current_mode = 'TERM'
     else
         let current_mode = mode
     endif

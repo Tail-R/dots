@@ -6,7 +6,7 @@
     
     <item label="Terminal">
       <action name="Execute">
-        <command>alacritty</command>
+        <command>xterm</command>
       </action>
     </item>
     <item label="Browser">
@@ -19,7 +19,7 @@
         <command>geany</command>
       </action>
     </item>
-    <item label="File Manager">
+    <item label="Files">
       <action name="Execute">
         <command>nemo</command>
       </action>

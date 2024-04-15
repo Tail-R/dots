@@ -11,12 +11,12 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi CursorLineNr ctermfg=black ctermbg=NONE cterm=bold
     hi LineNr ctermfg=magenta ctermbg=NONE cterm=NONE
     hi EndOfBuffer ctermfg=yellow ctermbg=NONE cterm=NONE
-    hi StatusLine ctermfg=magenta ctermbg=white cterm=bold
-    hi StatusLineNC ctermfg=magenta ctermbg=white cterm=bold
-    hi StatusLineTerm ctermfg=magenta ctermbg=white cterm=bold
-    hi StatusLineTermNC ctermfg=magenta ctermbg=white cterm=bold
+    hi StatusLine ctermfg=black ctermbg=yellow cterm=bold
+    hi StatusLineNC ctermfg=black ctermbg=white cterm=bold
+    hi StatusLineTerm ctermfg=black ctermbg=yellow cterm=bold
+    hi StatusLineTermNC ctermfg=black ctermbg=white cterm=bold
     hi VertSplit ctermfg=yellow ctermbg=NONE cterm=NONE
-    hi Tabline ctermfg=blue ctermbg=NONE cterm=bold
+    hi Tabline ctermfg=green ctermbg=NONE cterm=bold
     hi TablineFill ctermfg=NONE ctermbg=NONE cterm=NONE
     hi TablineSel ctermfg=black ctermbg=NONE cterm=bold
     hi WildMenu ctermfg=black ctermbg=yellow cterm=NONE
@@ -32,7 +32,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " Coding
     hi Comment ctermfg=green ctermbg=NONE cterm=italic
     hi Constant ctermfg=magenta ctermbg=NONE cterm=NONE
-    hi Identifier ctermfg=black ctermbg=NONE cterm=NONE
+    hi Identifier ctermfg=cyan ctermbg=NONE cterm=NONE
     hi Statement ctermfg=green ctermbg=NONE cterm=NONE
     hi PreProc ctermfg=magenta ctermbg=NONE cterm=NONE
     hi Type ctermfg=blue ctermbg=NONE cterm=NONE

@@ -1,6 +1,6 @@
 [colors.primary]
 foreground = "#aa0000"
-background = "#ffffdd"
+background = "#ffffee"
 
 [colors.cursor]
 text = "#ffffff"
@@ -12,7 +12,7 @@ background = "#ffaaaa"
 
 [colors.normal]
 black   = "#aa0000"
-red     = "#aa0000"
+red     = "#cc4444"
 green   = "#ee8888"
 yellow  = "#ffdddd"
 blue    = "#ffbbbb"
@@ -22,7 +22,7 @@ white   = "#ffffff"
 
 [colors.bright]
 black   = "#aa0000"
-red     = "#aa0000"
+red     = "#cc4444"
 green   = "#ee8888"
 yellow  = "#ffdddd"
 blue    = "#ffbbbb"

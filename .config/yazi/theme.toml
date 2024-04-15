@@ -58,9 +58,9 @@ separator_close = ""
 separator_style = { fg = "gray", bg = "gray" }
 
 # Mode
-mode_normal = { bg = "blue", bold = true }
-mode_select = { bg = "red", bold = true }
-mode_unset  = { bg = "red", bold = true }
+mode_normal = { bg = "cyan", bold = true }
+mode_select = { bg = "cyan", bold = true }
+mode_unset  = { bg = "cyan", bold = true }
 
 # Progress
 progress_label  = { bold = true }

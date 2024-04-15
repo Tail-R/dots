@@ -1,9 +1,9 @@
 xrdb merge ~/.Xresources &
+# xsetroot -solid '#ccbbcc' &
 xsetroot -solid '#fadee1' &
 
 # ~/.fehbg &
-# tint2 -c ~/.config/tint2/shortcake/tint2rc &
-pastry &
+(cd ~/Documents/workspaces/rust/pastry/src && cargo run) &
 (sleep 1s && fcitx5) &
 (sleep 1s && dunst -c ~/.config/dunst/dunstrc) &
 (sleep 2s && ~/scripts/start_mpd.sh) &

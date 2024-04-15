@@ -23,6 +23,7 @@ export BROWSER=firefox
 #
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/scripts
+export PATH=$PATH:$HOME/Documents/workspaces/rust/pastry/target/debug
 
 #
 # Options
@@ -45,7 +46,7 @@ export SAVEHIST=10000
 # Precmd() is a special function to redraw the prompt
 precmd() {
     if [[ $? == 0 ]]; then
-        estat=$(pad blue)
+        estat=$(pad green)
     else
         estat=$(pad red)
     fi

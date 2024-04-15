@@ -74,7 +74,7 @@ menu.separator.color: #ee8888
 
 # Menu textures
 menu.items.bg: Flat
-menu.items.bg.color: #ffffdd
+menu.items.bg.color: #ffffee
 menu.items.active.bg: Flat
 menu.items.active.bg.color: #ffdddd
 menu.title.bg: Solid

@@ -1,4 +1,4 @@
-import = [ "~/.config/alacritty/colors/lavender.toml" ]
+import = [ "~/.config/alacritty/colors/shortcake.toml" ]
 
 [font]
 size = 8.0
@@ -7,7 +7,7 @@ size = 8.0
 opacity = 1.0
 title = 'たーみなる'
 # title = 'AraAratty'
-dynamic_title = false
+dynamic_title = true
 
 [window.padding]
 x = 16
@@ -24,10 +24,10 @@ history = 4096
 shape = "block"
 
 [font.normal]
-family = "Comic Shanns"
+family = "azukifontB"
 
 [font.bold]
-family = "Comic Shanns"
+family = "azukifontB"
 
 [font.italic]
-family = "Comic Shanns"
+family = "azukifontB"

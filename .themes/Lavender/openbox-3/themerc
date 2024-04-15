@@ -13,32 +13,32 @@ menu.overlap.x: -12
 menu.overlap.y: 0
 
 # Border colors
-window.active.border.color: #ddccee
-window.active.title.separator.color: #ddccee
-window.inactive.border.color: #ddccee
-window.inactive.title.separator.color: #ddccee
+window.active.border.color: #ccbbdd
+window.active.title.separator.color: #ccbbdd
+window.inactive.border.color: #ccbbdd
+window.inactive.title.separator.color: #ccbbdd
 window.active.client.color: #ffffff
 window.inactive.client.color: #ffffff
-menu.border.color: #ddccee
-osd.border.color: #ddccee
+menu.border.color: #ccbbdd
+osd.border.color: #ccbbdd
 
 # Titlebar colors
-window.active.label.text.color: #776699
+window.active.label.text.color: #775566
 window.inactive.label.text.color: #aa99cc
 
-window.active.button.*.unpressed.image.color: #776699
-window.active.button.*.pressed.image.color: #ddccee
-window.active.button.*.disabled.image.color: #776699
+window.active.button.*.unpressed.image.color: #775566
+window.active.button.*.pressed.image.color: #ccbbdd
+window.active.button.*.disabled.image.color: #775566
 window.active.button.*.hover.image.color: #aa77aa
 
 window.inactive.button.*.unpressed.image.color: #aa99cc
-window.inactive.button.*.pressed.image.color: #ddccee
+window.inactive.button.*.pressed.image.color: #ccbbdd
 window.inactive.button.*.disabled.image.color: #aa99cc
 window.inactive.button.*.hover.image.color: #aa77aa
 
 # Active window textures
 window.active.*.bg.color: #ffffff
-window.active.*.bg.colorTo: #ddccee
+window.active.*.bg.colorTo: #ccbbdd
 
 window.active.title.bg: Gradient Vertical Flat
 window.active.label.bg: Parentrelative Flat
@@ -47,7 +47,7 @@ window.active.grip.bg: Gradient Vertical Flat
 
 # Inactive window textures
 window.inactive.*.bg.color: #ffffff
-window.inactive.*.bg.colorTo: #ddccee
+window.inactive.*.bg.colorTo: #ccbbdd
 
 window.inactive.title.bg: Gradient Vertical Flat
 window.inactive.label.bg: Parentrelative Flat
@@ -61,12 +61,12 @@ window.*.active.button.*.bg: Parentrelative
 window.*.inactive.button.*.bg: Parentrelative
 
 # Menu colors
-menu.title.text.color: #776699
-menu.items.text.color: #776699
+menu.title.text.color: #775566
+menu.items.text.color: #775566
 menu.items.disabled.text.color: #aa77aa
-menu.items.active.text.color: #776699
+menu.items.active.text.color: #775566
 menu.items.active.disabled.text.color: #aa77aa
-menu.separator.color: #ddccee
+menu.separator.color: #ccbbdd
 
 # Menu textures
 menu.items.bg: Flat
@@ -81,9 +81,9 @@ osd.bg: Flat
 osd.bg.color: #ffffff
 osd.label.bg: Parentrelative
 osd.hilight.bg: Flat
-osd.hilight.bg.color: #776699
+osd.hilight.bg.color: #775566
 osd.unhilight.bg: Flat
-osd.unhilight.bg.color: #ddccee
+osd.unhilight.bg.color: #ccbbdd
 
 # Text justification
 window.label.text.justify: Left
