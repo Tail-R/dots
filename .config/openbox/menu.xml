@@ -6,7 +6,7 @@
     
     <item label="Terminal">
       <action name="Execute">
-        <command>xterm</command>
+        <command>alacritty</command>
       </action>
     </item>
     <item label="Browser">

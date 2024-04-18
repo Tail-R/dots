@@ -23,7 +23,6 @@ export BROWSER=firefox
 #
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/scripts
-export PATH=$PATH:$HOME/Documents/workspaces/rust/pastry/target/debug
 
 #
 # Options
@@ -135,7 +134,6 @@ alias zat='zathura'
 
 alias cr='cargo run'
 alias cb='cargo build'
-alias pastry='cd ~/Documents/workspaces/rust/pastry/src'
 
 #
 # Custom commands

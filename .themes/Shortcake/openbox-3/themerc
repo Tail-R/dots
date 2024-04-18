@@ -1,9 +1,9 @@
 # Geometry
-border.width: 1
-menu.border.width: 1
-menu.separator.width: 1
+border.width: 2
+menu.border.width: 2
+menu.separator.width: 2
 menu.separator.padding.width: 0
-osd.border.width: 1
+osd.border.width: 2
 window.client.padding.width: 0
 window.client.padding.height: 0
 window.handle.width: 16

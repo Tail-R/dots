@@ -207,3 +207,95 @@ Apr 15 16:07 : player: played "spotifydown.com - だから僕は音楽を辞め�
 Apr 15 16:10 : player: played "spotifydown.com - だから僕は音楽を辞めた.mp3"
 Apr 15 16:34 : player: played "spotifydown.com - ただ君に晴れ.mp3"
 Apr 15 22:08 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 11:43 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 13:40 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 13:40 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:01 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:17 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:21 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:24 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:27 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:31 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:34 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:37 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:41 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:44 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:47 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:50 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:54 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 14:57 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 15:00 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 15:04 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 15:07 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 15:09 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 16:45 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 16:46 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 17 22:15 : player: played "spotifydown.com - ただ君に晴れ.mp3"
+Apr 18 00:57 : player: played "spotifydown.com - だから僕は音楽を辞めた.mp3"
+Apr 18 01:01 : player: played "spotifydown.com - だから僕は音楽を辞めた.mp3"
+Apr 18 01:05 : player: played "spotifydown.com - だから僕は音楽を辞めた.mp3"
+Apr 18 01:09 : player: played "spotifydown.com - だから僕は音楽を辞めた.mp3"
+Apr 18 01:13 : player: played "spotifydown.com - だから僕は音楽を辞めた.mp3"
+Apr 18 01:15 : player: played "spotifydown.com - だから僕は音楽を辞めた.mp3"
+Apr 18 01:17 : update: added /spotifydown.com - 孤独月.mp3
+Apr 18 01:17 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Apr 18 01:21 : player: played "spotifydown.com - 孤独月.mp3"
+Apr 18 01:25 : player: played "spotifydown.com - 孤独月.mp3"
+Apr 18 01:27 : player: played "spotifydown.com - 孤独月.mp3"
+Apr 18 01:39 : update: added /spotifydown.com - 泡沫、哀のまほろば.mp3
+Apr 18 01:39 : update: added /spotifydown.com - 君色サブリミナル(with senya).mp3
+Apr 18 01:39 : update: added /spotifydown.com - 色は匂へど散りぬるを(full ver.).mp3
+Apr 18 01:39 : update: added /spotifydown.com - 千花繚乱.mp3
+Apr 18 01:39 : update: added /spotifydown.com - 零れずの願いゴト.mp3
+Apr 18 01:39 : update: added /spotifydown.com - ヒトリシズカ.mp3
+Apr 18 01:39 : update: added /spotifydown.com - 月に叢雲華に風.mp3
+Apr 18 01:39 : update: added /spotifydown.com - 華鳥風月(with senya) 幻想万華鏡 花の異変の章 OP主題歌 .mp3
+Apr 18 01:39 : update: added /spotifydown.com - 穢れなきユーフォリア[with senya].mp3
+Apr 18 01:43 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Apr 18 01:43 : player: played "spotifydown.com - 零れずの願いゴト.mp3"
+Apr 18 01:44 : update: updating /spotifydown.com - 千花繚乱.mp3
+Apr 18 01:44 : update: updating /spotifydown.com - 泡沫、哀のまほろば.mp3
+Apr 18 01:44 : update: updating /spotifydown.com - 月に叢雲華に風.mp3
+Apr 18 01:45 : update: updating /spotifydown.com - 零れずの願いゴト.mp3
+Apr 18 01:45 : update: updating /spotifydown.com - 華鳥風月(with senya) 幻想万華鏡 花の異変の章 OP主題歌 .mp3
+Apr 18 01:45 : update: updating /spotifydown.com - 色は匂へど散りぬるを(full ver.).mp3
+Apr 18 01:45 : update: updating /spotifydown.com - 君色サブリミナル(with senya).mp3
+Apr 18 01:45 : update: updating /spotifydown.com - 穢れなきユーフォリア[with senya].mp3
+Apr 18 01:47 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Apr 18 01:47 : player: played "spotifydown.com - 孤独月.mp3"
+Apr 18 01:54 : update: added /spotifydown.com - 童遊.mp3
+Apr 18 01:54 : update: added /spotifydown.com - 葬迎.mp3
+Apr 18 01:54 : update: added /spotifydown.com - 祭符「神遊びの唄」.mp3
+Apr 18 01:54 : update: added /spotifydown.com - げんきになったときのうた.mp3
+Apr 18 01:54 : update: added /spotifydown.com - 「心綺楼」.mp3
+Apr 18 01:54 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Apr 18 01:56 : player: played "spotifydown.com - ヒトリシズカ.mp3"
+Apr 18 01:57 : update: removing spotifydown.com - ヒトリシズカ.mp3
+Apr 18 01:57 : update: added /spotifydown.com - ヒトリシズカ.mp3
+Apr 18 01:57 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Apr 18 01:58 : player: played "spotifydown.com - ヒトリシズカ.mp3"
+Apr 18 02:07 : player: played "spotifydown.com - ヒトリシズカ.mp3"
+Apr 18 02:14 : player: played "spotifydown.com - ヒトリシズカ.mp3"
+Apr 18 21:00 : player: played "spotifydown.com - 葬迎.mp3"
+Apr 18 21:03 : player: played "spotifydown.com - げんきになったときのうた.mp3"
+Apr 18 21:42 : player: played "spotifydown.com - げんきになったときのうた.mp3"
+Apr 18 21:50 : player: played "spotifydown.com - 「心綺楼」.mp3"
+Apr 18 21:56 : player: played "spotifydown.com - 祭符「神遊びの唄」.mp3"
+Apr 18 21:59 : player: played "spotifydown.com - 色は匂へど散りぬるを(full ver.).mp3"
+Apr 18 22:04 : player: played "spotifydown.com - 泡沫、哀のまほろば.mp3"
+Apr 18 22:09 : player: played "spotifydown.com - 月に叢雲華に風.mp3"
+Apr 18 22:13 : player: played "spotifydown.com - ヒトリシズカ.mp3"
+Apr 18 22:19 : player: played "spotifydown.com - 華鳥風月(with senya) 幻想万華鏡 花の異変の章 OP主題歌 .mp3"
+Apr 18 22:22 : player: played "spotifydown.com - 千花繚乱.mp3"
+Apr 18 22:27 : player: played "spotifydown.com - 孤独月.mp3"
+Apr 18 22:31 : player: played "spotifydown.com - 君色サブリミナル(with senya).mp3"
+Apr 18 22:35 : player: played "spotifydown.com - 零れずの願いゴト.mp3"
+Apr 18 22:39 : player: played "spotifydown.com - 穢れなきユーフォリア[with senya].mp3"
+Apr 18 22:40 : player: played "spotifydown.com - 穢れなきユーフォリア[with senya].mp3"
+Apr 18 22:40 : player: played "spotifydown.com - 穢れなきユーフォリア[with senya].mp3"
+Apr 18 22:40 : exception: Failed to open /home/tailr/.config/mpd/playlists: No such file or directory
+Apr 18 22:40 : update: removing spotifydown.com - 穢れなきユーフォリア[with senya].mp3
+Apr 18 22:46 : player: played "spotifydown.com - 童遊.mp3"
+Apr 18 22:53 : player: played "spotifydown.com - げんきになったときのうた.mp3"
+Apr 18 23:00 : player: played "spotifydown.com - 「心綺楼」.mp3"
+Apr 18 23:06 : player: played "spotifydown.com - 祭符「神遊びの唄」.mp3"
