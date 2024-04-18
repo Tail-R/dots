@@ -1,2 +1,13 @@
 # ignore all under the .config
 .config/*
+
+!.config/alacritty/*
+!.config/dunst/* 
+!.config/mpd/*
+!.config/ncmpcpp/*
+!.config/openbox/*
+!.config/pastry/*
+!.config/tint2/*
+!.config/yazi/*
+
+!.config/mimeapps.list
