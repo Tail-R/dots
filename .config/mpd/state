@@ -1,0 +1,28 @@
+sw_volume: 66
+audio_device_state:1:pulse audio
+state: play
+current: 7
+time: 120.059000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:spotifydown.com - 童遊.mp3
+1:spotifydown.com - 葬迎.mp3
+2:spotifydown.com - げんきになったときのうた.mp3
+3:spotifydown.com - 「心綺楼」.mp3
+4:spotifydown.com - 祭符「神遊びの唄」.mp3
+5:spotifydown.com - 色は匂へど散りぬるを(full ver.).mp3
+6:spotifydown.com - 泡沫、哀のまほろば.mp3
+7:spotifydown.com - 月に叢雲華に風.mp3
+8:spotifydown.com - ヒトリシズカ.mp3
+9:spotifydown.com - 華鳥風月(with senya) 幻想万華鏡 花の異変の章 OP主題歌 .mp3
+10:spotifydown.com - 千花繚乱.mp3
+11:spotifydown.com - 孤独月.mp3
+12:spotifydown.com - 君色サブリミナル(with senya).mp3
+13:spotifydown.com - 零れずの願いゴト.mp3
+playlist_end
