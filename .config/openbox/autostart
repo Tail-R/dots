@@ -1,8 +1,0 @@
-xrdb merge ~/.Xresources &
-# xsetroot -solid '#fadee1' &
-
-~/.fehbg &
-(cd ~/Documents/workspaces/rust/pastry/src && cargo run) &
-(sleep 1s && fcitx5) &
-(sleep 1s && dunst -c ~/.config/dunst/dunstrc) &
-(sleep 2s && ~/scripts/start_mpd.sh) &

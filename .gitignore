@@ -1,15 +1,2 @@
 # ignore all under the .config
-.config/btop/
-.config/dconf/
-.config/fcitx*/
-.config/geany/
-.config/GIMP/
-.config/gtk-*/
-.config/ibus/
-.config/mozc/
-.conifg/neofetch/
-.config/picom/
-.config/procps/
-.config/pluse/
-.config/pavucontrol.ini
-.config/user-dirs.*/
+.config/*
