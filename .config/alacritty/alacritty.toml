@@ -1,0 +1,33 @@
+import = [ "~/.config/alacritty/colors/shortcake.toml" ]
+
+[font]
+size = 8.0
+
+[window]
+opacity = 1.0
+title = 'たーみなる'
+# title = 'AraAratty'
+dynamic_title = true
+
+[window.padding]
+x = 16
+y = 16
+
+[window.dimensions]
+lines = 32
+columns = 96
+
+[scrolling]
+history = 4096
+
+[cursor.style]
+shape = "block"
+
+[font.normal]
+family = "azukifontB"
+
+[font.bold]
+family = "azukifontB"
+
+[font.italic]
+family = "azukifontB"

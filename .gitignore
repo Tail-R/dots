@@ -1,11 +1,15 @@
 # ignore all under the .config
-.config/
-
-!.config/alacritty/*
-!.config/dunst/*
-!.config/mpd/*
-!.config/ncmpcpp/*
-!.config/openbox/*
-!.config/tint2/*
-!.config/yazi/*
-!.ocnfig/pastry/*
+.config/btop/
+.config/dconf/
+.config/fcitx*/
+.config/geany/
+.config/GIMP/
+.config/gtk-*/
+.config/ibus/
+.config/mozc/
+.conifg/neofetch/
+.config/picom/
+.config/procps/
+.config/pluse/
+.config/pavucontrol.ini
+.config/user-dirs.*/
