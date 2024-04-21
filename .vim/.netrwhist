@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/tailr'
+let g:netrw_dirhist_9='/home/tailr/Pictures/wallpapers'
 let g:netrw_dirhist_8='/home/tailr/Documents/workspaces/rust/pastry/src'
 let g:netrw_dirhist_7='/home/tailr/dots/.config/pastry/scss'
 let g:netrw_dirhist_6='/home/tailr/dots/.config/pastry'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_4='/home/tailr/Documents/workspaces/rust/pastry/src/scss/col
 let g:netrw_dirhist_3='/home/tailr/Documents/workspaces/rust/pastry/src/scss'
 let g:netrw_dirhist_2='/home/tailr/Documents/workspaces/rust/pastry/src'
 let g:netrw_dirhist_1='/home/tailr/Documents/workspaces/rust/pastry/src/scss'
-let g:netrw_dirhist_0='/home/tailr/Documents/workspaces/rust/pastry/src'
-let g:netrw_dirhist_9='/home/tailr/Documents/workspaces/rust/pastry/src/scss/colors'

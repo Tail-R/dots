@@ -94,7 +94,7 @@
 <margins>
   <top>0</top>
   <bottom>0</bottom>
-  <left>50</left>
+  <left>0</left>
   <right>0</right>
 </margins>
 
@@ -495,7 +495,7 @@
 
   <context name="Root">
     <!-- Menus -->
-    <mousebind button="Left" action="Press">
+    <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
     </mousebind> 
     <mousebind button="Right" action="Press">
@@ -524,6 +524,9 @@
 </menu>
 
 <applications>
+  <application class="firefox">
+    <decor>yes</decor>
+  </application>
 </applications>
 
 </openbox_config>

@@ -12,7 +12,7 @@ border_color = #ffcccc 100
 #
 # Panel
 #
-panel_items = PPPPFB:C:
+panel_items = TFB:C:
 panel_monitor = 1
 panel_position = bottom left vertical
 panel_size = 100% 52

@@ -5,7 +5,7 @@ size = 8.0
 
 [window]
 opacity = 1.0
-title = 'たーみなる'
+# title = 'たーみなる'
 # title = 'AraAratty'
 dynamic_title = true
 
