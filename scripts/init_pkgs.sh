@@ -5,12 +5,8 @@ vim
 yazi
 unzip
 openbox
-tint2
 alacritty
-sxiv
 feh
-mpd
-ncmpcpp
 mpv
 firefox
 gimp

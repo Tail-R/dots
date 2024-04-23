@@ -45,7 +45,7 @@ border_symbol = " "
 border_style  = { fg = "gray" }
 
 # Highlighting
-syntect_theme = ""
+syntect_theme = " "
 
 # : }}}
 
@@ -58,9 +58,9 @@ separator_close = ""
 separator_style = { fg = "gray", bg = "gray" }
 
 # Mode
-mode_normal = { bg = "cyan", bold = true }
-mode_select = { bg = "cyan", bold = true }
-mode_unset  = { bg = "cyan", bold = true }
+mode_normal = { fg = "black", bg = "white", bold = true }
+mode_select = { bg = "white", bold = true }
+mode_unset  = { bg = "white", bold = true }
 
 # Progress
 progress_label  = { bold = true }

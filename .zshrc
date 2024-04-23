@@ -9,12 +9,6 @@ try_cd() {
 try_source $HOME/.cargo/env
 try_source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Set title for specific terminal
-case $TERM in
-xterm*|rxvt*) print -Pn "\e]0;たーみなる\a"
-;;
-esac
-
 export EDITOR=vim
 export BROWSER=firefox
 
@@ -44,53 +38,8 @@ export SAVEHIST=10000
 
 # Precmd() is a special function to redraw the prompt
 precmd() {
-    if [[ $? == 0 ]]; then
-        estat=$(pad green)
-    else
-        estat=$(pad red)
-    fi
-
-    if [[ $TERM != 'linux' ]]; then
-        cdir=$(bold $(ch_bg cyan $(ch_fg black $(get_cdir))))
-        
-        PS1=$'\n'
-        PS1+="$estat$(pad cyan)$cdir$(pad cyan) "
-    else
-        # Simple prompt for tty
-        PS1=$'\n'
-        PS1+="$USER@$HOST %~ %# "
-    fi
-}
-
-get_cdir() {
-    hsym='～'
-    # hsym='HOME'
-    
-    if [[ $PWD != $HOME ]]; then
-        echo "%c" 
-    else
-        echo $hsym
-    fi
-}
-
-get_date() {
-    date +'%H:%M'
-}
-
-ch_fg() {
-    echo "%F{$1}$2%f"
-}
-
-ch_bg() {
-    echo "%K{$1}$2%k"
-}
-
-bold() {
-    echo "%B$1%b"
-}
-
-pad() {
-    echo "$(ch_bg $1 ' ')"
+    PS1=$'\n'
+    PS1+="%3~ %# "
 }
 
 #
@@ -107,6 +56,7 @@ alias l='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias t='tree -C'
 
+alias gi='git init'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit -m'

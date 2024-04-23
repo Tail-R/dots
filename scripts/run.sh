@@ -1,13 +1,11 @@
 #! /usr/bin/env bash
 
-# dependencies: dmenu
+font='ComicShanns-16-Bold'
+monitor=-1
 
-font='azukifontB-16-Bold'
-monitor=0
-
-nf='#aa0000'
-nb='#ffffee'
-sf='#aa0000'
-sb='#ffcccc'
+nf='#242927'
+nb='#ffffff'
+sf='#0366d6'
+sb='#d1d5da'
 
 dmenu_run -fn $font -m $monitor -nb $nb -nf $nf -sb $sb -sf $sf

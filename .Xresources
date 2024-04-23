@@ -1,26 +1,23 @@
-#define FG #aa0000
-#define BG #ffffee
+#define FG #24292f
+#define BG #ffffff
 
-#define C0 #aa0000
-#define C1 #cc4444
-#define C2 #ee8888
-#define C3 #ffdddd
-#define C4 #ffbbbb
-#define C5 #ffaaaa
-#define C6 #ffcccc
-#define C7 #ffffff
+#define C0 #24292e
+#define C1 #d73a49
+#define C2 #28a745
+#define C3 #dbab09
+#define C4 #0366d6
+#define C5 #5a32a3
+#define C6 #0598bc
+#define C7 #6a737d
 
-! #define FG #775566
-! #define BG #ffffff
-
-! #define C0 #775566
-! #define C1 #aa77aa
-! #define C2 #bb99cc
-! #define C3 #eeddee
-! #define C4 #aa99cc
-! #define C5 #ddbbdd
-! #define C6 #ccbbdd
-! #define C7 #faf2fa
+#define C8 #959da5
+#define C9 #cb2431
+#define C10 #22863a
+#define C11 #b08800
+#define C12 #005cc5
+#define C13 #5a32a3
+#define C14 #3192aa
+#define C15 #d1d5da
 
 !! colors
 *.foreground: FG

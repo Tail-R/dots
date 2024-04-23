@@ -1,6 +1,7 @@
 "
 " Settings
 "
+set notitle
 set encoding=UTF-8
 
 set nobackup
@@ -15,7 +16,7 @@ set shell=zsh
 set mouse=a " enable the mouse
 
 set number
-set relativenumber
+set norelativenumber
 set cursorline
 set nocursorcolumn
 
@@ -33,36 +34,35 @@ set hlsearch
 set smartcase
 set ignorecase
 
-set spell
+set nospell
 set background=light
 
-syntax on
-
-colorscheme light-theme
-
 set wildmenu
+
+syntax on
+" colorscheme desert
 
 "
 " Status Line
 "
 set laststatus=2 " show always
+set noshowmode
 
 if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
     
-    " hi User1 ctermfg=green ctermbg=white cterm=bold
-    hi User2 ctermfg=black ctermbg=cyan cterm=bold
+    hi User1 ctermfg=black ctermbg=white cterm=bold
     
     " left items
-    set statusline=\ ▼\ \ %{GetCurrentMode()}\ 
+    set statusline=%1*\ %{GetCurrentMode()}\ 
     
     " jump to right
     set statusline+=%=
     
     " right items
-    set statusline+=\ %l\ 行\ %c\ 列\ 
-    set statusline+=%2*\ %{GetCurrentFileName()}\ 
+    set statusline+=\ R\ %l\ C\ %c\ \ \ \ 
+    set statusline+=\ %{GetCurrentFileName()}\ 
 endif
 
 "
@@ -70,8 +70,6 @@ endif
 "
 set showtabline=1
 set tabline=%!MyTabLine()
-
-set noshowmode
 
 "
 " Remap
@@ -164,7 +162,7 @@ endfunction
 
 " simple implementation of the tabline
 function MyTabLine()
-    let s = '   '
+    let s = ''
     
     for i in range(tabpagenr('$'))
         let s..= i + 1 == tabpagenr() ? '%#TabLineSel#': '%#TabLine#'
@@ -208,7 +206,14 @@ endfunction
 "
 " Startup commands
 "
-augroup xmlIndent
+augroup makefileTab
+    autocmd!
+    autocmd FileType make set noexpandtab
+    autocmd FileType make set tabstop=4
+    autocmd FileType make set shiftwidth=4
+augroup END
+
+augroup xmlTab
     autocmd!
     autocmd FileType xml set expandtab
     autocmd FileType xml set tabstop=2
@@ -228,8 +233,8 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 "
 " Callback commands
 "
-autocmd ModeChanged *:i* set norelativenumber
-autocmd ModeChanged i*:* set relativenumber
+" autocmd ModeChanged *:i* set norelativenumber
+" autocmd ModeChanged i*:* set relativenumber
 
 " xml tag auto completion
 set omnifunc=xmlcomplete#CompleteTags

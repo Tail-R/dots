@@ -23,13 +23,13 @@ menu.border.color: #ffcccc
 osd.border.color: #ffcccc
 
 # Titlebar colors
-window.active.label.text.color: #aa0000
+window.active.label.text.color: #aa4444
 window.inactive.label.text.color: #ee8888
-window.active.button.unpressed.image.color: #aa0000
+window.active.button.unpressed.image.color: #aa4444
 window.active.button.pressed.image.color: #ffcccc
-window.active.button.disabled.image.color: #aa0000
+window.active.button.disabled.image.color: #aa4444
 window.active.button.hover.image.color: #ffaaaa
-window.active.button.toggled.unpressed.image.color: #aa0000
+window.active.button.toggled.unpressed.image.color: #aa4444
 window.active.button.toggled.pressed.image.color: #ffcccc
 window.active.button.toggled.hover.image.color: #ffaaaa
 window.inactive.button.unpressed.image.color: #ee8888
@@ -65,10 +65,10 @@ window.*.active.button.*.bg: Parentrelative
 window.*.inactive.button.*.bg: Parentrelative
 
 # Menu colors
-menu.title.text.color: #aa0000
-menu.items.text.color: #aa0000
+menu.title.text.color: #aa4444
+menu.items.text.color: #aa4444
 menu.items.disabled.text.color: #ee8888
-menu.items.active.text.color: #aa0000
+menu.items.active.text.color: #aa4444
 menu.items.active.disabled.text.color: #ee8888
 menu.separator.color: #ffcccc
 
@@ -85,7 +85,7 @@ osd.bg: Solid
 osd.bg.color: #ffffff
 osd.label.bg: Parentrelative
 osd.hilight.bg: Flat
-osd.hilight.bg.color: #aa0000
+osd.hilight.bg.color: #aa4444
 osd.unhilight.bg: Flat
 osd.unhilight.bg.color: #ffcccc
 

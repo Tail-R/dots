@@ -32,7 +32,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " Coding
     hi Comment ctermfg=green ctermbg=NONE cterm=italic
     hi Constant ctermfg=magenta ctermbg=NONE cterm=NONE
-    hi Identifier ctermfg=cyan ctermbg=NONE cterm=NONE
+    hi Identifier ctermfg=blue ctermbg=NONE cterm=NONE
     hi Statement ctermfg=green ctermbg=NONE cterm=NONE
     hi PreProc ctermfg=magenta ctermbg=NONE cterm=NONE
     hi Type ctermfg=blue ctermbg=NONE cterm=NONE

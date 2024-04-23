@@ -24,7 +24,7 @@
 </placement>
 
 <theme>
-  <name>Shortcake</name>
+  <name>Flat</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
   <titleLayout>NLIMC</titleLayout>
@@ -32,39 +32,39 @@
   <keepBorder>yes</keepBorder>
   <animateIconify>no</animateIconify>
   <font place="ActiveWindow">
-    <name>azukifontB</name>
-    <size>16</size>
-    <weight>bold</weight>
+    <name>NotoSansMono</name>
+    <size>14</size>
+    <weight>normal</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveWindow">
-    <name>azukifontB</name>
-    <size>16</size>
-    <weight>bold</weight>
+    <name>NotoSansMono</name>
+    <size>14</size>
+    <weight>normal</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuHeader">
-    <name>azukifontB</name>
-    <size>16</size>
-    <weight>bold</weight>
+    <name>NotoSansMono</name>
+    <size>14</size>
+    <weight>normal</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuItem">
-    <name>azukifontB</name>
+    <name>NotoSansMono</name>
     <size>14</size>
     <weight>normal</weight>
     <slant>normal</slant>
   </font>
   <font place="ActiveOnScreenDisplay">
-    <name>azukifontB</name>
-    <size>16</size>
-    <weight>bold</weight>
+    <name>NotoSansMono</name>
+    <size>14</size>
+    <weight>normal</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveOnScreenDisplay">
-    <name>azukifontB</name>
-    <size>16</size>
-    <weight>bold</weight>
+    <name>NotoSansMono</name>
+    <size>14</size>
+    <weight>normal</weight>
     <slant>normal</slant>
   </font>
 </theme>
@@ -196,19 +196,19 @@
   <!-- Launcher -->
   <keybind key="W-d">
     <action name="Execute">
-      <command>~/scripts/run.sh</command>
+      <command>run.sh</command>
     </action>
   </keybind>
   
   <!-- Screenshot -->
   <keybind key="W-s">
     <action name="Execute">
-      <command>~/scripts/screenshot.sh -p</command>
+      <command>screenshot.sh -p</command>
     </action>
   </keybind>
   <keybind key="W-S-s">
     <action name="Execute">
-      <command>~/scripts/screenshot.sh -s</command>
+      <command>screenshot.sh -s</command>
     </action>
   </keybind>
   
@@ -227,49 +227,22 @@
   <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
 
   <context name="Frame">
-    <mousebind button="A-Left" action="Press">
+    <mousebind button="W-Left" action="Press">
       <action name="Focus"/>
       <action name="Raise"/>
     </mousebind>
-    <mousebind button="A-Left" action="Click">
-      <action name="Unshade"/>
-    </mousebind>
-    <mousebind button="A-Left" action="Drag">
+
+    <mousebind button="W-Left" action="Drag">
       <action name="Move"/>
     </mousebind>
 
-    <mousebind button="A-Right" action="Press">
+    <mousebind button="W-Right" action="Press">
       <action name="Focus"/>
       <action name="Raise"/>
-      <action name="Unshade"/>
     </mousebind>
-    <mousebind button="A-Right" action="Drag">
+
+    <mousebind button="W-Right" action="Drag">
       <action name="Resize"/>
-    </mousebind> 
-
-    <mousebind button="A-Middle" action="Press">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-    </mousebind>
-
-    <mousebind button="A-Up" action="Click">
-      <action name="GoToDesktop"><to>previous</to></action>
-    </mousebind>
-    <mousebind button="A-Down" action="Click">
-      <action name="GoToDesktop"><to>next</to></action>
-    </mousebind>
-    <mousebind button="C-A-Up" action="Click">
-      <action name="GoToDesktop"><to>previous</to></action>
-    </mousebind>
-    <mousebind button="C-A-Down" action="Click">
-      <action name="GoToDesktop"><to>next</to></action>
-    </mousebind>
-    <mousebind button="A-S-Up" action="Click">
-      <action name="SendToDesktop"><to>previous</to></action>
-    </mousebind>
-    <mousebind button="A-S-Down" action="Click">
-      <action name="SendToDesktop"><to>next</to></action>
     </mousebind>
   </context>
 
@@ -277,6 +250,7 @@
     <mousebind button="Left" action="Drag">
       <action name="Move"/>
     </mousebind>
+
     <mousebind button="Left" action="DoubleClick">
       <action name="ToggleMaximize"/>
     </mousebind>
@@ -292,6 +266,7 @@
         </then>
       </action>
     </mousebind>
+
     <mousebind button="Down" action="Click">
       <action name="if">
         <shaded>yes</shaded>
@@ -307,18 +282,9 @@
     <mousebind button="Left" action="Press">
       <action name="Focus"/>
       <action name="Raise"/>
-      <action name="Unshade"/>
     </mousebind>
 
-    <mousebind button="Middle" action="Press">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-    </mousebind>
-
-    <mousebind button="Right" action="Press">
-      <action name="Focus"/>
-      <action name="Raise"/>
+    <mousebind button="right" action="Press">
       <action name="ShowMenu"><menu>client-menu</menu></action>
     </mousebind>
   </context>
@@ -357,8 +323,8 @@
     <mousebind button="Left" action="Press">
       <action name="Focus"/>
       <action name="Raise"/>
-      <action name="Unshade"/>
     </mousebind>
+
     <mousebind button="Left" action="Drag">
       <action name="Resize"/>
     </mousebind>
@@ -369,10 +335,7 @@
       <action name="Focus"/>
       <action name="Raise"/>
     </mousebind>
-    <mousebind button="Middle" action="Press">
-      <action name="Focus"/>
-      <action name="Raise"/>
-    </mousebind>
+
     <mousebind button="Right" action="Press">
       <action name="Focus"/>
       <action name="Raise"/>
@@ -383,12 +346,6 @@
     <mousebind button="Left" action="Press">
       <action name="Focus"/>
       <action name="Raise"/>
-      <action name="Unshade"/>
-      <action name="ShowMenu"><menu>client-menu</menu></action>
-    </mousebind>
-    <mousebind button="Right" action="Press">
-      <action name="Focus"/>
-      <action name="Raise"/>
       <action name="ShowMenu"><menu>client-menu</menu></action>
     </mousebind>
   </context>
@@ -397,7 +354,6 @@
     <mousebind button="Left" action="Press">
       <action name="Focus"/>
       <action name="Raise"/>
-      <action name="Unshade"/>
     </mousebind>
     <mousebind button="Left" action="Click">
       <action name="ToggleOmnipresent"/>
@@ -526,6 +482,10 @@
 <applications>
   <application class="firefox">
     <decor>yes</decor>
+  </application>
+
+  <application class="feh">
+    <decor>no</decor>
   </application>
 </applications>
 
