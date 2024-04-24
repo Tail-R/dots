@@ -13,14 +13,14 @@ menu.overlap.x: -12
 menu.overlap.y: 0
 
 # Border colors
-window.active.border.color: #959da5
-window.active.title.separator.color: #959da5
-window.inactive.border.color: #959da5
-window.inactive.title.separator.color: #959da5
+window.active.border.color: #d1d5da
+window.active.title.separator.color: #d1d5da
+window.inactive.border.color: #d1d5da
+window.inactive.title.separator.color: #d1d5da
 window.active.client.color: #ffffff
 window.inactive.client.color: #ffffff
-menu.border.color: #959da5
-osd.border.color: #959da5
+menu.border.color: #d1d5da
+osd.border.color: #d1d5da
 
 # Titlebar colors
 window.active.label.text.color: #24292e

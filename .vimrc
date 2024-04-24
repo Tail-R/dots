@@ -61,7 +61,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     set statusline+=%=
     
     " right items
-    set statusline+=\ R\ %l\ C\ %c\ \ \ \ 
+    set statusline+=\ %l:%c\ \ %LL\ \ \ \ 
     set statusline+=\ %{GetCurrentFileName()}\ 
 endif
 

@@ -48,16 +48,16 @@
 *.color15: C7
 
 !! Xterm
-XTerm.vt100.faceName: ComicShanns
-XTerm.vt100.faceNameDoublesize: azukifontB
-XTerm.vt100.faceSize: 14
+XTerm.vt100.faceName: NotoSansMono
+XTerm.vt100.faceNameDoublesize: NotoSansMono
+XTerm.vt100.faceSize: 12
 XTerm.vt100.geometry: 88x32
 XTerm.vt100.scrollBar: true
 XTerm.vt100.saveLines: 4096
 XTerm.vt100.internalBorder: 24
 
 !! Urxvt
-URxvt.font:	xft:azukifontB:size=14:weight=regular
+URxvt.font:	xft:NotoSansMono:size=14:weight=regular
 URxvt.geometry: 64x32
 URxvt.scrollBar: false
 URxvt.scrollBar_right: true
@@ -72,6 +72,6 @@ URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
 !! Sxiv
-Sxiv.font: azukifontB-16
+Sxiv.font: NotoSansMono-16
 Sxiv.foreground: C5
 Sxiv.background: C7

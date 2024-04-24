@@ -1,7 +1,7 @@
 xrdb merge ~/.Xresources &
-# xsetroot -solid '#888888'
 ~/.fehbg &
-alacritty -e btop
+
+alacritty -e btop &
 
 (sleep 1s && fcitx5) &
 (sleep 1s && dunst -c ~/.config/dunst/dunstrc) &
