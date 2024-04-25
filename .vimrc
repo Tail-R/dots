@@ -34,7 +34,7 @@ set hlsearch
 set smartcase
 set ignorecase
 
-set nospell
+set spell
 set background=light
 
 set wildmenu
@@ -107,7 +107,7 @@ nnoremap <C-s> :call ToggleTypoHighlight()<CR>
 inoremap ( ()<Left>
 inoremap { {}<Left>
 inoremap [ []<Left>
-inoremap < <><Left>
+" inoremap < <><Left>
 inoremap " ""<Left>
 inoremap /* /*  */<Left><Left><Left>
 inoremap <!-- <!--  --><Left><Left><Left><Left>
