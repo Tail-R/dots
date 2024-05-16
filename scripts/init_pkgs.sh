@@ -1,23 +1,27 @@
 #! /usr/bin/env bash
 
 pkgs="
-vim
+helix
 yazi
 unzip
-openbox
+hyprland
+hyprpaper
 alacritty
+wofi
 feh
 mpv
+mpd
+ncmpcpp
 firefox
+fcitx5
+fcitx5-im
+fcitx5-mozc
 gimp
 nemo
 nemo-fileroller
 brightnessctl
 pamixer
 dunst
-dmenu
-xclip
-inotify-tools
 "
 
 echo $pkgs | while read -r pkg; do

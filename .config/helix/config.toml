@@ -1,0 +1,41 @@
+theme = "github_dark"
+
+[editor]
+# auto-info = false
+shell = ["bash", "-c"]
+line-number = "absolute" # or relative
+cursorline = true
+cursorcolumn = false
+auto-save = true
+
+
+[editor.statusline]
+left = ["mode"]
+center = []
+right = ["position", "position-percentage", "spacer", "file-base-name", "file-encoding"]
+
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+tab = "→"
+tabpad = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+newline = "⏎"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+
+[keys.normal]
+r = "redo"

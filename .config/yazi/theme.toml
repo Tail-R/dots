@@ -21,7 +21,7 @@ hovered         = { reversed = true }
 preview_hovered = { underline = true }
 
 # Find
-find_keyword  = { fg = "black", bold = true, italic = true, underline = true }
+find_keyword  = { fg = "lightyellow", bold = true, italic = true, underline = true }
 find_position = { fg = "magenta", bg = "reset", bold = true, italic = true }
 
 # Marker
@@ -55,7 +55,7 @@ syntect_theme = " "
 [status]
 separator_open  = ""
 separator_close = ""
-separator_style = { fg = "gray", bg = "gray" }
+separator_style = { fg = "white", bg = "darkgray" }
 
 # Mode
 mode_normal = { fg = "black", bg = "white", bold = true }

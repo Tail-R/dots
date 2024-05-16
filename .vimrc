@@ -35,7 +35,7 @@ set smartcase
 set ignorecase
 
 set spell
-set background=light
+set background=dark
 
 set wildmenu
 
@@ -52,7 +52,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
     
-    hi User1 ctermfg=black ctermbg=white cterm=bold
+    hi User1 ctermfg=lightgray ctermbg=black cterm=bold
     
     " left items
     set statusline=%1*\ %{GetCurrentMode()}\ 
@@ -112,7 +112,7 @@ inoremap " ""<Left>
 inoremap /* /*  */<Left><Left><Left>
 inoremap <!-- <!--  --><Left><Left><Left><Left>
 
-" copy the latest selection to the system clipboard via xclip command
+" copy the latest selection to the system clipboard via xclip command,
 " make sure that you have xclip on your system
 nnoremap <C-c> :call CopyVisualSelection()<CR>
 vnoremap <C-c> :call CopyVisualSelection()<CR>
@@ -228,7 +228,10 @@ augroup autoShebang
 augroup END
 
 " return to last edit position. just working lol
-autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" delete unnecessary white spaces
+autocmd FileType c,cpp,rust,lua,python,sh autocmd BufWritePre <buffer> %s/\s\+$//e
 
 "
 " Callback commands
@@ -236,7 +239,7 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 " autocmd ModeChanged *:i* set norelativenumber
 " autocmd ModeChanged i*:* set relativenumber
 
-" xml tag auto completion
+" XML tag auto completion
 set omnifunc=xmlcomplete#CompleteTags
 augroup MyXML
     autocmd!

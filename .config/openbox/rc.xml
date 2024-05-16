@@ -24,7 +24,7 @@
 </placement>
 
 <theme>
-  <name>Flat</name>
+  <name>Flat-Dark</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
   <titleLayout>NLIMC</titleLayout>
@@ -34,19 +34,19 @@
   <font place="ActiveWindow">
     <name>NotoSansMono</name>
     <size>14</size>
-    <weight>normal</weight>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveWindow">
     <name>NotoSansMono</name>
     <size>14</size>
-    <weight>normal</weight>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuHeader">
     <name>NotoSansMono</name>
     <size>14</size>
-    <weight>normal</weight>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuItem">
@@ -58,13 +58,13 @@
   <font place="ActiveOnScreenDisplay">
     <name>NotoSansMono</name>
     <size>14</size>
-    <weight>normal</weight>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveOnScreenDisplay">
     <name>NotoSansMono</name>
     <size>14</size>
-    <weight>normal</weight>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
 </theme>

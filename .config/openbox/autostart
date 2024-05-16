@@ -1,5 +1,6 @@
 xrdb merge ~/.Xresources &
-~/.fehbg &
+# ~/.fehbg &
+xsetroot -solid '#959da5'
 
 alacritty -e btop &
 

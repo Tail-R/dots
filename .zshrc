@@ -9,8 +9,11 @@ try_cd() {
 try_source $HOME/.cargo/env
 try_source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export EDITOR=vim
+export EDITOR=helix
 export BROWSER=firefox
+
+# Disable Alacritty auto scaling
+export WINIT_X11_SCALE_FACTOR=2
 
 #
 # Extend PATH
@@ -36,7 +39,7 @@ export SAVEHIST=10000
 # Prompt
 #
 
-# Precmd() is a special function to redraw the prompt
+# Precmd() is a special function to redraw prompt
 precmd() {
     PS1=$'\n'
     PS1+="%3~ %# "
@@ -45,6 +48,8 @@ precmd() {
 #
 # Aliases
 #
+
+# I use Arch BTW
 alias update='sudo pacman -Syu'
 alias lspkgs='pacman -Q'
 alias install='sudo pacman -S'
@@ -62,8 +67,12 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 
-alias v='vim'
-alias r='yazi'
+# Helix is my beloved
+alias vi='vim'
+alias vim='nvim'
+alias nvim='helix'
+
+alias f='yazi'
 alias xmrg='xrdb merge ~/.Xresources'
 
 alias xres='vim ~/.Xresources'
@@ -75,8 +84,6 @@ alias menu.xml='vim ~/.config/openbox/menu.xml'
 alias autostart='vim ~/.config/openbox/autostart'
 
 alias dots='try_cd ~/dots'
-alias rice='try_cd ~/.config'
-alias coffee='try_cd ~/Documents/workspaces'
 alias walls='try_cd ~/Pictures/wallpapers'
 
 alias ncmp='ncmpcpp'
@@ -86,8 +93,20 @@ alias cr='cargo run'
 alias cb='cargo build'
 
 #
-# Custom commands
+# Useful commands
 #
+rice() {
+    try_cd ~/.config
+
+    [ "$1" != "" ] && try_cd $1
+}
+
+coffee() {
+    try_cd ~/Documents/workspaces
+
+    [ "$1" != "" ] && try_cd $1
+}
+
 gg() {
     xdg-open "https://www.google.com/search?q=$1"
 }
