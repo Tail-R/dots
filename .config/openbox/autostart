@@ -1,9 +1,9 @@
 xrdb merge ~/.Xresources &
-# ~/.fehbg &
-xsetroot -solid '#959da5'
+# xsetroot -solid '#959da5'
+~/.fehbg &
 
-start_mpd.sh
-# alacritty -e btop &
+tint2 ~/.config/tint2/shortcake/tint2rc &
+start_mpd.sh &
 
 (sleep 1s && fcitx5) &
 (sleep 1s && dunst -c ~/.config/dunst/dunstrc) &

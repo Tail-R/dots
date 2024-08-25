@@ -1,7 +1,7 @@
-import = ["~/.config/alacritty/colors/github_light.toml"]
+import = ["~/.config/alacritty/colors/shortcake.toml"]
 
 [font]
-size = 9
+size = 10
 
 [window]
 opacity = 1.0
@@ -22,10 +22,10 @@ history = 4096
 shape = "block"
 
 [font.normal]
-family = "NotoSansMono"
+family = "azukifontB"
 
 [font.bold]
-family = "NotoSansMono"
+family = "azukifontB"
 
 [font.italic]
-family = "NotoSansMono"
+family = "azukifontB"

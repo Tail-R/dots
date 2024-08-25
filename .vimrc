@@ -40,7 +40,7 @@ set background=light
 set wildmenu
 
 syntax on
-" colorscheme default
+colorscheme light-theme
 
 "
 " Status Line
@@ -52,10 +52,11 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
     
-    hi User1 ctermfg=black ctermbg=white cterm=bold
+    hi User1 ctermfg=green ctermbg=white cterm=bold
+    hi User2 ctermfg=black ctermbg=cyan cterm=bold
     
     " left items
-    set statusline=%1*\ %{GetCurrentMode()}\ 
+    set statusline=\ %{GetCurrentMode()}\ 
     
     " jump to right
     set statusline+=%=
@@ -134,19 +135,19 @@ function! GetCurrentMode()
     let mode = mode()
      
     if mode ==# 'n'
-        let current_mode = 'NORMAL'
+        let current_mode = '▲  NORMAL'
     elseif mode ==# 'v'
-        let current_mode = 'VISUAL'
+        let current_mode = '■  VISUAL'
     elseif mode ==# 'V'
-        let current_mode = 'V-LINE'
+        let current_mode = '■  V-LINE'
     elseif mode ==# "\<C-v>"
-        let current_mode = 'V-BLOCK'
+        let current_mode = '■  V-BLOCK'
     elseif mode ==# 'i'
-        let current_mode = 'INSERT'
+        let current_mode = '▼  INSERT'
     elseif mode ==# 'c'
-        let current_mode = 'COMMAND'
+        let current_mode = '●  COMMAND'
     elseif mode ==# 't'
-        let current_mode = 'TERM'
+        let current_mode = '★  TERM'
     else
         let current_mode = mode
     endif

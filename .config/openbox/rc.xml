@@ -24,7 +24,7 @@
 </placement>
 
 <theme>
-  <name>Lavender</name>
+  <name>Shortcake</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
   <titleLayout>NLIMC</titleLayout>
@@ -32,38 +32,38 @@
   <keepBorder>yes</keepBorder>
   <animateIconify>no</animateIconify>
   <font place="ActiveWindow">
-    <name>NotoSansMono</name>
-    <size>14</size>
+    <name>azukifontB</name>
+    <size>16</size>
     <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveWindow">
-    <name>NotoSansMono</name>
-    <size>14</size>
+    <name>azukifontB</name>
+    <size>16</size>
     <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuHeader">
-    <name>NotoSansMono</name>
-    <size>14</size>
+    <name>azukifontB</name>
+    <size>16</size>
     <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuItem">
-    <name>NotoSansMono</name>
-    <size>14</size>
+    <name>azukifontB</name>
+    <size>16</size>
     <weight>normal</weight>
     <slant>normal</slant>
   </font>
   <font place="ActiveOnScreenDisplay">
-    <name>NotoSansMono</name>
-    <size>14</size>
+    <name>azukifontB</name>
+    <size>16</size>
     <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveOnScreenDisplay">
-    <name>NotoSansMono</name>
-    <size>14</size>
+    <name>azukifontB</name>
+    <size>16</size>
     <weight>bold</weight>
     <slant>normal</slant>
   </font>
@@ -196,7 +196,7 @@
   <!-- Launcher -->
   <keybind key="W-d">
     <action name="Execute">
-      <command>rofi -show run</command>
+      <command>run.sh</command>
     </action>
   </keybind>
   

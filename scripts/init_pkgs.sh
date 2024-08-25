@@ -9,9 +9,9 @@ unzip
 alacritty
 xterm
 rxvt-unicode
-dmenu
-rofi
 geany
+dmenu
+tint2
 feh
 mpv
 ncmpcpp
