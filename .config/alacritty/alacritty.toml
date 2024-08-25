@@ -1,7 +1,7 @@
-import = ["~/.config/alacritty/colors/github_dark_tritanopia.toml"]
+import = ["~/.config/alacritty/colors/github_light.toml"]
 
 [font]
-size = 12
+size = 9
 
 [window]
 opacity = 1.0
@@ -12,8 +12,8 @@ x = 8
 y = 8
 
 [window.dimensions]
-lines = 26
-columns = 86
+lines = 32
+columns = 96
 
 [scrolling]
 history = 4096

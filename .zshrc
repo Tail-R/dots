@@ -9,11 +9,8 @@ try_cd() {
 try_source $HOME/.cargo/env
 try_source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export EDITOR=helix
+export EDITOR=vim
 export BROWSER=firefox
-
-# Disable Alacritty auto scaling
-export WINIT_X11_SCALE_FACTOR=2
 
 #
 # Extend PATH
@@ -67,10 +64,7 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 
-# Helix is my beloved
-alias vi='vim'
-alias vim='nvim'
-alias nvim='helix'
+# alias vim='helix'
 
 alias f='yazi'
 alias xmrg='xrdb merge ~/.Xresources'

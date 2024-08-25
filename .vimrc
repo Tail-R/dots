@@ -35,12 +35,12 @@ set smartcase
 set ignorecase
 
 set spell
-set background=dark
+set background=light
 
 set wildmenu
 
 syntax on
-" colorscheme desert
+" colorscheme default
 
 "
 " Status Line
@@ -52,7 +52,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
     
-    hi User1 ctermfg=lightgray ctermbg=black cterm=bold
+    hi User1 ctermfg=black ctermbg=white cterm=bold
     
     " left items
     set statusline=%1*\ %{GetCurrentMode()}\ 
@@ -74,13 +74,13 @@ set tabline=%!MyTabLine()
 "
 " Remap
 "
-let mapleader = ' ' "  use space as leaderkey
+let mapleader = 'g' "  use space as leaderkey
 
 " move between tabs
 nnoremap <Leader>t :tabnew<CR>
 nnoremap <Leader>c :tabclose<CR>
-nnoremap <Leader>h :tabprev<CR>
-nnoremap <Leader>l :tabnext<CR>
+nnoremap <Leader>n :tabnext<CR>
+nnoremap <Leader>p :tabprev<CR>
 
 " move between windows
 nnoremap <S-h> <C-w>h
@@ -94,8 +94,8 @@ nnoremap <C-j> :resize +2<CR>
 nnoremap <C-k> :resize -2<CR>
 nnoremap <C-l> :vertical resize +2<CR>
 
-nnoremap s ^ " jump tp start of line
-nnoremap e $ " jump to end of line
+nnoremap <Leader>h ^ " jump tp start of line
+nnoremap <Leader>l $ " jump to end of line
 
 " disable highlighting until next search
 nnoremap <C-n> :noh<CR>
@@ -121,7 +121,7 @@ vnoremap <C-c> :call CopyVisualSelection()<CR>
 " Functions
 "
 function! ToggleTypoHighlight()
-    let spell_is_enable = &spell
+let spell_is_enable = &spell
 
     if spell_is_enable == '0'
         set spell
@@ -160,7 +160,7 @@ function! GetCurrentFileName()
     return fileName == '' ? 'New File' : fileName
 endfunction
 
-" simple implementation of the tabline
+" Tab Appearance
 function MyTabLine()
     let s = ''
     
@@ -184,6 +184,7 @@ function GetTabLabel(n)
     return bufname == '' ? 'New File' : bufname
 endfunction
 
+" A simple way to copy to the system clipboard. It only support Xorg
 function CopyVisualSelection()
     call system("echo -e '" . GetVisualSelection() . "' | xclip -sel clip")
 endfunction
@@ -227,7 +228,7 @@ augroup autoShebang
     autocmd BufNewFile *.lua call append(0, '#! /usr/bin/env lua')
 augroup END
 
-" return to last edit position. just working lol
+" return to last edit position
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " delete unnecessary white spaces

@@ -3,7 +3,6 @@
 CDIR=$(pwd)
 
 ln -fns $CDIR/.vimrc ~/.vimrc
-ln -fns $CDIR/.vim $HOME
 
 ln -fns $CDIR/.zshrc ~/.zshrc
 

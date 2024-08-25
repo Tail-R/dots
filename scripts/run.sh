@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-font='ComicShanns-16-Bold'
+font='NotoSansMono-16-Bold'
 monitor=-1
 
 # nf='#242927'

@@ -1,13 +1,12 @@
 theme = "github_dark"
 
 [editor]
-# auto-info = false
 shell = ["bash", "-c"]
-line-number = "absolute" # or relative
+line-number = "absolute"
 cursorline = true
 cursorcolumn = false
 auto-save = true
-
+bufferline = "multiple"
 
 [editor.statusline]
 left = ["mode"]
@@ -39,3 +38,8 @@ character = "╎"
 
 [keys.normal]
 r = "redo"
+
+"C-h" = "jump_view_left"
+"C-j" = "jump_view_down"
+"C-k" = "jump_view_up"
+"C-l" = "jump_view_right"

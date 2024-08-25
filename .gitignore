@@ -8,5 +8,6 @@
 !.config/ncmpcpp
 !.config/openbox
 !.config/yazi
+!.config/wofi
 
 !.config/mimeapps.list
