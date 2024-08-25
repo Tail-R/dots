@@ -1,8 +1,9 @@
 xrdb merge ~/.Xresources &
-~/.fehbg &
-# xsetroot -solid '#959da5'
+# ~/.fehbg &
+xsetroot -solid '#959da5'
 
-alacritty -e btop &
+start_mpd.sh
+# alacritty -e btop &
 
 (sleep 1s && fcitx5) &
 (sleep 1s && dunst -c ~/.config/dunst/dunstrc) &

@@ -11,6 +11,7 @@ xterm
 rxvt-unicode
 dmenu
 rofi
+geany
 feh
 mpv
 ncmpcpp

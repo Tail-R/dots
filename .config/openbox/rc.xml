@@ -196,7 +196,7 @@
   <!-- Launcher -->
   <keybind key="W-d">
     <action name="Execute">
-      <command>run.sh</command>
+      <command>rofi -show run</command>
     </action>
   </keybind>
   
