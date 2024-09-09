@@ -1,15 +1,16 @@
 import = ["~/.config/alacritty/colors/shortcake.toml"]
 
 [font]
-size = 10
+size = 9
 
 [window]
+title = "Alacritty"
 opacity = 1.0
-dynamic_title = true
+dynamic_title = false
 
 [window.padding]
-x = 8
-y = 8
+x = 16
+y = 16
 
 [window.dimensions]
 lines = 32

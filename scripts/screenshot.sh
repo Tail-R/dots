@@ -2,7 +2,7 @@
 
 # dependencies: maim, xrandr, dunst
 
-SSDIR=$HOME/Pictures/screenshot
+SSDIR=$HOME/Pictures/Screenshots
 TYPE='png'
 Q=10 # quality: 1 ~ 10
 

@@ -27,7 +27,7 @@
   <name>Shortcake</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
-  <titleLayout>NLIMC</titleLayout>
+  <titleLayout>LIMC</titleLayout>
   
   <keepBorder>yes</keepBorder>
   <animateIconify>no</animateIconify>

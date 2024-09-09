@@ -9,8 +9,12 @@ try_cd() {
 try_source $HOME/.cargo/env
 try_source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+#
+# Environment variabless
+#
 export EDITOR=vim
 export BROWSER=firefox
+export WINIT_X11_SCALE_FACTOR=2
 
 #
 # Extend PATH

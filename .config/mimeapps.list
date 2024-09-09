@@ -1,6 +1,6 @@
 [Default Applications]
-image/jpeg=org.gnome.Loupe.desktop
-image/png=org.gnome.Loupe.desktop
+image/jpeg=sxiv.desktop
+image/png=sxiv.desktop
 image/gif=org.gnome.Loupe.desktop
 image/webp=org.gnome.Loupe.desktop
 image/tiff=org.gnome.Loupe.desktop
@@ -73,6 +73,7 @@ video/avi=mpv.desktop
 video/mkv=mpv.desktop
 video/x-ogm=mpv.desktop
 video/vnd.avi=mpv.desktop
+image/jpg=sxiv.desktop
 
 [Added Associations]
 image/png=org.gnome.Loupe.desktop;

@@ -1,23 +1,23 @@
-#define FG #24292f
-#define BG #ffffff
+#define FG #aa0000
+#define BG #ffffdd
 
-#define C0 #24292e
-#define C1 #d73a49
-#define C2 #28a745
-#define C3 #dbab09
-#define C4 #0366d6
-#define C5 #5a32a3
-#define C6 #0598bc
-#define C7 #6a737d
+#define C0 #aa0000
+#define C1 #cc4444
+#define C2 #ee8888
+#define C3 #ffdddd
+#define C4 #ffbbbb
+#define C5 #ffaaaa
+#define C6 #ffcccc
+#define C7 #ffffff
 
-#define C8 #959da5
-#define C9 #cb2431
-#define C10 #22863a
-#define C11 #b08800
-#define C12 #005cc5
-#define C13 #5a32a3
-#define C14 #3192aa
-#define C15 #d1d5da
+#define C8  #aa0000
+#define C9  #cc4444
+#define C10 #ee8888
+#define C11 #ffdddd
+#define C12 #ffbbbb
+#define C13 #ffaaaa
+#define C14 #ffcccc
+#define C15 #ffffff
 
 !! colors
 *.foreground: FG
@@ -48,16 +48,16 @@
 *.color15: C7
 
 !! Xterm
-XTerm.vt100.faceName: NotoSansMono
-XTerm.vt100.faceNameDoublesize: NotoSansMono
-XTerm.vt100.faceSize: 12
+XTerm.vt100.faceName: azukifontB
+XTerm.vt100.faceNameDoublesize: azukifontB
+XTerm.vt100.faceSize: 16
 XTerm.vt100.geometry: 88x32
 XTerm.vt100.scrollBar: true
 XTerm.vt100.saveLines: 4096
-XTerm.vt100.internalBorder: 24
+XTerm.vt100.internalBorder: 0
 
 !! Urxvt
-URxvt.font:	xft:NotoSansMono:size=14:weight=regular
+URxvt.font:	xft:azukifontB:size=16:weight=regular
 URxvt.geometry: 64x32
 URxvt.scrollBar: false
 URxvt.scrollBar_right: true
@@ -72,6 +72,6 @@ URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
 !! Sxiv
-Sxiv.font: NotoSansMono-16
+Sxiv.font: azukifontB-16
 Sxiv.foreground: C5
 Sxiv.background: C7

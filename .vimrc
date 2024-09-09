@@ -34,7 +34,7 @@ set hlsearch
 set smartcase
 set ignorecase
 
-set spell
+set nospell
 set background=light
 
 set wildmenu
@@ -53,12 +53,14 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " :h statusline to see more details
     
     hi User1 ctermfg=green ctermbg=white cterm=bold
-    hi User2 ctermfg=black ctermbg=cyan cterm=bold
-    
+
+    " Set color scheme
+    set statusline=%1*
+ 
     " left items
-    set statusline=\ %{GetCurrentMode()}\ 
+    set statusline+=\ %{GetCurrentMode()}\ 
     
-    " jump to right
+    " jump to the right section
     set statusline+=%=
     
     " right items
@@ -145,7 +147,7 @@ function! GetCurrentMode()
     elseif mode ==# 'i'
         let current_mode = '▼  INSERT'
     elseif mode ==# 'c'
-        let current_mode = '●  COMMAND'
+        let current_mode = '▼  COMMAND'
     elseif mode ==# 't'
         let current_mode = '★  TERM'
     else
