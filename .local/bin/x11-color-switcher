@@ -1,0 +1,40 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+X11_COLOR_DIR="$HOME/.config/X11/colors"
+X11_COLOR_LINK="$X11_COLOR_DIR/current"
+
+if [ ! -d "$X11_COLOR_DIR" ]; then
+    echo "Make sure you have $X11_COLOR_DIR"
+
+    exit 1
+fi
+
+if [ -z "${1:-}" ]; then
+    echo "Usage: $0 <color-name>"
+    echo "ls $X11_COLOR_DIR to see the available color schemes"
+
+    exit 1
+fi
+
+color_name="$1"
+target_color="$X11_COLOR_DIR/$color_name"
+
+if [ ! -f "$target_color" ]; then
+    echo "Color scheme $color_name doesn't exist"
+
+    exit 1
+fi
+
+# Replace symlink
+ln -sfn "$target_color" "$X11_COLOR_LINK"
+echo "Switched Xresources color scheme to $color_name"
+
+# Reload X Resource Database
+if command -v xrdb >/dev/null 2>&1; then
+    xrdb ~/.Xresources
+else
+    echo "xrdb command not found"
+fi
+

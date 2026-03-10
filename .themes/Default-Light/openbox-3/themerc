@@ -1,0 +1,95 @@
+# Geometry
+border.width: 1
+menu.border.width: 1
+menu.separator.width: 1
+menu.separator.padding.width: 0
+osd.border.width: 1
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 8
+padding.width: 6
+padding.height: 6
+menu.overlap.x: -12
+menu.overlap.y: 0
+
+# Border colors
+window.active.border.color: #cccccc
+window.active.title.separator.color: #cb2431
+window.active.client.color: #ffffff
+
+window.inactive.border.color: #cccccc
+window.inactive.title.separator.color: #ffffff
+window.inactive.client.color: #ffffff
+
+menu.border.color: #cccccc
+osd.border.color: #cccccc
+
+# Titlebar colors
+window.active.label.text.color: #ffffff
+window.inactive.label.text.color: #cb2431
+
+# Active window textures
+window.active.title.bg: Solid
+window.active.title.bg.color: #cb2431
+window.active.label.bg: Parentrelative
+window.active.handle.bg: Solid
+window.active.handle.bg.color: #ffffff
+window.active.grip.bg: Solid
+window.active.grip.bg.color: #ffffff
+
+# Inactive window textures
+window.inactive.title.bg: Solid
+window.inactive.title.bg.color: #ffffff
+window.inactive.label.bg: Parentrelative
+window.inactive.handle.bg: Solid
+window.inactive.handle.bg.color: #ffffff
+window.inactive.grip.bg: Solid
+window.inactive.grip.bg.color: #ffffff
+
+# Active window button textures
+window.active.button.*.bg: Parentrelative
+window.active.button.*.color: #ffffff
+window.active.button.*.unpressed.image.color: #ffffff
+window.active.button.*.pressed.image.color: #cccccc
+window.active.button.*.disabled.image.color: #888888
+window.active.button.*.hover.image.color: #aaaaaa
+
+# Inactive window button textures
+window.inactive.button.*.bg: Parentrelative
+window.inactive.button.*.color: #ffffff
+window.inactive.button.*.unpressed.image.color: #24292f
+window.inactive.button.*.pressed.image.color: #cccccc
+window.inactive.button.*.disabled.image.color: #888888
+window.inactive.button.*.hover.image.color: #aaaaaa
+
+# Menu colors
+menu.title.text.color: #ffffff
+menu.items.text.color: #24292f
+menu.items.disabled.text.color: #959da5
+menu.items.active.text.color: #24292f
+menu.items.active.disabled.text.color: #959da5
+menu.separator.color: #cccccc
+
+# Menu textures
+menu.items.bg: Flat
+menu.items.bg.color: #ffffff
+menu.items.active.bg: Flat
+menu.items.active.bg.color: #d1d5da
+menu.title.bg: Solid
+menu.title.bg.color: #cb2431
+
+# OSD textures
+osd.label.text.color: #24292f
+osd.bg: Solid
+osd.bg.color: #ffffff
+osd.bg.colorTo: #ffffff
+osd.label.bg: Parentrelative
+osd.hilight.bg: Flat
+osd.hilight.bg.color: #cb2431
+osd.unhilight.bg: Flat
+osd.unhilight.bg.color: #ffffff
+
+# Text justification
+window.label.text.justify: Left
+menu.title.text.justify: Center
+

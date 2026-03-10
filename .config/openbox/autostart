@@ -1,0 +1,11 @@
+xrdb -merge ~/.Xresources &
+
+picom &
+~/.fehbg &
+
+tint2 -c ~/.config/tint2/moss &
+
+(sleep 1s && fcitx5) &
+(sleep 1s && nm-applet) &
+(sleep 2s && dunst) &
+

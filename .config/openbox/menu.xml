@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
+
+  <menu id="root-menu" label="Openbox 3">
+    <!-- separator label="୨୧ ⑅ ୨୧ ⑅ ୨୧ ⑅ ୨୧"/-->
+    <separator label="Openbox"/>
+
+    <!-- Applications -->
+    <item label="Terminal">
+      <action name="Execute">
+        <command>urxvt</command>
+      </action>
+    </item>
+    <item label="Web Browser">
+      <action name="Execute">
+        <command>firefox</command>
+      </action>
+    </item>
+    <item label="File Manager">
+      <action name="Execute">
+        <command>thunar</command>
+      </action>
+    </item>
+
+    <!-- Applications submenu -->
+    <menu id="applications" label="Applications">
+      <item label="Timer">
+        <action name="Execute">
+          <command>gnome-clocks</command>
+        </action>
+      </item>
+      <item label="Calculator">
+        <action name="Execute">
+          <command>gnome-calculator</command>
+        </action>
+      </item>
+      <item label="Inkscape">
+        <action name="Execute">
+          <command>inkscape</command>
+        </action>
+      </item>
+      <item label="OBS Studio">
+        <action name="Execute">
+          <command>obs</command>
+        </action>
+      </item>
+      <item label="VLC media player">
+        <action name="Execute">
+          <command>vlc</command>
+        </action>
+      </item>
+      <item label="pavucontrol">
+        <action name="Execute">
+          <command>pavucontrol</command>
+        </action>
+      </item>
+      <item label="fcitx5-configtool">
+        <action name="Execute">
+          <command>fcitx5-configtool</command>
+        </action>
+      </item>
+
+      <!-- Screenshot submenu -->
+      <menu id="screenshot" label="Screenshot">
+        <item label="entire-screen">
+          <action name="Execute">
+            <command>~/.local/bin/shot -e</command>
+          </action>
+        </item>
+        <item label="primary-monitor">
+          <action name="Execute">
+            <command>~/.local/bin/shot -p</command>
+          </action>
+        </item>
+        <item label="selection">
+          <action name="Execute">
+            <command>~/.local/bin/shot -s</command>
+          </action>
+        </item>
+      </menu>
+      <item label="Mines">
+        <action name="Execute">
+          <command>gnome-mines</command>
+        </action>
+      </item>
+      <item label="Sol">
+        <action name="Execute">
+          <command>sol</command>
+        </action>
+      </item>
+
+    </menu>
+
+    <separator/>
+
+    <!-- Openbox -->
+    <item label="Reconfigure">
+      <action name="Reconfigure"/>
+    </item>
+    <item label="Restart">
+      <action name="Restart"/>
+    </item>
+    <item label="Exit">
+      <action name="Exit"/>
+    </item>
+
+    <separator/>
+
+    <!-- System -->
+    <menu id="system" label="System">
+      <item label="Sleep">
+        <action name="Execute">
+          <command>systemctl suspend</command>
+        </action>
+      </item>
+      <item label="Reboot">
+        <action name="Execute">
+          <command>systemctl reboot</command>
+        </action>
+      </item>
+      <item label="Shutdown">
+        <action name="Execute">
+          <command>systemctl poweroff</command>
+        </action>
+      </item>
+    </menu>
+  </menu>
+
+</openbox_menu>
+

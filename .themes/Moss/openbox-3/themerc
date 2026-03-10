@@ -1,0 +1,98 @@
+# Geometry
+border.width: 2
+menu.border.width: 2
+menu.separator.width: 2
+menu.separator.padding.width: 0
+osd.border.width: 2
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 4
+padding.width: 10
+padding.height: 10
+menu.overlap.x: -12
+menu.overlap.y: 0
+
+# Border colors
+window.active.border.color: #373737
+window.active.title.separator.color: #6e8472
+window.inactive.border.color: #373737
+window.inactive.title.separator.color: #6e8472
+window.active.client.color: #000000
+window.inactive.client.color: #000000
+menu.border.color: #373737
+osd.border.color: #373737
+
+# Titlebar colors
+window.active.label.text.color: #c9cad3
+window.inactive.label.text.color: #c9cad3
+
+window.active.button.*.bg: Parentrelative
+window.active.button.*.unpressed.image.color: #c9cad3
+window.active.button.*.pressed.image.color: #686868
+window.active.button.*.disabled.image.color: #828282
+window.active.button.*.hover.image.color: #828282
+
+window.inactive.button.*.bg: Parentrelative
+window.inactive.button.*.unpressed.image.color: #c9cad3
+window.inactive.button.*.pressed.image.color: #686868
+window.inactive.button.*.disabled.image.color: #828282
+window.inactive.button.*.hover.image.color: #828282
+
+# Active window textures
+window.active.title.bg: Gradient Vertical Solid
+window.active.title.bg.color: #6e8472
+window.active.title.bg.colorTo: #2c2b30
+window.active.label.bg: Parentrelative
+window.active.handle.bg: Solid
+window.active.handle.bg.color: #41444b
+window.active.grip.bg: Solid
+window.active.grip.bg.color: #41444b
+
+# Inactive window textures
+window.inactive.title.bg: Gradient Vertical Solid
+window.inactive.title.bg.color: #41444b
+window.inactive.title.bg.colorTo: #2c2b30
+window.inactive.label.bg: Parentrelative
+window.inactive.handle.bg: Solid
+window.inactive.handle.bg.color: #41444b
+window.inactive.grip.bg: Solid
+window.inactive.grip.bg.color: #41444b
+
+# Active window button textures
+window.*.active.button.*.bg: Parentrelative
+
+# Inactive window button textures
+window.*.inactive.button.*.bg: Parentrelative
+
+# Menu colors
+menu.title.text.color: #c9cad3
+menu.items.text.color: #adaeb7
+menu.items.disabled.text.color: #828282
+menu.items.active.text.color: #c9cad3
+menu.items.active.disabled.text.color: #828282
+menu.separator.color: #373737
+
+# Menu textures
+menu.items.bg: Flat
+menu.items.bg.color: #2c2b30
+menu.items.active.bg: Solid
+menu.items.active.bg.color: #41444b
+menu.title.bg: Vertical Gradient Solid
+menu.title.bg.color: #41444b
+menu.title.bg.colorTo: #41444b
+
+# OSD textures
+osd.label.text.color: #c9cad3
+osd.bg: Solid
+osd.bg.color: #41444b
+osd.bg.colorTo: #41444b
+osd.label.bg: Parentrelative
+osd.hilight.bg: Flat
+osd.hilight.bg.color: #698c55
+osd.unhilight.bg: Flat
+osd.unhilight.bg.color: #5a5f5b
+
+# Text justification
+window.label.text.justify: Left
+menu.title.text.justify: Center
+

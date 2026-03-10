@@ -1,0 +1,41 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+    
+SAVE_DIR=$HOME/Pictures/screenshots
+FILE_EXT=png
+Q=10 # quality: 1 ~ 10
+PGEOM=1920x1200+0+0
+
+mkdir -p "$SAVE_DIR"
+
+# Screen shot file_name
+file_name="${SAVE_DIR}/$(date '+%Y%m%d_%H%M%S').${FILE_EXT}"
+
+case "$1" in 
+# entire-screen
+-e) maim -u -m "$Q" "$file_name" ;;
+
+# selection
+-s) maim -u -m "$Q" -s "$file_name" ;;
+
+# primary-monitor
+-p) maim -u -m "$Q" -g "$PGEOM" "$file_name" ;;
+
+*)
+    echo "Usage: $0 <option>"
+    echo "Available options: -e (entire screen), -s (selection), -p (primary monitor ${PGEOM})"
+
+    exit 1
+;;
+esac
+
+if [ -f "$file_name" ]; then
+    echo "Screenshot taken"
+    echo "Saved to ${file_name}"
+else
+    echo "Something went wrong"
+
+    exit 1
+fi
+

@@ -1,0 +1,40 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+OB_THEME_DIR="$HOME/.themes"
+OB_THEME_LINK="$OB_THEME_DIR/Current"
+
+if [ ! -d "$OB_THEME_DIR" ]; then
+    echo "Make sure you have $OB_THEME_DIR"
+
+    exit 1
+fi
+
+if [ -z "${1:-}" ]; then
+    echo "Usage: $0 <theme-name>"
+    echo "ls $OB_THEME_DIR to see the available themes"
+
+    exit 1
+fi
+
+theme_name="$1"
+target_theme="$OB_THEME_DIR/$theme_name"
+
+if [ ! -d "$target_theme" ]; then
+    echo "Theme $theme_name doesn't exist"
+
+    exit 1
+fi
+
+# Replace symlink
+ln -sfn "$target_theme" "$OB_THEME_LINK"
+echo "Switched Openbox theme to $theme_name"
+
+# Reconfigure Openbox
+if pgrep -x openbox >/dev/null 2>&1; then
+    openbox --reconfigure
+else
+    echo "Openbox is not running"
+fi
+

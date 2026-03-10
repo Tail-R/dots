@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+
+mkdir -p ~/Pictures
+mkdir -p ~/Documents
+mkdir -p ~/Downloads
+mkdir -p ~/Music
+mkdir -p ~/Videos
+mkdir -p ~/workspace
+mkdir -p ~/src
+
+mkdir -p ~/Pictures/walls
+mkdir -p ~/Pictures/screenshots
+
+mkdir -p ~/.config
+mkdir -p ~/.themes
+mkdir -p ~/.local
+mkdir -p ~/.local/bin
+mkdir -p ~/.local/share
+mkdir -p ~/.local/share/fonts
+

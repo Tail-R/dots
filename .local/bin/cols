@@ -1,0 +1,36 @@
+#! /usr/bin/env bash
+
+if [ "$1" == "-n" ]; then
+    # Print numbers 0 ~ 7
+    for i in {0..7}; do
+        printf "%4d" $i
+    done
+
+    printf "\n"
+fi
+
+# Print normal colors
+for i in {0..7}; do
+    printf "\e[48;5;${i}m    \e[0m" $i
+done
+
+printf "\n"
+
+# Print bright colors
+for i in {8..15}; do
+    printf "\e[48;5;${i}m    \e[0m" $i
+done
+
+printf "\n"
+
+if [ "$1" == "-n" ]; then
+    # Print numbers 8 ~ 15
+    for i in {8..15}; do
+        printf "%4d" $i
+    done
+
+    printf "\n"
+fi
+
+printf "\n"
+
