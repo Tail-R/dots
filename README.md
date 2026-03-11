@@ -14,5 +14,9 @@ My personal Openbox configurations
 <td><img src ="assets/screenshot_shortcake.png"></td>
 </tr>
 
+<tr>
+<td><img src ="assets/screenshot_moss.png"></td>
+</tr>
+
 </table>
 
