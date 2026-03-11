@@ -9,28 +9,28 @@ int main(string[] args) {
             .poll_value_sync(1000, "scripts/get_mem_usage.sh");
 
         var mem_level = new MyLabel("0", "level")
-            .poll_command_sync(100, "scripts/get_mem_usage.sh");
+            .poll_command_sync(1000, "scripts/get_mem_usage.sh");
 
         // Battery
         var bat_scale = new MyScale(H, 0, 0, 100, "bat-scale")
             .poll_value_sync(1000, "scripts/get_bat_level.sh");
 
         var bat_level = new MyLabel("0", "level")
-            .poll_command_sync(100, "scripts/get_bat_level.sh");
+            .poll_command_sync(1000, "scripts/get_bat_level.sh");
 
         // Volume
         var vol_scale = new MyScale(H, 0, 0, 100, "vol-scale")
             .poll_value_sync(1000, "scripts/get_vol_level.sh");
 
         var vol_level = new MyLabel("0", "level")
-            .poll_command_sync(100, "scripts/get_vol_level.sh");
+            .poll_command_sync(1000, "scripts/get_vol_level.sh");
 
         // Brightness
         var bri_scale = new MyScale(H, 0, 0, 100, "bri-scale")
             .poll_value_sync(1000, "scripts/get_brightness.sh");
 
         var bri_level = new MyLabel("0", "level")
-            .poll_command_sync(100, "scripts/get_brightness.sh");
+            .poll_command_sync(1000, "scripts/get_brightness.sh");
 
         var gap_size = 12;
 

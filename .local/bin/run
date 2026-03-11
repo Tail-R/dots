@@ -1,12 +1,21 @@
 #! /usr/bin/env bash
 
-font='monospace-14-Regular'
+# font='monospace-14-Regular'
+font='Tamzen-15-Regular'
+
 monitor=-1
 
-nf='#24292f'
-nb='#ffffff'
-sf='#24292f'
-sb='#d1d5da'
+# Light-theme
+# nf='#24292f'
+# nb='#ffffff'
+# sf='#24292f'
+# sb='#d1d5da'
+
+# Dark-theme
+nf='#adaeb7'
+nb='#2c2b30'
+sf='#c9cad3'
+sb='#41444b'
 
 dmenu_run -fn $font -m $monitor -nb $nb -nf $nf -sb $sb -sf $sf
 
