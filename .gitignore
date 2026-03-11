@@ -1,1 +1,5 @@
+**/build/
+
+# Vim
 ~/.vim/undo
+~/.vim/pack

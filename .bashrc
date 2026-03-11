@@ -49,7 +49,7 @@ precmd() {
         printf "\033]0;Term\007"
     fi
 
-    PS1="\n\033[1;36m \w \033[1;37m$ \033[0m"
+    PS1="\n\033[0;35m \w \033[0;37m$ \033[0m"
 }
 
 export PROMPT_DIRTRIM=3

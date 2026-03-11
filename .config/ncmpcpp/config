@@ -1,0 +1,45 @@
+# mpd
+mpd_host = localhost
+mpd_port = 6600
+mpd_music_dir = ~/Music
+mpd_crossfade_time = 5
+mpd_connection_timeout = 5
+
+# general
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory = ~/.config/ncmpcpp/lyrics
+
+mouse_support = "yes"
+
+playlist_shorten_total_times = "yes"
+playlist_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+search_engine_display_mode = "columns"
+
+colors_enabled = "yes"
+main_window_color = "default"
+header_window_color = "black"
+startup_screen = "playlist"
+autocenter_mode = "no"
+
+# UI options
+user_interface = "classic" # classic or alternative
+
+header_visibility = "no"
+statusbar_visibility = "no"
+titles_visibility = "no"
+enable_window_title = "yes"
+
+progressbar_look = "▃▃▃"
+
+progressbar_elapsed_color = "13"
+progressbar_color = "16"
+
+statusbar_color = "1"
+
+# custom UI options
+current_item_prefix = "$1> "
+current_item_suffix = ""
+
+song_columns_list_format = "(65)[8]{tl} (25)[3]{ar} (8)[10]{lr}"
+
