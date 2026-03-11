@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/tailr/sysmon">
+    <file>assets/style.css</file>
+    <file>assets/satori.png</file>
+    <file>assets/koishi.png</file>
+    <file>assets/okuu.png</file>
+    <file>assets/orin.png</file>
+  </gresource>
+</gresources>
+
