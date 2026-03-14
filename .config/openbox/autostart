@@ -1,6 +1,5 @@
 xrdb -merge ~/.Xresources &
 
-picom &
 ~/.fehbg &
 
 tint2 -c ~/.config/tint2/moss &

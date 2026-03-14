@@ -69,17 +69,17 @@
       <menu id="screenshot" label="Screenshot">
         <item label="entire-screen">
           <action name="Execute">
-            <command>~/.local/bin/shot -e</command>
+            <command>shot -e</command>
           </action>
         </item>
         <item label="primary-monitor">
           <action name="Execute">
-            <command>~/.local/bin/shot -p</command>
+            <command>shot -p</command>
           </action>
         </item>
         <item label="selection">
           <action name="Execute">
-            <command>~/.local/bin/shot -s</command>
+            <command>shot -s</command>
           </action>
         </item>
       </menu>
@@ -99,6 +99,16 @@
     <separator/>
 
     <!-- Openbox -->
+
+    <!-- Themes -->
+    <menu id="themes" label="Themes">
+      <item label="Default-Light">
+        <action name="Execute"><command>ob-theme-switcher Default-Light</command></action>
+      </item>
+      <item label="Moss">
+        <action name="Execute"><command>ob-theme-switcher Moss</command></action>
+      </item>
+    </menu>
     <item label="Reconfigure">
       <action name="Reconfigure"/>
     </item>

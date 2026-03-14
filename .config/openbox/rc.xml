@@ -28,44 +28,44 @@
   <name>Current</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
-  <titleLayout>DLSIMC</titleLayout>
+  <titleLayout>NLIMC</titleLayout>
 
   <keepBorder>yes</keepBorder>
   <animateIconify>yes</animateIconify>
   <font place="ActiveWindow">
-    <name>x12y16pxSolidLinker</name>
-    <size>12</size>
-    <weight>normal</weight>
+    <name>IBMPlexSans</name>
+    <size>14</size>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveWindow">
-    <name>x12y16pxSolidLinker</name>
-    <size>12</size>
-    <weight>normal</weight>
+    <name>IBMPlexSans</name>
+    <size>14</size>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuHeader">
-    <name>x12y16pxSolidLinker</name>
-    <size>12</size>
-    <weight>normal</weight>
+    <name>IBMPlexSans</name>
+    <size>14</size>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="MenuItem">
-    <name>Unifont-JP</name>
-    <size>12</size>
+    <name>IBMPlexSans</name>
+    <size>14</size>
     <weight>normal</weight>
     <slant>normal</slant>
   </font>
   <font place="ActiveOnScreenDisplay">
-    <name>Tamzen</name>
-    <size>15</size>
-    <weight>normal</weight>
+    <name>IBMPlexSans</name>
+    <size>14</size>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
   <font place="InactiveOnScreenDisplay">
-    <name>Tamzen</name>
-    <size>15</size>
-    <weight>normal</weight>
+    <name>IBMPlexSans</name>
+    <size>14</size>
+    <weight>bold</weight>
     <slant>normal</slant>
   </font>
 </theme>

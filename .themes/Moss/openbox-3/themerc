@@ -7,8 +7,8 @@ osd.border.width: 2
 window.client.padding.width: 0
 window.client.padding.height: 0
 window.handle.width: 4
-padding.width: 10
-padding.height: 10
+padding.width: 8
+padding.height: 8
 menu.overlap.x: -12
 menu.overlap.y: 0
 

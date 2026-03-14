@@ -1,7 +1,6 @@
 #! /usr/bin/env bash
 
-# font='monospace-14-Regular'
-font='Tamzen-15-Regular'
+font='monospace-14-Regular'
 
 monitor=-1
 
