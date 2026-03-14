@@ -2,13 +2,17 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
 
   <menu id="root-menu" label="Openbox 3">
-    <!-- separator label="୨୧ ⑅ ୨୧ ⑅ ୨୧ ⑅ ୨୧"/-->
     <separator label="Openbox"/>
 
     <!-- Applications -->
     <item label="Terminal">
       <action name="Execute">
         <command>urxvt</command>
+      </action>
+    </item>
+    <item label="Text Editor">
+      <action name="Execute">
+        <command>vscodium</command>
       </action>
     </item>
     <item label="Web Browser">
@@ -54,18 +58,8 @@
           <command>gnome-calculator</command>
         </action>
       </item>
-      <item label="pavucontrol">
-        <action name="Execute">
-          <command>pavucontrol</command>
-        </action>
-      </item>
-      <item label="fcitx5-configtool">
-        <action name="Execute">
-          <command>fcitx5-configtool</command>
-        </action>
-      </item>
 
-      <!-- Screenshot submenu -->
+      <!-- Screenshot -->
       <menu id="screenshot" label="Screenshot">
         <item label="entire-screen">
           <action name="Execute">
@@ -83,46 +77,62 @@
           </action>
         </item>
       </menu>
-      <item label="Mines">
+
+      <!-- Settings -->
+      <menu id="settings" label="Settings">
+        <item label="Appearance">
+          <action name="Execute">
+            <command>lxappearance</command>
+          </action>
+        </item>
+        <item label="pavucontrol">
+          <action name="Execute">
+            <command>pavucontrol</command>
+          </action>
+        </item>
+        <item label="fcitx5-configtool">
+          <action name="Execute">
+            <command>fcitx5-configtool</command>
+          </action>
+        </item>
+      </menu>
+
+      <item label="Minesweeper">
         <action name="Execute">
           <command>gnome-mines</command>
         </action>
       </item>
-      <item label="Sol">
+      <item label="Solitaire">
         <action name="Execute">
           <command>sol</command>
         </action>
       </item>
-
     </menu>
-
-    <separator/>
 
     <!-- Openbox -->
-
-    <!-- Themes -->
-    <menu id="themes" label="Themes">
-      <item label="Default-Light">
-        <action name="Execute"><command>ob-theme-switcher Default-Light</command></action>
+    <separator/>
+    <menu id="openbox" label="Openbox">
+      <menu id="themes" label="Themes">
+        <item label="Default-Light">
+          <action name="Execute"><command>ob-theme-switcher Default-Light</command></action>
+        </item>
+        <item label="Moss">
+          <action name="Execute"><command>ob-theme-switcher Moss</command></action>
+        </item>
+      </menu>
+      <item label="Reconfigure">
+        <action name="Reconfigure"/>
       </item>
-      <item label="Moss">
-        <action name="Execute"><command>ob-theme-switcher Moss</command></action>
+      <item label="Restart">
+        <action name="Restart"/>
+      </item>
+      <item label="Exit">
+        <action name="Exit"/>
       </item>
     </menu>
-    <item label="Reconfigure">
-      <action name="Reconfigure"/>
-    </item>
-    <item label="Restart">
-      <action name="Restart"/>
-    </item>
-    <item label="Exit">
-      <action name="Exit"/>
-    </item>
 
-    <separator/>
-
-    <!-- System -->
-    <menu id="system" label="System">
+    <!-- Power -->
+    <menu id="power" label="Power">
       <item label="Sleep">
         <action name="Execute">
           <command>systemctl suspend</command>

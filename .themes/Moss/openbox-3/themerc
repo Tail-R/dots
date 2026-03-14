@@ -7,8 +7,8 @@ osd.border.width: 2
 window.client.padding.width: 0
 window.client.padding.height: 0
 window.handle.width: 4
-padding.width: 8
-padding.height: 8
+padding.width: 6
+padding.height: 6
 menu.overlap.x: -12
 menu.overlap.y: 0
 
@@ -88,7 +88,7 @@ osd.bg.color: #41444b
 osd.bg.colorTo: #41444b
 osd.label.bg: Parentrelative
 osd.hilight.bg: Flat
-osd.hilight.bg.color: #698c55
+osd.hilight.bg.color: #6e8472
 osd.unhilight.bg: Flat
 osd.unhilight.bg.color: #5a5f5b
 
