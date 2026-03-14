@@ -41,7 +41,7 @@ window.inactive.button.*.hover.image.color: #828282
 # Active window textures
 window.active.title.bg: Gradient Vertical Solid
 window.active.title.bg.color: #6e8472
-window.active.title.bg.colorTo: #2c2b30
+window.active.title.bg.colorTo: #41444b
 window.active.label.bg: Parentrelative
 window.active.handle.bg: Solid
 window.active.handle.bg.color: #41444b
