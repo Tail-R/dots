@@ -10,7 +10,7 @@ let g:colors_name = "dark-theme"
 
 " General
 hi Normal ctermfg=7 ctermbg=none cterm=none
-hi Visual ctermfg=none ctermbg=none cterm=reverse
+hi Visual ctermfg=none ctermbg=0 cterm=none
 hi Cursor ctermfg=none ctermbg=none cterm=reverse
 hi CursorLine ctermfg=none ctermbg=none cterm=none
 hi CursorColumn ctermfg=none ctermbg=none cterm=none
@@ -20,9 +20,9 @@ hi VertSplit ctermfg=0 ctermbg=none cterm=none
 hi EndOfBuffer ctermfg=0 ctermbg=none cterm=none
 
 " Search
-hi Search ctermfg=11 ctermbg=none cterm=underline
+hi Search ctermfg=11 ctermbg=0 cterm=underline
 hi IncSearch ctermfg=15 ctermbg=0 cterm=underline
-hi MatchParen ctermfg=0 ctermbg=13 cterm=none
+hi MatchParen ctermfg=0 ctermbg=8 cterm=none
 
 " Statusline
 hi StatusLine ctermfg=15 ctermbg=none cterm=none
