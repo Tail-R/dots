@@ -28,7 +28,7 @@
   <name>Current</name>
   <!-- N: window icon, L: window label, I: iconify,
     M: maximize, C: close, S: shade, D: omnipresent -->
-  <titleLayout>NLIMC</titleLayout>
+  <titleLayout>NLSIMC</titleLayout>
 
   <keepBorder>yes</keepBorder>
   <animateIconify>yes</animateIconify>
@@ -123,14 +123,35 @@
     <action name="Close"/>
   </keybind>
   <keybind key="W-f">
-    <!-- <action name="ToggleFullscreen"/> -->
     <action name="ToggleMaximize"/>
+    <action name="MoveResizeTo">
+      <x>center</x>
+      <y>center</y>
+    </action>
   </keybind>
   <keybind key="W-i">
     <action name="Iconify"/>
   </keybind>
   <keybind key="W-g">
     <action name="GrowToFill"/>
+  </keybind>
+
+  <!-- Partial maximize -->
+  <keybind key="W-Right">
+    <action name="Unmaximize"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
+      <width>50%</width>
+    </action>
+    <action name="MoveToEdgeEast"/>
+  </keybind>
+  <keybind key="W-Left">
+    <action name="Unmaximize"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
+      <width>50%</width>
+    </action>
+    <action name="MoveToEdgeWest"/>
   </keybind>
 
   <!-- Keybindings for menus -->
@@ -198,7 +219,7 @@
   <!-- Keybindings for running applications -->
   <keybind key="W-d">
     <action name="Execute">
-      <command>~/.local/bin/run</command>
+      <command>run</command>
     </action>
   </keybind>
   <keybind key="W-Return">
