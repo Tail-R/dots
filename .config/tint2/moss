@@ -85,7 +85,7 @@ border_color = #373737 100
 # E - Executor plugin
 # P - Push button
 # : - Separator
-panel_items = TBC
+panel_items = TSBC
 
 # all | primary | 1, 2, ...
 panel_monitor = primary
@@ -176,7 +176,7 @@ task_iconified_background_id = 2
 ##################################################
 # Systray
 ##################################################
-systray_padding = 6 4 4
+systray_padding = 4 4 4
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 0

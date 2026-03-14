@@ -38,7 +38,7 @@ URxvt*thickness: 10
 URxvt*cursorUnderline: false
 URxvt*cursorBlink: true
 URxvt*saveLines: 4096
-URxvt*internalBorder: 12
+URxvt*internalBorder: 4
 URxvt*urlLauncher: firefox
 URxvt*underlineURLs: true
 

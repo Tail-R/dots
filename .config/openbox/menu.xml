@@ -24,14 +24,9 @@
 
     <!-- Applications submenu -->
     <menu id="applications" label="Applications">
-      <item label="Timer">
+      <item label="Libreoffice">
         <action name="Execute">
-          <command>gnome-clocks</command>
-        </action>
-      </item>
-      <item label="Calculator">
-        <action name="Execute">
-          <command>gnome-calculator</command>
+          <command>libreoffice</command>
         </action>
       </item>
       <item label="Inkscape">
@@ -47,6 +42,16 @@
       <item label="VLC media player">
         <action name="Execute">
           <command>vlc</command>
+        </action>
+      </item>
+      <item label="Timer">
+        <action name="Execute">
+          <command>gnome-clocks</command>
+        </action>
+      </item>
+      <item label="Calculator">
+        <action name="Execute">
+          <command>gnome-calculator</command>
         </action>
       </item>
       <item label="pavucontrol">
