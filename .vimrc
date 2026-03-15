@@ -231,9 +231,9 @@ augroup END
 
 augroup xmlTab
     autocmd!
-    autocmd FileType xml set expandtab
-    autocmd FileType xml set tabstop=2
-    autocmd FileType xml set shiftwidth=2
+    autocmd FileType html,xml set expandtab
+    autocmd FileType html,xml set tabstop=2
+    autocmd FileType html,xml set shiftwidth=2
 augroup END
 
 augroup autoShebang
@@ -247,9 +247,13 @@ augroup END
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " XML tag auto completion
-set omnifunc=xmlcomplete#CompleteTags
 augroup MyXML
     autocmd!
-    autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
+    " Set omnifunc for each file type
+    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+    autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+
+    " Map </ to trigger completion automatically
+    autocmd Filetype html,xml inoremap <buffer> </ </<C-x><C-o>
 augroup END
 

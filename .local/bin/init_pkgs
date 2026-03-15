@@ -1,0 +1,14 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+pkg_list="${1:-"./pkg_list"}"
+
+if [ ! -f "$pkg_list" ]; then
+    echo "ERROR: File ${pkg_list} not found"
+
+    exit 1
+fi
+
+comm -12 <(pacman -Slq | sort) <(sort "$pkg_list") | sudo pacman -S --needed -
+

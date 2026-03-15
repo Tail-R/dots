@@ -10,7 +10,7 @@ Xft.hintstyle: hintslight
 !! Xterm
 XTerm.vt100.faceName: monospace
 XTerm.vt100.faceSize: 12
-XTerm.vt100.geometry: 64x32
+XTerm.vt100.geometry: 96x32
 XTerm.vt100.scrollBar: true
 XTerm.vt100.saveLines: 4096
 XTerm.vt100.internalBorder: 0
@@ -23,11 +23,11 @@ XTerm.vt100.internalBorder: 0
 ! urxvt*italicfont: xft:tamzen:style=bold:pixelsize=20
 
 !! Vector font
-urxvt*font: xft:IBMPlexMono:style=regular:size=13, \
-    xft:IBMPlexSansJP:style=regular:size=13
+urxvt*font: xft:IBMPlexMono:style=regular:size=12, \
+    xft:IBMPlexSansJP:style=regular:size=12
 
-urxvt*boldfont: xft:IBMPlexMono:style=bold:size=13
-urxvt*italicfont: xft:IBMPlexMono:style=bold:size=13
+urxvt*boldfont: xft:IBMPlexMono:style=bold:size=12
+urxvt*italicfont: xft:IBMPlexMono:style=bold:size=12
 
 URxvt*letterSpace: 0
 URxvt*geometry: 96x32
