@@ -106,7 +106,8 @@ panel_padding = 2 2 4
 
 panel_background_id = 1
 
-strut_policy = none
+# follow_size | minimum | none
+strut_policy = follow_size
 
 # bottom | normal | top
 panel_layer = bottom
