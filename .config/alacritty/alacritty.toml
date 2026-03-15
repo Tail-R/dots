@@ -1,0 +1,20 @@
+[general]
+import = [ "~/.config/alacritty/themes/moss.toml" ]
+
+[window]
+dimensions = { columns = 96, lines = 32 }
+padding = { x = 4, y = 4 }
+dynamic_title = true
+
+[scrolling]
+history = 10000
+
+[font]
+normal = { family = "monospace", style = "Regular" }
+bold = { family = "monospace", style = "Bold" }
+italic = { family = "monospace", style = "Italic" }
+size = 12
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+

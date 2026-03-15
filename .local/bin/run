@@ -2,7 +2,7 @@
 
 font='monospace-14-Regular'
 
-monitor=-1
+monitor=0
 
 # Light-theme
 # nf='#24292f'
