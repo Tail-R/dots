@@ -16,6 +16,7 @@ My personal Openbox configurations
 
 <tr>
 <td><img src ="assets/screenshot_arctic.png"></td>
+<td><img src ="assets/screenshot_default-light.png"></td>
 </tr>
 
 </table>
