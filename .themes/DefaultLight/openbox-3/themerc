@@ -63,7 +63,7 @@ window.inactive.button.*.disabled.image.color: #888888
 window.inactive.button.*.hover.image.color: #aaaaaa
 
 # Menu colors
-menu.title.text.color: #ffffff
+menu.title.text.color: #24292f
 menu.items.text.color: #24292f
 menu.items.disabled.text.color: #959da5
 menu.items.active.text.color: #24292f
@@ -76,7 +76,7 @@ menu.items.bg.color: #ffffff
 menu.items.active.bg: Flat
 menu.items.active.bg.color: #d1d5da
 menu.title.bg: Solid
-menu.title.bg.color: #cb2431
+menu.title.bg.color: #ffffff
 
 # OSD textures
 osd.label.text.color: #24292f

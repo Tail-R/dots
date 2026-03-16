@@ -1,5 +1,6 @@
 [general]
-import = [ "~/.config/alacritty/themes/moss.toml" ]
+import = [ "~/.config/alacritty/themes/current" ]
+live_config_reload = true
 
 [window]
 dimensions = { columns = 96, lines = 32 }

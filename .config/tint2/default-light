@@ -94,7 +94,7 @@ panel_monitor = primary
 panel_position = bottom center horizontal
 
 # width height
-panel_size = 100% 38
+panel_size = 100% 36
 
 panel_shrink = 0
 
@@ -124,7 +124,7 @@ taskbar_hide_if_empty = 0
 taskbar_distribute_size 1
 
 # horizontal_padding vertical_padding spacing
-taskbar_padding = 0 0 4
+taskbar_padding = 0 0 2
 
 taskbar_background_id = 0
 
