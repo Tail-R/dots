@@ -12,7 +12,7 @@ mkdir -p "$SAVE_DIR"
 # Screen shot file_name
 file_name="${SAVE_DIR}/$(date '+%Y%m%d_%H%M%S').${FILE_EXT}"
 
-case "$1" in 
+case "$1" in
 # entire-screen
 -e) maim -u -m "$Q" "$file_name" ;;
 

@@ -115,10 +115,10 @@
     <menu id="openbox" label="Openbox">
       <menu id="themes" label="Themes">
         <item label="Default-Light">
-          <action name="Execute"><command>switch-openbox-theme Default-Light</command></action>
+          <action name="Execute"><command>switch-theme default-light</command></action>
         </item>
         <item label="Moss">
-          <action name="Execute"><command>switch-openbox-theme Moss</command></action>
+          <action name="Execute"><command>switch-theme moss</command></action>
         </item>
       </menu>
       <item label="Reconfigure">

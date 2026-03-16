@@ -77,9 +77,9 @@ menu.items.bg: Flat
 menu.items.bg.color: #2c2b30
 menu.items.active.bg: Solid
 menu.items.active.bg.color: #41444b
-menu.title.bg: Vertical Gradient Solid
-menu.title.bg.color: #41444b
-menu.title.bg.colorTo: #41444b
+menu.title.bg: Vertical Gradient Flat
+menu.title.bg.color: #2c2b30
+menu.title.bg.colorTo: #2c2b30
 
 # OSD textures
 osd.label.text.color: #c9cad3

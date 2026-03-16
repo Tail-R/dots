@@ -1,0 +1,39 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+if [ -z "${1:-}" ]; then
+    echo "Usage: $0 <theme-name>"
+
+    exit 1
+fi
+
+case "$1" in
+default-light)
+    switch-openbox-theme DefaultLight
+    switch-x11-colors default-light
+    switch-alacritty-theme default-light
+    switch-tint2-theme default-light
+    feh --bg-tile ~/Pictures/walls/soda_tile.png
+    ;;
+
+moss)
+    switch-openbox-theme Moss
+    switch-x11-colors moss
+    switch-alacritty-theme moss
+    switch-tint2-theme moss
+    feh --bg-tile ~/Pictures/walls/moss_tile.png
+    ;;
+soda)
+    switch-openbox-theme Soda
+    switch-x11-colors soda
+    switch-alacritty-theme default-light
+    switch-tint2-theme soda
+    feh --bg-tile ~/Pictures/walls/soda_tile.png
+    ;;
+*)
+    echo "No theme matches: $1"
+    exit 1
+    ;;
+esac
+
