@@ -178,7 +178,7 @@ task_iconified_background_id = 2
 ##################################################
 # Systray
 ##################################################
-systray_padding = 4 4 4
+systray_padding = 4 2 2
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 0

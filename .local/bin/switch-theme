@@ -14,9 +14,8 @@ default-light)
     switch-x11-colors default-light
     switch-alacritty-theme default-light
     switch-tint2-theme default-light
-    feh --bg-tile ~/Pictures/walls/soda_tile.png
+    feh --bg-fill ~/Pictures/walls/kita.png
     ;;
-
 moss)
     switch-openbox-theme Moss
     switch-x11-colors moss
