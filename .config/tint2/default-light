@@ -102,7 +102,7 @@ panel_shrink = 0
 panel_margin = 0 0
 
 # horizontal_padding vertical_padding spacing
-panel_padding = 2 2 4
+panel_padding = 2 2 2
 
 panel_background_id = 1
 
@@ -150,14 +150,14 @@ taskbar_name_active_font_color = #ffffff 100
 ##################################################
 # Taskbar buttons
 ##################################################
-task_icon = 0
+task_icon = 1
 task_text = 1
-task_centered = 1
+task_centered = 0
 task_tooltip = 0
 
 # width height
-task_maximum_size = 320 0
-task_padding = 12 0 0
+task_maximum_size = 280 0
+task_padding = 6 2 6
 
 # [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]
 task_font = monospace 12

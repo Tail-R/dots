@@ -1,0 +1,33 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+ALACT_THEME_DIR="$HOME/.config/alacritty/themes"
+ALACT_THEME_LINK="$ALACT_THEME_DIR/current"
+
+if [ ! -d "$ALACT_THEME_DIR" ]; then
+    echo "Make sure you have $ALACT_THEME_DIR"
+
+    exit 1
+fi
+
+if [ -z "${1:-}" ]; then
+    echo "Usage: $0 <theme-name>"
+    echo "ls $ALACT_THEME_DIR to see the available themes"
+
+    exit 1
+fi
+
+theme_name="$1"
+target_theme="$ALACT_THEME_DIR/$theme_name"
+
+if [ ! -f "$target_theme" ]; then
+    echo "Theme $theme_name doesn't exist"
+
+    exit 1
+fi
+
+# Replace symlink
+ln -sfn "$target_theme" "$ALACT_THEME_LINK"
+echo "Switched Alacritty theme to $theme_name"
+

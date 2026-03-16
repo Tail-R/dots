@@ -1,0 +1,36 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+TINT2_THEME_DIR="$HOME/.config/tint2"
+TINT2_THEME_LINK="$TINT2_THEME_DIR/current"
+
+if [ ! -d "$TINT2_THEME_DIR" ]; then
+    echo "Make sure you have $TINT2_THEME_DIR"
+
+    exit 1
+fi
+
+if [ -z "${1:-}" ]; then
+    echo "Usage: $0 <theme-name>"
+    echo "ls $TINT2_THEME_DIR to see the available themes"
+
+    exit 1
+fi
+
+theme_name="$1"
+target_theme="$TINT2_THEME_DIR/$theme_name"
+
+if [ ! -f "$target_theme" ]; then
+    echo "Theme $theme_name doesn't exist"
+
+    exit 1
+fi
+
+# Replace symlink
+ln -sfn "$target_theme" "$TINT2_THEME_LINK"
+echo "Switched tint2 theme to $theme_name"
+
+pkill -x 'tint2' 2>/dev/null || true
+tint2 -c "$TINT2_THEME_LINK" &
+

@@ -1,8 +1,9 @@
 xrdb -merge ~/.Xresources &
 
 ~/.fehbg &
+picom &
 
-tint2 -c ~/.config/tint2/moss &
+tint2 -c ~/.config/tint2/current &
 
 (sleep 1s && pasystray) &
 (sleep 1s && nm-applet) &
