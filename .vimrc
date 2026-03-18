@@ -39,7 +39,7 @@ set undofile
 set undodir=~/.vim/undo
 
 syntax on
-colorscheme dark-theme
+colorscheme light-theme
 
 " Visualize tabs and trails
 set list
@@ -56,9 +56,9 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " :h statusline to see more details
 
     if g:colors_name ==# 'light-theme'
-        hi HiLeft   ctermfg=0 ctermbg=15 cterm=bold
+        hi HiLeft   ctermfg=0 ctermbg=7 cterm=none
         hi HiCenter ctermfg=0 ctermbg=15 cterm=none
-        hi HiRight  ctermfg=0 ctermbg=15 cterm=bold
+        hi HiRight  ctermfg=0 ctermbg=7 cterm=none
     else
         hi HiLeft   ctermfg=15 ctermbg=8 cterm=bold
         hi HiCenter ctermfg=15 ctermbg=0 cterm=none
@@ -75,6 +75,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " Jump to the right section
     set statusline+=%#HiCenter#
     set statusline+=\ %{GetCurrentFileName()}\ 
+    set statusline+=%{&fileencoding}\ 
     set statusline+=%m%r%=
 
     " Right items
@@ -142,19 +143,21 @@ function GetCurrentMode()
     let mode = mode()
 
     if mode ==# 'n'
-        let current_mode = 'n'
+        let current_mode = 'nor'
     elseif mode ==# 'v'
-        let current_mode = 'v'
+        let current_mode = 'vis'
     elseif mode ==# 'V'
-        let current_mode = 'l'
+        let current_mode = 'v-l'
     elseif mode ==# "\<C-v>"
-        let current_mode = 'b'
+        let current_mode = 'v-b'
     elseif mode ==# 'i'
-        let current_mode = 'i'
+        let current_mode = 'ins'
+    elseif mode ==# 'R'
+        let current_mode = 'rpl'
     elseif mode ==# 'c'
-        let current_mode = 'c'
+        let current_mode = 'cmd'
     elseif mode ==# 't'
-        let current_mode = 't'
+        let current_mode = 'shl'
     else
         let current_mode = mode
     endif
@@ -169,7 +172,7 @@ function GetCurrentFileName()
 endfunction
 
 function GetCurrentFileType()
-    let fileType = expand('%:e')
+    let fileType = &filetype
 
     return fileType == '' ? 'unknown' : fileType
 endfunction

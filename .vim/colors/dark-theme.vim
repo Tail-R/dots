@@ -4,7 +4,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-set background=light
+set background=dark
 
 let g:colors_name = "dark-theme"
 
@@ -36,6 +36,12 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi TabLine ctermfg=15 ctermbg=none cterm=none
     hi TabLineSel ctermfg=15 ctermbg=0 cterm=bold
     hi TabLineFill ctermfg=none ctermbg=none cterm=none
+
+    " Spell
+    hi SpellBad ctermfg=9 ctermbg=none cterm=underline
+    hi SpellCap ctermfg=12 ctermbg=none cterm=underline
+    hi SpellLocal ctermfg=12 ctermbg=none cterm=underline
+    hi SpellRare ctermfg=12 ctermbg=none cterm=underline
 
     " Syntax
     hi Comment ctermfg=8 ctermbg=none cterm=italic

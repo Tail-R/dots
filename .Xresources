@@ -31,7 +31,7 @@ urxvt*italicfont: xft:IBMPlexMono:style=bold:size=12
 
 URxvt*letterSpace: 0
 URxvt*geometry: 96x32
-URxvt*scrollBar: false
+URxvt*scrollBar: true
 URxvt*scrollBar_right: true
 URxvt*thickness: 10
 URxvt*cursorUnderline: false
