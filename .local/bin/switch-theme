@@ -16,6 +16,13 @@ default-light)
     switch-tint2-theme default-light
     feh --bg-fill ~/Pictures/walls/kita.png
     ;;
+solid-light)
+    switch-openbox-theme SolidLight
+    switch-x11-colors default-light
+    switch-alacritty-theme default-light
+    switch-tint2-theme default-light
+    feh --bg-fill ~/Pictures/walls/kita.png
+    ;;
 moss)
     switch-openbox-theme Moss
     switch-x11-colors moss
@@ -25,10 +32,31 @@ moss)
     ;;
 soda)
     switch-openbox-theme Soda
-    switch-x11-colors soda
+    switch-x11-colors default-light
     switch-alacritty-theme default-light
     switch-tint2-theme soda
     feh --bg-tile ~/Pictures/walls/soda_tile.png
+    ;;
+lavender)
+    switch-openbox-theme Lavender
+    switch-x11-colors default-light
+    switch-alacritty-theme default-light
+    switch-tint2-theme soda
+    feh --bg-tile ~/Pictures/walls/lavender_tile.png
+    ;;
+shortcake)
+    switch-openbox-theme Shortcake
+    switch-x11-colors default-light
+    switch-alacritty-theme default-light
+    switch-tint2-theme soda
+    feh --bg-tile ~/Pictures/walls/shortcake_tile.jpg
+    ;;
+arctic)
+    switch-openbox-theme Arctic
+    switch-x11-colors default-light
+    switch-alacritty-theme default-light
+    switch-tint2-theme soda
+    feh --bg-tile ~/Pictures/walls/arctic_tile.jpg
     ;;
 *)
     echo "No theme matches: $1"

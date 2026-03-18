@@ -71,7 +71,7 @@ border_color = #c4cdf3 100
 # E - Executor plugin
 # P - Push button
 # : - Separator
-panel_items = PTFBC
+panel_items = TFBC
 
 # all | primary | 1, 2, ...
 panel_monitor = primary
@@ -103,6 +103,8 @@ panel_window_name = tint2
 
 # single_desktop | multi_desktop
 taskbar_mode = single_desktop
+taskbar_hide_if_empty = 0
+taskbar_distribute_size 1
 
 # horizontal_padding vertical_padding spacing
 taskbar_padding = 0 0 0
@@ -110,13 +112,23 @@ taskbar_padding = 0 0 0
 taskbar_background_id = 0
 
 taskbar_hide_inactive_tasks = 0
+taskbar_hide_different_monitor = 0
+taskbar_hide_different_desktop = 0
 
+# none | title | center
 taskbar_sort_order = center
 
 # left | center | right
 task_align = left
 
-taskbar_name = 0
+taskbar_name = 1
+taskbar_name_padding = 0 0
+taskbar_name_background_id = 0
+taskbar_name_font = monospace Bold 12
+taskbar_name_font_color = #7b6678 100
+
+taskbar_name_active_background_id = 0
+taskbar_name_active_font_color = #7b6678 100
 
 ##################################################
 # Taskbar buttons
@@ -124,7 +136,7 @@ taskbar_name = 0
 task_icon = 0
 task_text = 1
 task_centered = 1
-task_tooltip = 1
+task_tooltip = 0
 
 # width height
 task_maximum_size = 0 0
@@ -134,7 +146,7 @@ task_padding = 0 0 0
 task_font_color = #7b6678 75
 
 # [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]
-task_font = MochiyPopOne Regular 12
+task_font = monospace Bold 12
 task_background_id = 0
 
 # Active task
@@ -160,7 +172,7 @@ systray_monitor = primary
 ##################################################
 time1_format = %H:%M
 time1_timezone = :Asia/Tokyo
-time1_font = MochiyPopOne Regular 12
+time1_font = monospace Bold 12
 clock_font_color = #7b6678 100
 clock_padding = 0 0
 clock_background_id = 0
@@ -171,28 +183,11 @@ clock_tooltip = %b/%d %A
 ##################################################
 battery_low_status = 20
 # battery_low_cmd =
-bat1_font = MochiyPopOne Regular 12
+bat1_font = monospace Bold 12
 battery_font_color = #7b6678 100
 bat1_format = %p
 battery_padding = 0 0
 battery_background_id = 0
-
-##################################################
-# Button
-##################################################
-
-# 1
-button = new
-button_icon = ~/.config/tint2/icons/pfp.png
-button_text = Menu
-button_font = MochiyPopOne Regular 12
-button_font_color = #7b6678 100
-button_background_id = 0
-button_padding = 0 4 4
-button_max_icon_size = 0
-button_lclick_command = my_panel
-button_rclick_command = 
-button_mclick_command = 
 
 ##################################################
 # Separator
@@ -210,14 +205,6 @@ separator_size = 1
 # side_padding cap_padding
 separator_padding = 0 0
 
-# 2
-separator = new
-separator_background_id = 0
-separator_color = #c4cdf3 100
-separator_style = line
-separator_size = 1
-separator_padding = 0 0
-
 ##################################################
 # Tooltip
 ##################################################
@@ -225,6 +212,6 @@ tooltip_padding = 4 4
 tooltip_show_timeout = 0.25
 tooltip_hide_timeout = 0.25
 tooltip_background_id = 4
-tooltip_font = MochiyPopOne Regular 12
+tooltip_font = monospace Bold 12
 tooltip_font_color = #7b6678 100
 
