@@ -57,20 +57,6 @@
         </action>
       </item>
 
-      <!-- Games -->
-      <menu id="games" label="Games">
-        <item label="Minesweeper">
-          <action name="Execute">
-            <command>gnome-mines</command>
-          </action>
-        </item>
-        <item label="Solitaire">
-          <action name="Execute">
-            <command>sol</command>
-          </action>
-        </item>
-      </menu>
-
       <!-- Screenshot -->
       <menu id="screenshot" label="Screenshot">
         <item label="entire-screen">
