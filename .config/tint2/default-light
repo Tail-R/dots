@@ -4,8 +4,8 @@
 
 # Panel
 gradient = vertical
-start_color = #f5f5f5 100
-end_color = #f5f5f5 100
+start_color = #fafafa 100
+end_color = #fafafa 100
 
 # Normal
 gradient = vertical
@@ -19,10 +19,10 @@ end_color = #d1d5da 100
 
 # Item
 gradient = vertical
-start_color = #cb2431 100
-end_color = #cb2431 100
+start_color = #d1d5da 100
+end_color = #d1d5da 100
 
-#################################################
+##################################################
 # Backgrounds
 ##################################################
 
@@ -41,7 +41,7 @@ rounded = 0
 border_width = 1
 border_sides = TRBL
 background_color = #000000 0
-border_color = #f5f5f5 100
+border_color = #cccccc 100
 gradient_id = 2
 gradient_id_hover = 2
 gradient_id_pressed = 2
@@ -51,7 +51,7 @@ rounded = 0
 border_width = 1
 border_sides = TRBL
 background_color = #000000 0
-border_color = #f5f5f5 100
+border_color = #aaaaaa 100
 gradient_id = 3
 gradient_id_hover = 3
 gradient_id_pressed = 3
@@ -61,7 +61,7 @@ rounded = 0
 border_width = 1
 border_sides = TRBL
 background_color = #000000 0
-border_color = #b3202c 100
+border_color = #aaaaaa 100
 gradient_id = 4
 gradient_id_hover = 4
 gradient_id_pressed = 4
@@ -94,7 +94,7 @@ panel_monitor = primary
 panel_position = bottom center horizontal
 
 # width height
-panel_size = 100% 32
+panel_size = 100% 34
 
 panel_shrink = 0
 
@@ -102,7 +102,7 @@ panel_shrink = 0
 panel_margin = 0 0
 
 # horizontal_padding vertical_padding spacing
-panel_padding = 0 0 0
+panel_padding = 1 1 1
 
 panel_background_id = 1
 
@@ -124,7 +124,7 @@ taskbar_hide_if_empty = 0
 taskbar_distribute_size 1
 
 # horizontal_padding vertical_padding spacing
-taskbar_padding = 0 0 0
+taskbar_padding = 0 0 1
 
 taskbar_background_id = 0
 
@@ -139,13 +139,13 @@ taskbar_sort_order = center
 task_align = left
 
 taskbar_name = 1
-taskbar_name_padding = 12 0
+taskbar_name_padding = 6 0
 taskbar_name_background_id = 0
 taskbar_name_font = monospace Bold 12
-taskbar_name_font_color = #ffffff 100
+taskbar_name_font_color = #24292f 100
 
 taskbar_name_active_background_id = 4
-taskbar_name_active_font_color = #ffffff 100
+taskbar_name_active_font_color = #24292f 100
 
 ##################################################
 # Taskbar buttons
@@ -157,8 +157,7 @@ task_tooltip = 0
 
 # width height
 task_maximum_size = 280 0
-task_padding = 4 2 4
-
+task_padding = 6 2 6
 
 # [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]
 task_font = monospace 12
@@ -173,13 +172,13 @@ task_active_font_color = #24292f 100
 task_active_background_id = 3
 
 # Iconified task
-task_iconified_font_color = #24292f 50
+task_iconified_font_color = #24292f 75
 task_iconified_background_id = 2
 
 ##################################################
 # Systray
 ##################################################
-systray_padding = 4 2 4
+systray_padding = 4 2 2
 systray_background_id = 0
 systray_sort = ascending
 systray_icon_size = 0
@@ -192,8 +191,8 @@ systray_monitor = primary
 time1_format = %H:%M
 time1_timezone = :Asia/Tokyo
 time1_font = monospace Bold 12
-clock_font_color = #ffffff 100
-clock_padding = 12 0
+clock_font_color = #24292f 100
+clock_padding = 6 0
 clock_background_id = 4
 clock_tooltip = %a %b %d
 
@@ -203,9 +202,9 @@ clock_tooltip = %a %b %d
 battery_low_status = 20
 # battery_low_cmd =
 bat1_font = monospace Bold 12
-battery_font_color = #ffffff 100
+battery_font_color = #24292f 100
 bat1_format = %p
-battery_padding = 12 0
+battery_padding = 6 0
 battery_background_id = 4
 
 ##################################################

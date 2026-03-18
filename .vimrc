@@ -39,6 +39,8 @@ set undofile
 set undodir=~/.vim/undo
 
 syntax on
+
+" Color scheme
 colorscheme light-theme
 
 " Visualize tabs and trails

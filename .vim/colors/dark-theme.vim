@@ -28,8 +28,8 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi MatchParen ctermfg=15 ctermbg=0 cterm=none
 
     " Statusline
-    hi StatusLine ctermfg=15 ctermbg=0 cterm=none
-    hi StatusLineNC ctermfg=15 ctermbg=0 cterm=none
+    hi StatusLine ctermfg=none ctermbg=none cterm=none
+    hi StatusLineNC ctermfg=none ctermbg=none cterm=none
     hi WildMenu ctermfg=15 ctermbg=8 cterm=none
 
     " TabLine

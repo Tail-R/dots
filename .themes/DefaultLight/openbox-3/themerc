@@ -29,8 +29,9 @@ window.active.label.text.color: #ffffff
 window.inactive.label.text.color: #cb2431
 
 # Active window textures
-window.active.title.bg: Solid
+window.active.title.bg: Horizontal Solid Gradient
 window.active.title.bg.color: #cb2431
+window.active.title.bg.colorTo: #cb2431
 window.active.label.bg: Parentrelative
 window.active.handle.bg: Solid
 window.active.handle.bg.color: #ffffff
@@ -38,8 +39,9 @@ window.active.grip.bg: Solid
 window.active.grip.bg.color: #ffffff
 
 # Inactive window textures
-window.inactive.title.bg: Solid
+window.inactive.title.bg: Horizontal Solid Gradient
 window.inactive.title.bg.color: #ffffff
+window.inactive.title.bg.colorTo: #ffffff
 window.inactive.label.bg: Parentrelative
 window.inactive.handle.bg: Solid
 window.inactive.handle.bg.color: #ffffff
@@ -48,7 +50,6 @@ window.inactive.grip.bg.color: #ffffff
 
 # Active window button textures
 window.active.button.*.bg: Parentrelative
-window.active.button.*.color: #ffffff
 window.active.button.*.unpressed.image.color: #ffffff
 window.active.button.*.pressed.image.color: #cccccc
 window.active.button.*.disabled.image.color: #888888
@@ -56,7 +57,7 @@ window.active.button.*.hover.image.color: #aaaaaa
 
 # Inactive window button textures
 window.inactive.button.*.bg: Parentrelative
-window.inactive.button.*.color: #ffffff
+window.inactive.button.*.color: #e1e5ea
 window.inactive.button.*.unpressed.image.color: #24292f
 window.inactive.button.*.pressed.image.color: #cccccc
 window.inactive.button.*.disabled.image.color: #888888
