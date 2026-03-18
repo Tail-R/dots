@@ -8,7 +8,7 @@
 *.color4:  #174d8f
 *.color5:  #744d99
 *.color6:  #157685
-*.color7:  #babec3
+*.color7:  #d1d5da
 
 *.color8:  #4f5966
 *.color9:  #cb2431
@@ -17,5 +17,5 @@
 *.color12: #1b5cab
 *.color13: #8759b3
 *.color14: #188899
-*.color15: #d1d5da
+*.color15: #e1e5ea
 

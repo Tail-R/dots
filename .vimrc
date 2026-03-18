@@ -56,9 +56,9 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " :h statusline to see more details
 
     if g:colors_name ==# 'light-theme'
-        hi HiLeft   ctermfg=0 ctermbg=7 cterm=none
+        hi HiLeft   ctermfg=0 ctermbg=7 cterm=bold
         hi HiCenter ctermfg=0 ctermbg=15 cterm=none
-        hi HiRight  ctermfg=0 ctermbg=7 cterm=none
+        hi HiRight  ctermfg=0 ctermbg=7 cterm=bold
     else
         hi HiLeft   ctermfg=15 ctermbg=8 cterm=bold
         hi HiCenter ctermfg=15 ctermbg=0 cterm=none
