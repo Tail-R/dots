@@ -19,7 +19,7 @@
     </item>
     <item label="File Manager">
       <action name="Execute">
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
     </item>
 
@@ -100,11 +100,29 @@
     <separator/>
     <menu id="openbox" label="Openbox">
       <menu id="themes" label="Themes">
-        <item label="Default-Light">
+        <item label="DefaultLight">
           <action name="Execute"><command>switch-theme default-light</command></action>
+        </item>
+        <item label="SolidLight">
+          <action name="Execute"><command>switch-theme solid-light</command></action>
         </item>
         <item label="Moss">
           <action name="Execute"><command>switch-theme moss</command></action>
+        </item>
+        <item label="HoneyOats">
+          <action name="Execute"><command>switch-theme honey-oats</command></action>
+        </item>
+        <item label="Soda">
+          <action name="Execute"><command>switch-theme soda</command></action>
+        </item>
+        <item label="Lavender">
+          <action name="Execute"><command>switch-theme lavender</command></action>
+        </item>
+        <item label="Shortcake">
+          <action name="Execute"><command>switch-theme shortcake</command></action>
+        </item>
+        <item label="Arctic">
+          <action name="Execute"><command>switch-theme arctic</command></action>
         </item>
       </menu>
       <item label="Reconfigure">

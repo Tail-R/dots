@@ -186,3 +186,420 @@
 2026-03-08T05:46:27 player: played "spotifydown.com - Voice From Darkness.mp3"
 2026-03-08T05:49:57 player: played "spotifydown.com - Warzone.mp3"
 2026-03-08T05:50:10 player: played "spotifydown.com - Warzone.mp3"
+2026-03-14T13:19:33 player: played "spotifydown.com - Hydra.mp3"
+2026-03-14T13:19:53 player: played "spotifydown.com - Hydra.mp3"
+2026-03-14T13:19:58 player: played "spotifydown.com - Hydra.mp3"
+2026-03-14T13:30:40 player: played "spotifydown.com - Hydra.mp3"
+2026-03-14T22:45:18 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-14T22:45:18 exception: Failed to open audio output
+2026-03-14T22:45:22 player: played "spotifydown.com - 青春コンプレックス.mp3"
+2026-03-15T15:55:01 player: played "spotifydown.com - 青春コンプレックス.mp3"
+2026-03-17T02:51:13 player: played "spotifydown.com - The 7 Seas.mp3"
+2026-03-21T04:53:10 player: played "spotifydown.com - The 7 Seas.mp3"
+2026-03-21T04:55:41 player: played "spotifydown.com - The 7 Seas.mp3"
+2026-03-21T04:55:58 player: played "spotifydown.com - Voice From Darkness.mp3"
+2026-03-21T07:52:14 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-21T07:52:14 exception: Failed to open audio output
+2026-03-21T07:52:17 player: played "spotifydown.com - Voice From Darkness.mp3"
+2026-03-21T07:52:29 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-21T07:52:29 exception: Failed to open audio output
+2026-03-22T02:08:31 update: removing spotifydown.com - ただ君に晴れ.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 青春コンプレックス.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 星座になれたら.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 花に亡霊.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - だから僕は音楽を辞めた.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 雨とカプチーノ.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Warzone.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Voice From Darkness.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - U Got That.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - SO TIRED.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 夜の踊り子.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Aoi.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Double Jump.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - The 7 Seas.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Otona !.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Journey.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Hydra.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - ただ君に晴れ.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 青春コンプレックス.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 星座になれたら.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 花に亡霊.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - だから僕は音楽を辞めた.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 雨とカプチーノ.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Warzone.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Voice From Darkness.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - U Got That.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - SO TIRED.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - 夜の踊り子.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Aoi.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Double Jump.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - The 7 Seas.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Otona !.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Journey.mp3
+2026-03-22T02:08:31 update: removing spotifydown.com - Hydra.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - ただ君に晴れ.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 春泥棒.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - ただ君に晴れ.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 藍二乗.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 晴る.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 春泥棒.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 雨とカプチーノ.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 藍二乗.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - だから僕は音楽を辞めた.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 晴る.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 花に亡霊.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 雨とカプチーノ.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - だから僕は音楽を辞めた.mp3
+2026-03-22T02:16:12 update: added /ヨルシカ - 花に亡霊.mp3
+2026-03-22T02:16:12 exception: Failed to save database: Failed to commit /home/tailr/.config/mpd/database: File exists
+2026-03-22T02:18:08 update: added /Burglar - Yorushika.mp3
+2026-03-22T02:18:08 update: added /Burglar - Yorushika.mp3
+2026-03-22T02:19:02 update: added /ヨルシカ - 昼鳶.mp3
+2026-03-22T02:19:02 update: removing Burglar - Yorushika.mp3
+2026-03-22T02:19:02 update: added /ヨルシカ - 昼鳶.mp3
+2026-03-22T02:19:02 update: removing Burglar - Yorushika.mp3
+2026-03-22T02:22:16 player: played "ヨルシカ - 昼鳶.mp3"
+2026-03-22T02:23:35 update: updating /ヨルシカ - だから僕は音楽を辞めた.mp3
+2026-03-22T02:23:43 update: updating /ヨルシカ - だから僕は音楽を辞めた.mp3
+2026-03-22T02:23:57 update: updating /ヨルシカ - ただ君に晴れ.mp3
+2026-03-22T02:24:06 update: updating /ヨルシカ - ただ君に晴れ.mp3
+2026-03-22T02:24:15 update: updating /ヨルシカ - 春泥棒.mp3
+2026-03-22T02:24:23 update: updating /ヨルシカ - 春泥棒.mp3
+2026-03-22T02:24:32 update: updating /ヨルシカ - 晴る.mp3
+2026-03-22T02:24:39 update: updating /ヨルシカ - 晴る.mp3
+2026-03-22T02:25:00 update: updating /ヨルシカ - 花に亡霊.mp3
+2026-03-22T02:25:08 update: updating /ヨルシカ - 花に亡霊.mp3
+2026-03-22T02:25:15 update: updating /ヨルシカ - 藍二乗.mp3
+2026-03-22T02:25:22 update: updating /ヨルシカ - 藍二乗.mp3
+2026-03-22T02:25:30 update: updating /ヨルシカ - 雨とカプチーノ.mp3
+2026-03-22T02:25:37 update: updating /ヨルシカ - 雨とカプチーノ.mp3
+2026-03-22T02:25:58 update: updating /ヨルシカ - 昼鳶.mp3
+2026-03-22T02:26:03 update: updating /ヨルシカ - 昼鳶.mp3
+2026-03-22T02:31:07 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T02:41:09 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T02:41:09 exception: Failed to open audio output
+2026-03-22T02:45:35 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T02:48:55 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T02:52:58 player: played "ヨルシカ - 花に亡霊.mp3"
+2026-03-22T02:57:57 player: played "ヨルシカ - 春泥棒.mp3"
+2026-03-22T03:02:33 player: played "ヨルシカ - 晴る.mp3"
+2026-03-22T03:06:43 player: played "ヨルシカ - 藍二乗.mp3"
+2026-03-22T03:09:26 player: played "ヨルシカ - 昼鳶.mp3"
+2026-03-22T03:13:55 player: played "ヨルシカ - 雨とカプチーノ.mp3"
+2026-03-22T03:18:40 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T03:25:09 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:25:49 player: played "ヨルシカ - 花に亡霊.mp3"
+2026-03-22T03:32:32 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:36:20 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:39:50 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:43:10 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:46:29 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:49:49 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:53:09 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:56:29 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T03:59:49 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:03:08 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:06:28 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:09:48 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:13:08 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:16:28 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:19:48 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:24:43 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:28:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:31:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:34:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:38:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:41:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:44:41 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:48:01 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:51:21 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:54:41 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T04:58:01 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:01:20 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:04:38 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:04:38 exception: Failed to open audio output
+2026-03-22T05:05:15 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:05:35 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:05:35 exception: Failed to open audio output
+2026-03-22T05:06:10 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:10 exception: Failed to open audio output
+2026-03-22T05:06:11 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:11 exception: Failed to open audio output
+2026-03-22T05:06:12 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:12 exception: Failed to open audio output
+2026-03-22T05:06:13 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:13 exception: Failed to open audio output
+2026-03-22T05:06:16 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:16 exception: Failed to open audio output
+2026-03-22T05:06:46 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:46 exception: Failed to open audio output
+2026-03-22T05:06:48 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:48 exception: Failed to open audio output
+2026-03-22T05:06:49 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:49 exception: Failed to open audio output
+2026-03-22T05:06:51 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T05:06:55 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-22T05:06:55 exception: Failed to open audio output
+2026-03-22T05:09:41 exception: Failed to commit /home/tailr/.config/mpd/state: File exists
+2026-03-22T05:09:41 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T05:31:10 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:35:04 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:38:24 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:41:43 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:45:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:48:23 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:51:43 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:55:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T05:58:23 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:01:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:05:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:08:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:11:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:15:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:18:21 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:21:41 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:25:01 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:28:21 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:31:41 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:35:00 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:38:20 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:41:40 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:45:00 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:48:20 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:51:40 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:54:59 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T06:58:19 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:01:39 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:04:59 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:08:19 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:11:38 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:14:58 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:18:18 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:21:38 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:24:58 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:28:17 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:31:37 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:34:57 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:38:17 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:41:37 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:44:56 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:48:16 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:51:36 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:54:56 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T07:58:16 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:01:36 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:04:55 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:08:15 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:11:35 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:14:55 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:18:15 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:21:34 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:24:54 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:28:14 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:31:34 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:34:54 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:38:13 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:41:33 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:44:53 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:48:13 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:51:33 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:54:52 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T08:58:12 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:01:32 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:04:52 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:08:12 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:11:32 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:14:51 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:18:11 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:21:31 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:24:51 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:28:11 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:31:30 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:34:50 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:38:10 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:41:30 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:44:50 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:48:09 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:51:29 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:54:49 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T09:58:09 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:01:29 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:04:48 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:08:08 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:11:28 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:14:48 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:18:08 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:21:27 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:24:47 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:28:07 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:31:27 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:34:47 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:38:07 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:41:26 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:44:46 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:48:06 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:51:26 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:54:46 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T10:58:05 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:01:25 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:04:45 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:08:05 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:11:25 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:14:44 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:18:04 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:21:24 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:24:44 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:28:04 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:31:24 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:34:43 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:38:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:41:23 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:44:43 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:48:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:51:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:54:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T11:58:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:05:38 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:09:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:12:23 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:15:43 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:19:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:22:23 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:25:43 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:29:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:32:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:35:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:39:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:42:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:45:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:49:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:52:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:55:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T12:59:01 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T13:02:21 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T13:05:41 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T13:11:18 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:15:25 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:19:31 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:23:37 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:27:43 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:31:49 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:35:55 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:40:02 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:44:08 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:48:14 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:52:20 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T13:56:26 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:00:32 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:04:38 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:08:45 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:12:51 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:16:57 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:21:03 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:25:09 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:29:15 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:33:21 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:37:27 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:41:34 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:45:40 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:49:46 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:53:52 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T14:57:58 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:02:04 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:06:11 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:10:17 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:14:23 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:18:29 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:22:35 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:26:41 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:30:47 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:34:54 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:39:00 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:43:06 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T15:47:12 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T16:36:41 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T16:40:47 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T16:44:53 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T16:49:00 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T16:53:06 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T16:57:12 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T19:56:49 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T20:00:55 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T20:05:01 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T20:09:08 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T20:13:14 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T20:46:42 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T20:48:38 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-22T21:43:59 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T21:47:19 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T21:50:38 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T21:53:58 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T21:57:18 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:00:38 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:03:58 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:07:17 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:10:37 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:13:57 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:17:17 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:20:37 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:23:57 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:27:16 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:30:36 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:33:56 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:37:16 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:40:36 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:43:55 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:47:15 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:50:35 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:53:55 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T22:57:15 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:00:35 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:03:54 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:07:14 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:10:34 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:13:54 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:17:14 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:20:33 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:23:53 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:27:13 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:30:33 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:33:53 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:37:12 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:40:32 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:43:52 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:47:12 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:50:32 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:53:51 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-22T23:57:11 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:00:31 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:03:51 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:07:11 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:12:59 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:16:19 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:19:39 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:22:59 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:26:18 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:29:38 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:32:58 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:36:18 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:39:49 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:42:03 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:46:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:49:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:52:42 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:56:02 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T00:59:22 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T01:02:57 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T01:07:57 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T01:11:17 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T01:14:37 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T01:17:57 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T01:20:33 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T02:04:58 player: played "ヨルシカ - だから僕は音楽を辞めた.mp3"
+2026-03-23T02:08:39 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T02:11:59 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T02:16:52 player: played "ヨルシカ - ただ君に晴れ.mp3"
+2026-03-23T02:24:16 output: Failed to play on "pulse audio" (pulse): suspended
+2026-03-23T02:24:16 exception: Failed to open audio output
+2026-03-23T02:33:15 mixer: Failed to set mixer for "pulse audio": disconnected
+2026-03-23T02:33:15 exception: Failed to set mixer for "pulse audio"; disconnected

@@ -28,13 +28,13 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>IBMPlexSans</name>
-      <size>13</size>
+      <size>12</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
     <font place="InactiveWindow">
       <name>IBMPlexSans</name>
-      <size>13</size>
+      <size>12</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
@@ -493,11 +493,8 @@
     <application class="firefox">
       <decor>no</decor>
     </application>
-    <application class="Zathura">
-      <decor>no</decor>
-    </application>
     <application class="feh">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
   </applications>
   <dock>

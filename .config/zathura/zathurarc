@@ -1,0 +1,21 @@
+# General
+set font "monospace 12"
+set default-fg "#24292f"
+set default-bg "#fafafa"
+
+# Window
+set window-title-basename true
+
+# Status bar
+set statusbar-basename true
+set statusbar-fg "#fafafa"
+set statusbar-bg "#24292f"
+set statusbar-h-padding 12
+set statusbar-v-padding 0
+
+# Recolor
+set recolor true
+set recolor-keephue true
+set recolor-darkcolor "#fafafa"
+set recolor-lightcolor "#4f5966"
+

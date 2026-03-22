@@ -4,7 +4,7 @@ live_config_reload = true
 
 [window]
 dimensions = { columns = 96, lines = 32 }
-padding = { x = 4, y = 4 }
+padding = { x = 0, y = 0 }
 dynamic_title = true
 
 [scrolling]
@@ -14,8 +14,9 @@ history = 10000
 normal = { family = "monospace", style = "Regular" }
 bold = { family = "monospace", style = "Bold" }
 italic = { family = "monospace", style = "Italic" }
-size = 12
+size = 11
 
 [cursor]
-style = { shape = "Beam", blinking = "Always" }
+# shape = Block | Beam
+style = { shape = "Block", blinking = "Always" }
 

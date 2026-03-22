@@ -1,4 +1,5 @@
 #include "/home/tailr/.config/X11/colors/current"
+#include "/home/tailr/.config/nsxiv/config"
 
 !! Xft
 Xft.dpi: 96
@@ -9,7 +10,7 @@ Xft.hintstyle: hintslight
 
 !! Xterm
 XTerm.vt100.faceName: monospace
-XTerm.vt100.faceSize: 12
+XTerm.vt100.faceSize: 11
 XTerm.vt100.geometry: 96x32
 XTerm.vt100.scrollBar: true
 XTerm.vt100.saveLines: 4096
@@ -23,27 +24,23 @@ XTerm.vt100.internalBorder: 0
 ! urxvt*italicfont: xft:tamzen:style=bold:pixelsize=20
 
 !! Vector font
-urxvt*font: xft:IBMPlexMono:style=regular:size=12, \
-    xft:IBMPlexSansJP:style=regular:size=12
-
-urxvt*boldfont: xft:IBMPlexMono:style=bold:size=12
-urxvt*italicfont: xft:IBMPlexMono:style=bold:size=12
+urxvt*font: xft:IBMPlexMono:style=regular:size=11, \
+    xft:IBMPlexSansJP:style=regular:size=11
+urxvt*boldfont: xft:IBMPlexMono:style=bold:size=11
+urxvt*italicfont: xft:IBMPlexMono:style=bold:size=11
 
 URxvt*letterSpace: 0
 URxvt*geometry: 96x32
 URxvt*scrollBar: true
 URxvt*scrollBar_right: true
-URxvt*thickness: 10
+URxvt*thickness: 12
 URxvt*cursorUnderline: false
 URxvt*cursorBlink: true
 URxvt*saveLines: 4096
-URxvt*internalBorder: 4
+URxvt*internalBorder: 0
 URxvt*urlLauncher: firefox
 URxvt*underlineURLs: true
 
 URxvt*keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt*keysym.Control-Shift-V: eval:paste_clipboard
-
-!! Nsxiv
-Nsxiv.bar.font: monospace-14-Regular
 

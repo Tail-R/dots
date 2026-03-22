@@ -30,6 +30,13 @@ moss)
     switch-tint2-theme moss
     feh --bg-tile ~/Pictures/walls/moss_tile.png
     ;;
+honey-oats)
+    switch-openbox-theme HoneyOats
+    switch-x11-colors default-light
+    switch-alacritty-theme default-light
+    switch-tint2-theme honey-oats
+    feh --bg-tile ~/Pictures/walls/honey_oats_tile.png
+    ;;
 soda)
     switch-openbox-theme Soda
     switch-x11-colors default-light

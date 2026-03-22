@@ -53,39 +53,37 @@ set listchars=tab:→\ ,trail:•
 set laststatus=2 " Show always
 set noshowmode
 
-if (&t_Co ?? 0) >= 16 && ! has('gui_running')
+" if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     " Set user highlight group to User{N} [The N must be 1 ~ 9]
     " :h statusline to see more details
 
-    if g:colors_name ==# 'light-theme'
-        hi HiLeft   ctermfg=0 ctermbg=7 cterm=bold
-        hi HiCenter ctermfg=0 ctermbg=15 cterm=none
-        hi HiRight  ctermfg=0 ctermbg=7 cterm=bold
-    else
-        hi HiLeft   ctermfg=15 ctermbg=8 cterm=bold
-        hi HiCenter ctermfg=15 ctermbg=0 cterm=none
-        hi HiRight  ctermfg=15 ctermbg=8 cterm=bold
-    endif
-
-    " Set color scheme
-    set statusline=%1*
-    set statusline+=%#HiLeft#
-    set statusline+=\ %{GetCurrentMode()}\ 
+    " if g:colors_name ==# 'light-theme'
+    "     hi HiLeft   ctermfg=0 ctermbg=7 cterm=bold
+    "     hi HiCenter ctermfg=0 ctermbg=15 cterm=none
+    "     hi HiRight  ctermfg=0 ctermbg=7 cterm=bold
+    " else
+    "     hi HiLeft   ctermfg=15 ctermbg=8 cterm=bold
+    "     hi HiCenter ctermfg=15 ctermbg=0 cterm=none
+    "     hi HiRight  ctermfg=15 ctermbg=8 cterm=bold
+    " endif
 
     " Left items
+    set statusline+=%#HiLeft#
+    set statusline+=\ %{GetCurrentMode()}
+    set statusline+=\ \|\ 
+    set statusline+=%{GetCurrentFileName()}\ 
+    " set statusline+=%{GetCurrentFileType()}\ 
+    set statusline+=%m\ %r\ 
 
     " Jump to the right section
     set statusline+=%#HiCenter#
-    set statusline+=\ %{GetCurrentFileName()}\ 
-    set statusline+=%{&fileencoding}\ 
-    set statusline+=%m%r%=
+    set statusline+=%=
 
     " Right items
-    set statusline+=\ %l:%c\ %LL\ 
-
     set statusline+=%#HiRight#
-    set statusline+=\ %{GetCurrentFileType()}\ 
-endif
+    set statusline+=Ln\ %l,\ Col\ %c\ \ %P\ \|\ 
+    set statusline+=%{GetFileEncoding()}\ 
+" endif
 
 "
 " Tab Line
@@ -145,21 +143,21 @@ function GetCurrentMode()
     let mode = mode()
 
     if mode ==# 'n'
-        let current_mode = 'nor'
+        let current_mode = 'Normal'
     elseif mode ==# 'v'
-        let current_mode = 'vis'
+        let current_mode = 'Visual'
     elseif mode ==# 'V'
-        let current_mode = 'v-l'
+        let current_mode = 'V-Line'
     elseif mode ==# "\<C-v>"
-        let current_mode = 'v-b'
+        let current_mode = 'V-Block'
     elseif mode ==# 'i'
-        let current_mode = 'ins'
+        let current_mode = 'Insert'
     elseif mode ==# 'R'
-        let current_mode = 'rpl'
+        let current_mode = 'Replace'
     elseif mode ==# 'c'
-        let current_mode = 'cmd'
+        let current_mode = 'Command'
     elseif mode ==# 't'
-        let current_mode = 'shl'
+        let current_mode = 'Terminal'
     else
         let current_mode = mode
     endif
@@ -168,15 +166,19 @@ function GetCurrentMode()
 endfunction
 
 function GetCurrentFileName()
-    let fileName = expand('%:t')
+    let file_name = expand('%:t')
 
-    return fileName == '' ? '[No Name]' : fileName
+    return file_name == '' ? '[No Name]' : file_name
 endfunction
 
 function GetCurrentFileType()
-    let fileType = &filetype
+    let file_type = &filetype
 
-    return fileType == '' ? 'unknown' : fileType
+    return file_type == '' ? '' : '[' .. file_type .. ']'
+endfunction
+
+function GetFileEncoding()
+    return (&fileencoding !=# '' ? &fileencoding : &encoding) .. ' [' .. &fileformat .. ']'
 endfunction
 
 " Tab Appearance

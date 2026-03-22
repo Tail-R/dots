@@ -25,15 +25,15 @@ autocenter_mode = "no"
 # UI options
 user_interface = "classic" # classic or alternative
 
-header_visibility = "no"
-statusbar_visibility = "no"
-titles_visibility = "no"
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "yes"
 enable_window_title = "yes"
 
 progressbar_look = "▃▃▃"
 
-progressbar_elapsed_color = "13"
-progressbar_color = "16"
+progressbar_elapsed_color = "1"
+progressbar_color = "8"
 
 statusbar_color = "1"
 
@@ -41,5 +41,5 @@ statusbar_color = "1"
 current_item_prefix = "$1> "
 current_item_suffix = ""
 
-song_columns_list_format = "(65)[8]{tl} (25)[3]{ar} (8)[10]{lr}"
+song_columns_list_format = "(65)[1]{tl} (25)[6]{ar} (8)[7]{lr}"
 

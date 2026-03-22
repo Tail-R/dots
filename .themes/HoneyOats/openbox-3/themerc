@@ -1,0 +1,122 @@
+# Geometry
+border.width: 2
+menu.border.width: 1
+menu.separator.width: 1
+menu.separator.padding.width: 0
+osd.border.width: 1
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 8
+padding.width: 2
+padding.height: 2
+menu.overlap.x: -2
+menu.overlap.y: 0
+
+# Border colors
+window.active.border.color: #cccccc
+window.active.title.separator.color: #cccccc
+window.active.client.color: #ffffff
+
+window.inactive.border.color: #cccccc
+window.inactive.title.separator.color: #cccccc
+window.inactive.client.color: #ffffff
+
+menu.border.color: #cccccc
+osd.border.color: #cccccc
+
+# Titlebar colors
+window.active.label.text.color: #24292f
+window.active.label.text.font: shadow=y:shadowtint=8:shadowoffset=2
+window.inactive.label.text.color: #888888
+window.inactive.label.text.font: shadow=y:shadowtint=8:shadowoffset=2
+
+# Active window textures
+window.active.title.bg: Solid Radial Gradient
+window.active.title.bg.color: #ffffff
+window.active.title.bg.colorTo: #bebbc9
+window.active.label.bg: Solid Vertical Gradient Sunken
+window.active.label.bg.color: #bebbc9
+window.active.label.bg.colorTo: #ffffff
+window.active.handle.bg: Solid Vertical Gradient
+window.active.handle.bg.color: #ffffff
+window.active.handle.bg.colorTo: #bebbc9
+window.active.grip.bg: Solid Vertical Gradient
+window.active.grip.bg.color: #ffffff
+window.active.grip.bg.colorTo: #bebbc9
+
+# Inactive window textures
+window.inactive.title.bg: Solid Radial Gradient
+window.inactive.title.bg.color: #ffffff
+window.inactive.title.bg.colorTo: #bebbc9
+window.inactive.label.bg: Solid Vertical Gradient Sunken
+window.inactive.label.bg.color: #ffffff
+window.inactive.label.bg.colorTo: #bebbc9
+window.inactive.handle.bg: Solid Vertical Gradient
+window.inactive.handle.bg.color: #ffffff
+window.inactive.handle.bg.colorTo: #bebbc9
+window.inactive.grip.bg: Solid Vertical Gradient
+window.inactive.grip.bg.color: #ffffff
+window.inactive.grip.bg.colorTo: #bebbc9
+
+# Active window button textures
+window.active.button.*.unpressed.bg: Solid Radial Gradient Raised
+window.active.button.*.pressed.bg: Solid Radial Gradient Sunken
+window.active.button.*.disabled.bg: Solid Radial Gradient Raised
+window.active.button.*.bg.color: #ffffff
+window.active.button.*.bg.colorTo: #bebbc9
+window.active.button.*.unpressed.image.color: #24292f
+window.active.button.*.pressed.image.color: #cccccc
+window.active.button.*.disabled.image.color: #cccccc
+window.active.button.*.hover.image.color: #888888
+
+# Inactive window button textures
+window.inactive.button.*.unpressed.bg: Solid Radial Gradient Raised
+window.inactive.button.*.pressed.bg: Solid Radial Gradient Sunken
+window.inactive.button.*.disabled.bg: Solid Radial Gradient Raised
+window.inactive.button.*.bg.color: #ffffff
+window.inactive.button.*.bg.colorTo: #bebbc9
+window.inactive.button.*.unpressed.image.color: #888888
+window.inactive.button.*.pressed.image.color: #cccccc
+window.inactive.button.*.disabled.image.color: #cccccc
+window.inactive.button.*.hover.image.color: #888888
+
+# Menu colors
+menu.title.text.color: #d1d5de
+menu.title.text.font: shadow=y:shadowtint=8:shadowoffset=2
+menu.items.text.color: #e1e5ea
+menu.items.disabled.text.color: #aaaaaa
+menu.items.active.text.color: #24292f
+menu.items.active.disabled.text.color: #aaaaaa
+menu.separator.color: #cccccc
+
+# Menu textures
+menu.title.bg: Flat
+menu.title.bg.color: #24292f
+menu.items.bg: Solid Vertical Gradient
+menu.items.bg.color: #24292f
+menu.items.active.bg: Solid SplitVertical Gradient
+menu.items.active.bg.color.splitTo: #e1e5ea
+menu.items.active.bg.color: #e1e5ea
+menu.items.active.bg.colorTo: #d1d5da
+menu.items.active.bg.colorTo..splitTo: #d1d5da
+
+# OSD textures
+osd.label.text.color: #24292f
+osd.label.text.font: shadow=y:shadowtint=8:shadowoffset=2
+osd.bg: Solid Radial Gradient
+osd.bg.color: #ffffff
+osd.bg.colorTo: #bebbc9
+osd.label.bg: Parentrelative
+osd.label.bg.color: #ffffff
+osd.label.bg.colorTo: #bebbc9
+osd.hilight.bg: Solid Radial Gradient
+osd.hilight.bg.color: #4f5966
+osd.hilight.bg.colorTo: #24292f
+osd.unhilight.bg: Solid Radial Gradient
+osd.unhilight.bg.color: #ffffff
+osd.unhilight.bg.colorTo: #d1d5da
+
+# Text justification
+window.label.text.justify: Center
+menu.title.text.justify: Left
+

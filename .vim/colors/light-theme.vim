@@ -15,26 +15,28 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi Cursor ctermfg=none ctermbg=15 cterm=none
     hi CursorLine ctermfg=none ctermbg=none cterm=underline
     hi CursorColumn ctermfg=none ctermbg=none cterm=none
-    hi LineNr ctermfg=8 ctermbg=none cterm=none
-    hi CursorLineNr ctermfg=0 ctermbg=none cterm=bold
+    hi LineNr ctermfg=7 ctermbg=none cterm=none
+    hi CursorLineNr ctermfg=8 ctermbg=none cterm=bold
     hi VertSplit ctermfg=15 ctermbg=none cterm=none
     hi EndOfBuffer ctermfg=0 ctermbg=none cterm=none
     hi ErrorMsg ctermfg=9 ctermbg=none cterm=underline
     hi WarningMsg ctermfg=11 ctermbg=none cterm=underline
 
     " Search
-    hi Search ctermfg=13 ctermbg=15 cterm=underline
-    hi IncSearch ctermfg=11 ctermbg=15 cterm=underline
-    hi MatchParen ctermfg=11 ctermbg=15 cterm=none
+    hi Search ctermfg=15 ctermbg=13 cterm=bold
+    hi IncSearch ctermfg=15 ctermbg=11 cterm=bold
+    hi MatchParen ctermfg=13 ctermbg=15 cterm=none
 
     " Statusline
-    hi StatusLine ctermfg=none ctermbg=none cterm=none
-    hi StatusLineNC ctermfg=none ctermbg=none cterm=none
+    hi StatusLine ctermfg=15 ctermbg=0 cterm=bold
+    hi StatusLineNC ctermfg=15 ctermbg=0 cterm=reverse
+    hi StatusLineTerm ctermfg=15 ctermbg=13 cterm=bold
+    hi StatusLineTermNC ctermfg=15 ctermbg=13 cterm=reverse
     hi WildMenu ctermfg=15 ctermbg=8 cterm=none
 
     " TabLine
     hi TabLine ctermfg=0 ctermbg=none cterm=none
-    hi TabLineSel ctermfg=0 ctermbg=15 cterm=none
+    hi TabLineSel ctermfg=0 ctermbg=15 cterm=bold
     hi TabLineFill ctermfg=none ctermbg=none cterm=none
 
     " Spell

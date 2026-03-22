@@ -1,20 +1,26 @@
 #! /usr/bin/env bash
 
-font='monospace-14-Regular'
+font='monospace-12-Regular'
 
 monitor=0
 
-# Light-theme
+# default-light
 # nf='#24292f'
 # nb='#ffffff'
 # sf='#24292f'
 # sb='#d1d5da'
 
-# Dark-theme
-nf='#adaeb7'
-nb='#2c2b30'
-sf='#c9cad3'
-sb='#41444b'
+# moss
+# nf='#adaeb7'
+# nb='#2c2b30'
+# sf='#c9cad3'
+# sb='#41444b'
+
+# honey-oats
+nf='#fafafa'
+nb='#4f5966'
+sf='#24292f'
+sb='#d1d5da'
 
 dmenu_run -fn $font -m $monitor -nb $nb -nf $nf -sb $sb -sf $sf
 

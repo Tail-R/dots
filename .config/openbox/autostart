@@ -12,3 +12,5 @@ tint2 -c ~/.config/tint2/current &
 (sleep 2s && fcitx5) &
 (sleep 2s && dunst) &
 
+(sleep 3s && mpd) &
+
