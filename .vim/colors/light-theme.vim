@@ -23,8 +23,8 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi WarningMsg ctermfg=11 ctermbg=none cterm=underline
 
     " Search
-    hi Search ctermfg=15 ctermbg=13 cterm=bold
-    hi IncSearch ctermfg=15 ctermbg=11 cterm=bold
+    hi Search ctermfg=11 ctermbg=15 cterm=underline
+    hi IncSearch ctermfg=13 ctermbg=15 cterm=underline
     hi MatchParen ctermfg=13 ctermbg=15 cterm=none
 
     " Statusline

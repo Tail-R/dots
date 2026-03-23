@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <core>
+    <decoration>server</decoration>
+    <gap>0</gap>
+  </core>
+
+  <placement>
+    <!-- center | automatic | cursor | cascade -->
+    <policy>cascade</policy>
+    <cascadeOffset x="40" y="30" />
+  </placement>
+
+  <focus>
+    <followMouse>yes</followMouse>
+    <raiseOnFocus>no</raiseOnFocus>
+  </focus>
+
+  <snapping>
+    <overlay>
+      <enabled>yes</enabled>
+      <delay inner="200" outer="200" />
+    </overlay>
+
+    <topMaximize>yes</topMaximize>
+  </snapping>
+
+  <desktops>
+    <number>4</number>
+    <names>
+      <name>VD-1</name>
+      <name>VD-2</name>
+      <name>VD-3</name>
+      <name>VD-4</name>
+    </names>
+    <initial>1</initial>
+  </desktops>
+
+  <theme>
+    <titlebar>
+      <!-- icon, menu, iconify, max, close, shade, desk, : (separator) -->
+      <layout>icon:title,iconify,max,close</layout>
+      <showTitle>yes</showTitle>
+    </titlebar>
+
+    <cornerRadius>8</cornerRadius>
+    <!-- titlebar | none -->
+    <maximizedDecoration>titlebar</maximizedDecoration>
+    <dropShadows>yes</dropShadows>
+
+    <font place="ActiveWindow">
+      <name>IBMPlexSansJP</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>bold</weight>
+    </font>
+    <font place="InactiveWindow">
+      <name>IBMPlexSansJP</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>bold</weight>
+    </font>
+    <font place="MenuHeader">
+      <name>IBMPlexSansJP</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>bold</weight>
+    </font>
+    <font place="MenuItem">
+      <name>IBMPlexSansJP</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+    <font place="OnScreenDisplay">
+      <name>IBMPlexSansJP</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>bold</weight>
+    </font>
+  </theme>
+
+  <resize>
+    <!-- Never | Always | Nonpixel -->
+    <popupShow>Never</popupShow>
+    <drawContents>no</drawContents>
+  </resize>
+
+  <keyboard>
+    <keybind key="Mod4-r">
+      <action name="Reconfigure" />
+    </keybind>
+
+    <!-- Desktop switching -->
+    <keybind key="Mod4-1"><action name="GoToDesktop" to="1" /></keybind>
+    <keybind key="Mod4-2"><action name="GoToDesktop" to="2" /></keybind>
+    <keybind key="Mod4-3"><action name="GoToDesktop" to="3" /></keybind>
+    <keybind key="Mod4-4"><action name="GoToDesktop" to="4" /></keybind>
+
+    <!-- Close window -->
+    <keybind key="Mod4-q">
+      <action name="Close" />
+    </keybind>
+
+    <!-- Maximize window -->
+    <keybind key="Mod4-f">
+      <action name="ToggleMaximize" />
+    </keybind>
+
+    <!-- Menus -->
+    <keybind key="Mod4-m">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+
+    <keybind key="Mod4-c">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
+
+    <keybind key="Mod4-w">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
+
+    <!-- App launcher -->
+    <keybind key="Mod4-d">
+      <action name="Execute" command="wofi --show drun" />
+    </keybind>
+
+    <!-- Default terminal -->
+    <keybind key="Mod4-Return">
+      <action name="Execute" command="alacritty" />
+    </keybind>
+
+    <!-- Audio control -->
+    <keybind key="XF86AudioMute">
+      <action name="Execute" command="pamixer --toggle-mute" />
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute" command="pamixer --decrease 2" />
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute" command="pamixer --increase 2" />
+    </keybind>
+
+    <!-- Brightness control -->
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute" command="brightnessctl set 2-%" />
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute" command="brightnessctl set +2%" />
+    </keybind>
+  </keyboard>
+</labwc_config>
+

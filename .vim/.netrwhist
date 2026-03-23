@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/tailr/.vim/colors'
 let g:netrw_dirhist_2='/home/tailr/Downloads/client-human/src/assets_factory'
 let g:netrw_dirhist_1='/home/tailr/Downloads/client-human/src'
 let g:netrw_dirhist_0='/home/tailr/Downloads/client-human'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/home'
 let g:netrw_dirhist_6='/home/tailr'
 let g:netrw_dirhist_5='/home/tailr/Downloads'
 let g:netrw_dirhist_4='/home/tailr/Downloads/client-human'
-let g:netrw_dirhist_3='/home/tailr/.themes/HoneyOats/openbox-3'

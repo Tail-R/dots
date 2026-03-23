@@ -1,0 +1,5 @@
+swaybg -m fill -i ~/Pictures/walls/chiaki-nanami.jpg &
+sfwbar &
+
+fcitx5 &
+
