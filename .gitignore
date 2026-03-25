@@ -1,5 +1,7 @@
 **/build/
 
 # Vim
-~/.vim/undo
-~/.vim/pack
+.vim/.netrwhist
+.vim/undo
+.vim/pack
+
