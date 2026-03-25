@@ -168,21 +168,21 @@ endfunction
 function GetCurrentFileName()
     let file_name = expand('%:t')
 
-    return file_name == '' ? '[No Name]' : file_name
+    return file_name ==# '' ? '[No Name]' : file_name
 endfunction
 
 function GetCurrentFileType()
     let file_type = &filetype
 
-    " return file_type == '' ? '' : '[' .. file_type .. ']'
-    return file_type == '' ? 'TEXT' : toupper(file_type)
+    " return file_type ==# '' ? '' : '[' .. file_type .. ']'
+    return file_type ==# '' ? 'TEXT' : toupper(file_type)
 endfunction
 
 function GetFileEncoding()
     let file_encoding = &fileencoding !=# '' ? &fileencoding : &encoding
     let file_format = &fileformat
 
-    let fmt = file_format == 'unix' ? 'LF' : file_format == 'mac' ? 'CR' : 'CRLF'
+    let fmt = file_format ==# 'unix' ? 'LF' : file_format ==# 'mac' ? 'CR' : 'CRLF'
 
     return toupper(file_encoding) .. '  ' .. fmt
 endfunction
@@ -208,13 +208,20 @@ function GetTabLabel(n)
     let winnr = tabpagewinnr(a:n)
     let bufname = bufname(buflist[winnr - 1])
 
-    return bufname == '' ? 'No Name' : bufname
+    return bufname ==# '' ? 'No Name' : bufname
 endfunction
 
 " Copy selected area to the system clipboard via xclip
 function CopyVisualSelection() abort
     let vblock = GetVisualSelection()
-    call system('xclip -sel clip', vblock)
+
+    if !empty($WAYLAND_DISPLAY)
+        call system('wl-copy', vblock)
+    elseif !empty($DISPLAY)
+        call system('xclip -sel clip', vblock)
+    else
+        echoerr "no clipboard available"
+    endif
 endfunction
 
 function GetVisualSelection()
@@ -226,7 +233,7 @@ function GetVisualSelection()
         return ''
     endif
 
-    let lines[-1] = lines[-1][: column_end - (&selection == 'inclusive' ? 1 : 2)]
+    let lines[-1] = lines[-1][: column_end - (&selection ==# 'inclusive' ? 1 : 2)]
     let lines[0] = lines[0][column_start - 1:]
 
     return join(lines, "\n")
