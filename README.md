@@ -1,7 +1,8 @@
-# Openbox dots
-My personal Openbox configurations
+# dots
+My personal linux configurations
 
 ## Screenshots
+### Openbox
 <table>
 
 <tr>
@@ -15,9 +16,10 @@ My personal Openbox configurations
 </tr>
 
 <tr>
-<td><img src ="assets/screenshot_honey-oats.png"></td>
 <td><img src ="assets/screenshot_arctic.png"></td>
 </tr>
 
 </table>
+
+### Labwc
 
