@@ -35,7 +35,7 @@ honey-oats)
     switch-x11-colors default-light
     switch-alacritty-theme default-light
     switch-tint2-theme honey-oats
-    feh --bg-tile ~/Pictures/walls/honey_oats_tile.png
+    feh --bg-fill ~/Pictures/walls/chiaki-nanami.jpg
     ;;
 soda)
     switch-openbox-theme Soda

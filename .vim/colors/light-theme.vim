@@ -13,7 +13,7 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi Normal ctermfg=0 ctermbg=none cterm=none
     hi Visual ctermfg=none ctermbg=15 cterm=none
     hi Cursor ctermfg=none ctermbg=15 cterm=none
-    hi CursorLine ctermfg=none ctermbg=none cterm=underline
+    hi CursorLine ctermfg=none ctermbg=none cterm=none
     hi CursorColumn ctermfg=none ctermbg=none cterm=none
     hi LineNr ctermfg=7 ctermbg=none cterm=none
     hi CursorLineNr ctermfg=8 ctermbg=none cterm=bold
@@ -35,9 +35,9 @@ if (&t_Co ?? 0) >= 16 && ! has('gui_running')
     hi WildMenu ctermfg=15 ctermbg=8 cterm=none
 
     " TabLine
-    hi TabLine ctermfg=0 ctermbg=none cterm=none
-    hi TabLineSel ctermfg=0 ctermbg=15 cterm=bold
-    hi TabLineFill ctermfg=none ctermbg=none cterm=none
+    hi TabLine ctermfg=0 ctermbg=7 cterm=bold
+    hi TabLineSel ctermfg=0 ctermbg=none cterm=bold
+    hi TabLineFill ctermfg=none ctermbg=15 cterm=none
 
     " Spell
     hi SpellBad ctermfg=9 ctermbg=none cterm=underline

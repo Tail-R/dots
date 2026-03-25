@@ -11,12 +11,27 @@
     <cascadeOffset x="40" y="30" />
   </placement>
 
+  <windowSwitcher>
+    <osd show="yes" style="thumbnail" output="all" thumbnailFormat="%T" />
+  </windowSwitcher>
+
+  <resistance>
+    <screenEdgeStrength>0</screenEdgeStrength>
+    <windowEdgeStrength>0</windowEdgeStrength>
+  </resistance>
+
   <focus>
     <followMouse>yes</followMouse>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
 
   <snapping>
+    <range>
+      <inner>25</inner>
+      <outer>25</outer>
+    </range>
+    <cornerRange>50</cornerRange>
+
     <overlay>
       <enabled>yes</enabled>
       <delay inner="200" outer="200" />
@@ -37,44 +52,50 @@
   </desktops>
 
   <theme>
+    <name>HoneyOats</name>
+
     <titlebar>
       <!-- icon, menu, iconify, max, close, shade, desk, : (separator) -->
-      <layout>icon:title,iconify,max,close</layout>
+      <layout>icon:iconify,max,close</layout>
       <showTitle>yes</showTitle>
     </titlebar>
 
-    <cornerRadius>8</cornerRadius>
+    <cornerRadius>6</cornerRadius>
     <!-- titlebar | none -->
     <maximizedDecoration>titlebar</maximizedDecoration>
     <dropShadows>yes</dropShadows>
 
     <font place="ActiveWindow">
-      <name>IBMPlexSansJP</name>
-      <size>10</size>
+      <name>SFProText</name>
+      <size>11</size>
       <slant>normal</slant>
       <weight>bold</weight>
     </font>
+
     <font place="InactiveWindow">
-      <name>IBMPlexSansJP</name>
-      <size>10</size>
+      <name>SFProText</name>
+      <size>11</size>
       <slant>normal</slant>
       <weight>bold</weight>
     </font>
+
     <font place="MenuHeader">
-      <name>IBMPlexSansJP</name>
-      <size>10</size>
-      <slant>normal</slant>
-      <weight>bold</weight>
-    </font>
-    <font place="MenuItem">
-      <name>IBMPlexSansJP</name>
-      <size>10</size>
+      <name>SFProDisplay</name>
+      <size>11</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
+
+    <font place="MenuItem">
+      <name>SFProDisplay</name>
+      <size>11</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+
     <font place="OnScreenDisplay">
-      <name>IBMPlexSansJP</name>
-      <size>10</size>
+      <name>SFMono</name>
+      <size>11</size>
       <slant>normal</slant>
       <weight>bold</weight>
     </font>
@@ -83,7 +104,7 @@
   <resize>
     <!-- Never | Always | Nonpixel -->
     <popupShow>Never</popupShow>
-    <drawContents>no</drawContents>
+    <drawContents>yes</drawContents>
   </resize>
 
   <keyboard>
@@ -96,11 +117,6 @@
     <keybind key="Mod4-2"><action name="GoToDesktop" to="2" /></keybind>
     <keybind key="Mod4-3"><action name="GoToDesktop" to="3" /></keybind>
     <keybind key="Mod4-4"><action name="GoToDesktop" to="4" /></keybind>
-
-    <!-- Close window -->
-    <keybind key="Mod4-q">
-      <action name="Close" />
-    </keybind>
 
     <!-- Maximize window -->
     <keybind key="Mod4-f">
@@ -126,6 +142,20 @@
       </action>
     </keybind>
 
+    <!-- Window switcher -->
+    <keybind key="Mod4-Right">
+      <action name="NextWindow" />
+    </keybind>
+
+    <keybind key="Mod4-Left">
+      <action name="PreviousWindow" />
+    </keybind>
+
+    <!-- Close window -->
+    <keybind key="Mod4-q">
+      <action name="Close" />
+    </keybind>
+
     <!-- App launcher -->
     <keybind key="Mod4-d">
       <action name="Execute" command="wofi --show drun" />
@@ -140,9 +170,11 @@
     <keybind key="XF86AudioMute">
       <action name="Execute" command="pamixer --toggle-mute" />
     </keybind>
+
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute" command="pamixer --decrease 2" />
     </keybind>
+
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute" command="pamixer --increase 2" />
     </keybind>
@@ -151,9 +183,26 @@
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute" command="brightnessctl set 2-%" />
     </keybind>
+
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute" command="brightnessctl set +2%" />
     </keybind>
   </keyboard>
+
+  <mouse>
+  </mouse>
+
+  <libinput>
+    <device>
+      <naturalScroll>yes</naturalScroll>
+      <pointerSpeed>0.0</pointerSpeed>
+    </device>
+  </libinput>
+
+  <menu>
+    <ignoreButtonReleasePeriod>500</ignoreButtonReleasePeriod>
+    <showIcons>yes</showIcons>
+  </menu>
+
 </labwc_config>
 

@@ -19,7 +19,7 @@
     </item>
     <item label="File Manager">
       <action name="Execute">
-        <command>pcmanfm</command>
+        <command>thunar</command>
       </action>
     </item>
 

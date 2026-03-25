@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+  <menu id="root-menu">
+    <item label="Terminal">
+      <action name="Execute">
+        <command>alacritty</command>
+      </action>
+    </item>
+    <item label="Text Editor">
+      <action name="Execute">
+        <command>vscodium</command>
+      </action>
+    </item>
+    <item label="Web Browser">
+      <action name="Execute">
+        <command>firefox</command>
+      </action>
+    </item>
+    <item label="File Manager">
+      <action name="Execute">
+        <command>thunar</command>
+      </action>
+    </item>
+
+    <!-- Labwc -->
+    <separator/>
+    <menu id="labwc" label="Labwc">
+      <item label="Reconfigure">
+        <action name="Reconfigure" />
+      </item>
+      <item label="Exit">
+        <action name="Exit" />
+      </item>
+    </menu>
+
+    <!-- Power options -->
+    <menu id="system" label="System">
+      <item label="Sleep">
+        <action name="Execute">
+          <command>systemctl suspend</command>
+        </action>
+      </item>
+      <item label="Reboot">
+        <action name="Execute">
+          <command>systemctl reboot</command>
+        </action>
+      </item>
+      <item label="Shutdown">
+        <action name="Execute">
+          <command>systemctl poweroff</command>
+        </action>
+      </item>
+    </menu>
+  </menu>
+
+</openbox_menu>

@@ -68,21 +68,21 @@ set noshowmode
     " endif
 
     " Left items
-    set statusline+=%#HiLeft#
-    set statusline+=\ %{GetCurrentMode()}
-    set statusline+=\ \|\ 
-    set statusline+=%{GetCurrentFileName()}\ 
-    " set statusline+=%{GetCurrentFileType()}\ 
-    set statusline+=%m\ %r\ 
+    set statusline+=%#HiLeft#\ 
+    " set statusline+=%{GetCurrentMode()}\ \ 
+    set statusline+=%{GetCurrentFileName()}\ \ 
+
+    set statusline+=%#HiCenter#
+    set statusline+=%m\ %r
 
     " Jump to the right section
-    set statusline+=%#HiCenter#
     set statusline+=%=
 
     " Right items
     set statusline+=%#HiRight#
-    set statusline+=Ln\ %l,\ Col\ %c\ \ %P\ \|\ 
-    set statusline+=%{GetFileEncoding()}\ 
+    set statusline+=%l:%c\ \ %P\ \ 
+    set statusline+=%{GetFileEncoding()}\ \ 
+    set statusline+=%{GetCurrentFileType()}\ 
 " endif
 
 "
@@ -143,21 +143,21 @@ function GetCurrentMode()
     let mode = mode()
 
     if mode ==# 'n'
-        let current_mode = 'Normal'
+        let current_mode = 'NOR'
     elseif mode ==# 'v'
-        let current_mode = 'Visual'
+        let current_mode = 'VIS'
     elseif mode ==# 'V'
-        let current_mode = 'V-Line'
+        let current_mode = 'V-L'
     elseif mode ==# "\<C-v>"
-        let current_mode = 'V-Block'
+        let current_mode = 'V-B'
     elseif mode ==# 'i'
-        let current_mode = 'Insert'
+        let current_mode = 'INS'
     elseif mode ==# 'R'
-        let current_mode = 'Replace'
+        let current_mode = 'REP'
     elseif mode ==# 'c'
-        let current_mode = 'Command'
+        let current_mode = 'CMD'
     elseif mode ==# 't'
-        let current_mode = 'Terminal'
+        let current_mode = 'TER'
     else
         let current_mode = mode
     endif
@@ -174,11 +174,17 @@ endfunction
 function GetCurrentFileType()
     let file_type = &filetype
 
-    return file_type == '' ? '' : '[' .. file_type .. ']'
+    " return file_type == '' ? '' : '[' .. file_type .. ']'
+    return file_type == '' ? 'TEXT' : toupper(file_type)
 endfunction
 
 function GetFileEncoding()
-    return (&fileencoding !=# '' ? &fileencoding : &encoding) .. ' [' .. &fileformat .. ']'
+    let file_encoding = &fileencoding !=# '' ? &fileencoding : &encoding
+    let file_format = &fileformat
+
+    let fmt = file_format == 'unix' ? 'LF' : file_format == 'mac' ? 'CR' : 'CRLF'
+
+    return toupper(file_encoding) .. '  ' .. fmt
 endfunction
 
 " Tab Appearance

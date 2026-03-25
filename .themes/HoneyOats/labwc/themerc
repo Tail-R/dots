@@ -1,0 +1,48 @@
+border.width: 1
+window.titlebar.padding.width: 4
+window.titlebar.padding.height: 4
+window.active.border.color: #aaaaaa
+window.inactive.border.color: #aaaaaa
+
+# Active window
+window.active.title.bg: Gradient Vertical
+window.active.title.bg.color: #ffffff
+window.active.title.bg.colorTo: #c4c3d0
+
+# Inactive window
+window.inactive.title.bg: Gradient Vertical
+window.inactive.title.bg.color: #ffffff
+window.inactive.title.bg.colorTo: #c4c3d0
+
+window.active.label.text.color: #36454f
+window.inactive.label.text.color: #899499
+
+window.label.text.justify: Left
+window.button.width: 26
+window.button.height: 26
+window.button.spacing: 4
+
+window.*.shadow.size: 60
+window.*.shadow.color: #00000060
+
+# Menus
+menu.overlap.x: 0
+menu.overlap.y: 0
+menu.width.min: 20
+menu.width.max: 200
+menu.items.padding.x: 4
+menu.items.padding.y: 2
+menu.items.bg.color: #fafafa
+menu.items.text.color: #36454f
+menu.items.active.bg.color: #c4c3d0
+menu.items.active.text.color: #36454f
+menu.separator.width: 1
+menu.separator.padding.width: 0
+menu.separator.padding.height: 0
+menu.separator.color: #aaaaaa
+menu.title.bg.color: #c4c3d0
+menu.title.text.justify: Left
+menu.title.text.color: #36454f
+
+# OSDs
+

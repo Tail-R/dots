@@ -90,15 +90,27 @@ alias mc='meson compile -C build'
 alias xmrg='xrdb merge ~/.Xresources'
 
 # Openbox aliases
-alias rc.xml='vim ~/.config/openbox/rc.xml'
-alias menu.xml='vim ~/.config/openbox/menu.xml'
-alias autostart='vim ~/.config/openbox/autostart'
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    alias rc.xml='vim ~/.config/labwc/rc.xml'
+    alias menu.xml='vim ~/.config/labwc/menu.xml'
+    alias autostart='vim ~/.config/labwc/autostart'
+else
+    alias rc.xml='vim ~/.config/openbox/rc.xml'
+    alias menu.xml='vim ~/.config/openbox/menu.xml'
+    alias autostart='vim ~/.config/openbox/autostart'
+fi
 
 #
 # Useful commands
 #
 rice() {
     try_cd ~/.config
+
+    [ "$1" != "" ] && try_cd $1
+}
+
+theme() {
+    try_cd ~/.themes
 
     [ "$1" != "" ] && try_cd $1
 }
