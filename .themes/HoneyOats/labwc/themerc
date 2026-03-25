@@ -1,29 +1,33 @@
-border.width: 1
-window.titlebar.padding.width: 4
-window.titlebar.padding.height: 4
-window.active.border.color: #aaaaaa
-window.inactive.border.color: #aaaaaa
+border.width: 2
+window.titlebar.padding.width: 6
+window.titlebar.padding.height: 6
+window.active.border.color: #cccccc
+window.inactive.border.color: #cccccc
 
 # Active window
-window.active.title.bg: Gradient Vertical
-window.active.title.bg.color: #ffffff
+window.active.title.bg: Gradient SplitVertical
+window.active.title.bg.color: #c4c3d0
+window.active.title.bg.color.splitTo: #fafafa
 window.active.title.bg.colorTo: #c4c3d0
+window.active.title.bg.colorTo.splitTo: #cdcfdb
 
 # Inactive window
-window.inactive.title.bg: Gradient Vertical
-window.inactive.title.bg.color: #ffffff
+window.inactive.title.bg: Gradient SplitVertical
+window.inactive.title.bg.color: #c4c3d0
+window.inactive.title.bg.color.splitTo: #fafafa
 window.inactive.title.bg.colorTo: #c4c3d0
+window.inactive.title.bg.colorTo.splitTo: #cdcfdb
 
-window.active.label.text.color: #36454f
+window.active.label.text.color: #24292f
 window.inactive.label.text.color: #899499
 
 window.label.text.justify: Left
-window.button.width: 26
-window.button.height: 26
-window.button.spacing: 4
+window.button.width: 32
+window.button.height: 32
+window.button.spacing: 2
 
 window.*.shadow.size: 60
-window.*.shadow.color: #00000060
+window.*.shadow.color: #00000045
 
 # Menus
 menu.overlap.x: 0
@@ -45,4 +49,6 @@ menu.title.text.justify: Left
 menu.title.text.color: #36454f
 
 # OSDs
+osd.bg.color: #fafafa
+osd.label.text.color: #666666
 

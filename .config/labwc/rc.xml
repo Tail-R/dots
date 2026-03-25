@@ -56,25 +56,25 @@
 
     <titlebar>
       <!-- icon, menu, iconify, max, close, shade, desk, : (separator) -->
-      <layout>icon:iconify,max,close</layout>
+      <layout>menu:max,close</layout>
       <showTitle>yes</showTitle>
     </titlebar>
 
-    <cornerRadius>6</cornerRadius>
+    <cornerRadius>8</cornerRadius>
     <!-- titlebar | none -->
     <maximizedDecoration>titlebar</maximizedDecoration>
     <dropShadows>yes</dropShadows>
 
     <font place="ActiveWindow">
-      <name>SFProText</name>
-      <size>11</size>
+      <name>SFProDisplay</name>
+      <size>14</size>
       <slant>normal</slant>
       <weight>bold</weight>
     </font>
 
     <font place="InactiveWindow">
-      <name>SFProText</name>
-      <size>11</size>
+      <name>SFProDisplay</name>
+      <size>14</size>
       <slant>normal</slant>
       <weight>bold</weight>
     </font>
