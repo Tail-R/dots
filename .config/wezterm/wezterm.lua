@@ -11,7 +11,7 @@ config.colors = {
     selection_fg = '#24292f',
     selection_bg = '#e1e5ea',
 
-    scrollbar_thumb = '#4f5966',
+    scrollbar_thumb = '#666666',
     -- split =
 
     ansi = {
@@ -52,10 +52,10 @@ config.colors = {
 }
 
 config.window_padding = {
-    top = 0,
-    right = 10,
-    left = 0,
-    bottom = 0
+    top = 6,
+    right = 6,
+    left = 6,
+    bottom = 6
 }
 
 config.use_fancy_tab_bar = true
@@ -68,8 +68,8 @@ config.window_decorations = "RESIZE"
 config.window_close_confirmation = 'NeverPrompt'
 
 config.window_frame = {
-    font = wezterm.font { family = 'azukifontB', weight = 'Bold' },
-    font_size = 12,
+    font = wezterm.font { family = 'IBMPlexSansJP', weight = 'Bold' },
+    font_size = 10,
 
     active_titlebar_bg = '#e1e5ea',
     inactive_titlebar_bg = '#e1e5ea'
@@ -77,8 +77,8 @@ config.window_frame = {
 
 config.window_background_opacity = 1.0
 
-config.font = wezterm.font('azukifontB', { weight = 'Regular', italic = false })
-config.font_size = 12
+config.font = wezterm.font('SFMono', { weight = 'Regular', italic = false })
+config.font_size = 10
 
 return config
 

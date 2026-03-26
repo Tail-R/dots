@@ -13,7 +13,7 @@ history = 10000
 [font]
 normal = { family = "SFMono", style = "Regular" }
 bold = { family = "SFMono", style = "Bold" }
-italic = { family = "SFMono", style = "Italic" }
+italic = { family = "SFMonoNerdFontMono", style = "Italic" }
 size = 10
 
 [cursor]

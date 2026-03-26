@@ -56,27 +56,27 @@
 
     <titlebar>
       <!-- icon, menu, iconify, max, close, shade, desk, : (separator) -->
-      <layout>menu:max,close</layout>
+      <layout>menu:iconify,close,max</layout>
       <showTitle>yes</showTitle>
     </titlebar>
 
     <cornerRadius>8</cornerRadius>
     <!-- titlebar | none -->
-    <maximizedDecoration>titlebar</maximizedDecoration>
+    <maximizedDecoration>none</maximizedDecoration>
     <dropShadows>yes</dropShadows>
 
     <font place="ActiveWindow">
-      <name>SFProDisplay</name>
-      <size>14</size>
+      <name>MochiyPopOne</name>
+      <size>12</size>
       <slant>normal</slant>
-      <weight>bold</weight>
+      <weight>normal</weight>
     </font>
 
     <font place="InactiveWindow">
-      <name>SFProDisplay</name>
-      <size>14</size>
+      <name>MochiyPopOne</name>
+      <size>12</size>
       <slant>normal</slant>
-      <weight>bold</weight>
+      <weight>normal</weight>
     </font>
 
     <font place="MenuHeader">
@@ -188,9 +188,6 @@
       <action name="Execute" command="brightnessctl set +2%" />
     </keybind>
   </keyboard>
-
-  <mouse>
-  </mouse>
 
   <libinput>
     <device>

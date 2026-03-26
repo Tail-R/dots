@@ -1,4 +1,4 @@
-border.width: 2
+border.width: 1
 window.titlebar.padding.width: 6
 window.titlebar.padding.height: 6
 window.active.border.color: #cccccc
@@ -18,13 +18,15 @@ window.inactive.title.bg.color.splitTo: #fafafa
 window.inactive.title.bg.colorTo: #c4c3d0
 window.inactive.title.bg.colorTo.splitTo: #cdcfdb
 
-window.active.label.text.color: #24292f
+window.active.label.text.color: #666666
 window.inactive.label.text.color: #899499
 
 window.label.text.justify: Left
 window.button.width: 32
 window.button.height: 32
 window.button.spacing: 2
+window.button.hover.bg.color: #80808037
+window.button.hover.bg.corner-radius: 8
 
 window.*.shadow.size: 60
 window.*.shadow.color: #00000045
