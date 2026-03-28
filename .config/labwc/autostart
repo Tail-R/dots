@@ -1,4 +1,4 @@
-swaybg -m fill -i ~/Pictures/walls/chiaki-nanami.jpg &
+swaybg -m tile -i ~/Pictures/walls/white_dots.png &
 sfwbar &
 
 fcitx5 &

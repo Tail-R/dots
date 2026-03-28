@@ -5,18 +5,18 @@ set -euo pipefail
 THEME_NAME="HoneyOats"
 
 # Active Icons
-ACTIVE_CLOSE="$HOME/Downloads/close-active.svg"
-ACTIVE_MAX="$HOME/Downloads/heart-active.svg"
+ACTIVE_CLOSE="red-icons-less-rounded/close-active.svg"
+ACTIVE_MAX="silver-icons-less-rounded/max-active.svg"
 ACTIVE_MAX_TOGGLED="$ACTIVE_MAX"
-ACTIVE_ICONIFY="$HOME/Downloads/iconify-active.svg"
-ACTIVE_MENU="$HOME/Downloads/rabbit.png"
+ACTIVE_ICONIFY="silver-icons-less-rounded/iconify-active.svg"
+ACTIVE_MENU="silver-icons-less-rounded/menu-active.png"
 
 # Inactive Icons
-INACTIVE_CLOSE="$HOME/Downloads/close-inactive.svg"
-INACTIVE_MAX="$HOME/Downloads/heart-inactive.svg"
-INACTIVE_MAX_TOGGLED="$INACTIVE_MAX"
-INACTIVE_ICONIFY="$HOME/Downloads/iconify-inactive.svg"
-INACTIVE_MENU="$HOME/Downloads/rabbit-dead.png"
+INACTIVE_CLOSE="black-icons-less-rounded/close-active.svg"
+INACTIVE_MAX="silver-icons-less-rounded/max-active.svg"
+INACTIVE_MAX_TOGGLED="$ACTIVE_MAX"
+INACTIVE_ICONIFY="silver-icons-less-rounded/iconify-active.svg"
+INACTIVE_MENU="silver-icons-less-rounded/menu-inactive.png"
 
 icon_dir="$HOME/.themes/$THEME_NAME/labwc"
 

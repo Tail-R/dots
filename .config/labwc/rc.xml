@@ -55,14 +55,15 @@
     <name>HoneyOats</name>
 
     <titlebar>
-      <!-- icon, menu, iconify, max, close, shade, desk, : (separator) -->
-      <layout>menu:iconify,close,max</layout>
+      <!-- icon, menu, iconify, max,
+      close, shade, desk, : (separator) -->
+      <layout>menu:iconify,max,close</layout>
       <showTitle>yes</showTitle>
     </titlebar>
 
-    <cornerRadius>8</cornerRadius>
+    <cornerRadius>6</cornerRadius>
     <!-- titlebar | none -->
-    <maximizedDecoration>none</maximizedDecoration>
+    <maximizedDecoration>titlebar</maximizedDecoration>
     <dropShadows>yes</dropShadows>
 
     <font place="ActiveWindow">
@@ -80,21 +81,21 @@
     </font>
 
     <font place="MenuHeader">
-      <name>SFProDisplay</name>
+      <name>azukifontB</name>
       <size>11</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
 
     <font place="MenuItem">
-      <name>SFProDisplay</name>
+      <name>azukifontB</name>
       <size>11</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
 
     <font place="OnScreenDisplay">
-      <name>SFMono</name>
+      <name>azukifontB</name>
       <size>11</size>
       <slant>normal</slant>
       <weight>bold</weight>

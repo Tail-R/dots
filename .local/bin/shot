@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 set -euo pipefail
-    
+
 SAVE_DIR=$HOME/Pictures/screenshots
 FILE_EXT=png
 Q=10 # quality: 1 ~ 10
@@ -9,7 +9,6 @@ PGEOM=1920x1200+0+0
 
 mkdir -p "$SAVE_DIR"
 
-# Screen shot file_name
 file_name="${SAVE_DIR}/$(date '+%Y%m%d_%H%M%S').${FILE_EXT}"
 
 case "$1" in

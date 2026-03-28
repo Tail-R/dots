@@ -4,16 +4,16 @@ live_config_reload = true
 
 [window]
 dimensions = { columns = 96, lines = 32 }
-padding = { x = 6, y = 6 }
+padding = { x = 0, y = 0 }
 dynamic_title = true
 
 [scrolling]
 history = 10000
 
 [font]
-normal = { family = "SFMono", style = "Regular" }
-bold = { family = "SFMono", style = "Bold" }
-italic = { family = "SFMonoNerdFontMono", style = "Italic" }
+normal = { family = "monospace", style = "Regular" }
+bold = { family = "monospace", style = "Bold" }
+italic = { family = "monospace", style = "Italic" }
 size = 10
 
 [cursor]

@@ -14,14 +14,14 @@ default-light)
     switch-x11-colors default-light
     switch-alacritty-theme default-light
     switch-tint2-theme default-light
-    feh --bg-fill ~/Pictures/walls/kita.png
+    feh --bg-tile ~/Pictures/walls/white_dots.png
     ;;
 solid-light)
     switch-openbox-theme SolidLight
     switch-x11-colors default-light
     switch-alacritty-theme default-light
     switch-tint2-theme default-light
-    feh --bg-fill ~/Pictures/walls/kita.png
+    feh --bg-tile ~/Pictures/walls/white_dots.png
     ;;
 moss)
     switch-openbox-theme Moss
@@ -35,33 +35,33 @@ honey-oats)
     switch-x11-colors default-light
     switch-alacritty-theme default-light
     switch-tint2-theme honey-oats
-    feh --bg-fill ~/Pictures/walls/chiaki-nanami.jpg
+    feh --bg-tile ~/Pictures/walls/white_dots.png
     ;;
 soda)
     switch-openbox-theme Soda
     switch-x11-colors default-light
-    switch-alacritty-theme default-light
+    switch-alacritty-theme soda
     switch-tint2-theme soda
     feh --bg-tile ~/Pictures/walls/soda_tile.png
     ;;
 lavender)
     switch-openbox-theme Lavender
     switch-x11-colors default-light
-    switch-alacritty-theme default-light
+    switch-alacritty-theme soda
     switch-tint2-theme soda
     feh --bg-tile ~/Pictures/walls/lavender_tile.png
     ;;
 shortcake)
     switch-openbox-theme Shortcake
     switch-x11-colors default-light
-    switch-alacritty-theme default-light
+    switch-alacritty-theme soda
     switch-tint2-theme soda
     feh --bg-tile ~/Pictures/walls/shortcake_tile.jpg
     ;;
 arctic)
     switch-openbox-theme Arctic
     switch-x11-colors default-light
-    switch-alacritty-theme default-light
+    switch-alacritty-theme soda
     switch-tint2-theme soda
     feh --bg-tile ~/Pictures/walls/arctic_tile.jpg
     ;;

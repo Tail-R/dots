@@ -26,6 +26,8 @@ libreoffice-fresh
 lxappearance
 lxde-icon-theme
 maim
+grim
+slurp
 meson
 mpd
 ncmpcpp
@@ -60,6 +62,7 @@ wpa_supplicant
 xorg-server
 xorg-xinit
 xclip
+wl-clipboard
 xterm
 zathura
 zathura-pdf-poppler
