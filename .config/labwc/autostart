@@ -1,5 +1,10 @@
 swaybg -m tile -i ~/Pictures/walls/white_dots.png &
-sfwbar &
+sfwbar -f ~/.config/sfwbar/my.config &
 
-fcitx5 &
+# Daemons
+(sleep 1 && fcitx5 ) &
+(sleep 1 && pasystray) &
+(sleep 2 && nm-applet) &
+(sleep 2 && blueman-applet ) &
+(sleep 3 && killall mpd && mpd) &
 

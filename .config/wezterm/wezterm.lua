@@ -77,7 +77,7 @@ config.window_frame = {
 
 config.window_background_opacity = 1.0
 
-config.font = wezterm.font('SFMono', { weight = 'Regular', italic = false })
+config.font = wezterm.font('monospace', { weight = 'Regular', italic = false })
 config.font_size = 10
 
 return config

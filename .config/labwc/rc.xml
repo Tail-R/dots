@@ -81,22 +81,22 @@
     </font>
 
     <font place="MenuHeader">
-      <name>azukifontB</name>
-      <size>11</size>
+      <name>IBMPlexSansJP</name>
+      <size>9</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
 
     <font place="MenuItem">
-      <name>azukifontB</name>
-      <size>11</size>
+      <name>IBMPlexSansJP</name>
+      <size>9</size>
       <slant>normal</slant>
       <weight>normal</weight>
     </font>
 
     <font place="OnScreenDisplay">
-      <name>azukifontB</name>
-      <size>11</size>
+      <name>IBMPlexSansJP</name>
+      <size>9</size>
       <slant>normal</slant>
       <weight>bold</weight>
     </font>
@@ -196,6 +196,10 @@
       <pointerSpeed>0.0</pointerSpeed>
     </device>
   </libinput>
+
+  <windowRules>
+    <windowRule identifier="imv" serverDecoration="yes" />
+  </windowRules>
 
   <menu>
     <ignoreButtonReleasePeriod>500</ignoreButtonReleasePeriod>

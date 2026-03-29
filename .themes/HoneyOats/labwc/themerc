@@ -1,4 +1,4 @@
-border.width: 2
+border.width: 1
 window.titlebar.padding.width: 4
 window.titlebar.padding.height: 4
 window.active.border.color: #c4c4c4
@@ -6,20 +6,20 @@ window.inactive.border.color: #c4c4c4
 
 # Active window
 window.active.title.bg: Gradient SplitVertical
-window.active.title.bg.color: #c4c3d0
+window.active.title.bg.color: #c4c3cd
 window.active.title.bg.color.splitTo: #ffffff
-window.active.title.bg.colorTo: #c4c3d0
-window.active.title.bg.colorTo.splitTo: #cdcfdb
+window.active.title.bg.colorTo: #c4c3cd
+window.active.title.bg.colorTo.splitTo: #a4a3af
 
 # Inactive window
 window.inactive.title.bg: Gradient SplitVertical
 window.inactive.title.bg.color: #c4c3d0
 window.inactive.title.bg.color.splitTo: #ffffff
 window.inactive.title.bg.colorTo: #c4c3d0
-window.inactive.title.bg.colorTo.splitTo: #cdcfdb
+window.inactive.title.bg.colorTo.splitTo: #a4a3af
 
 window.active.label.text.color: #666666
-window.inactive.label.text.color: #899499
+window.inactive.label.text.color: #666666
 
 window.label.text.justify: Left
 window.button.width: 32
@@ -28,7 +28,7 @@ window.button.spacing: 2
 window.button.hover.bg.color: #80808037
 window.button.hover.bg.corner-radius: 8
 
-window.*.shadow.size: 32
+window.*.shadow.size: 16
 window.*.shadow.color: #00000075
 
 # Menus
