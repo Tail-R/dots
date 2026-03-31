@@ -1,5 +1,5 @@
 swaybg -m tile -i ~/Pictures/walls/white_dots.png &
-sfwbar -f ~/.config/sfwbar/my.config &
+sfwbar -f ~/.config/sfwbar/bar.config -c ~/.config/sfwbar/style.css &
 
 # Daemons
 (sleep 1 && fcitx5 ) &

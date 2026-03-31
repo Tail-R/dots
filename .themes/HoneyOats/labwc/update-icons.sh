@@ -4,19 +4,39 @@ set -euo pipefail
 
 THEME_NAME="HoneyOats"
 
+######################################################################
 # Active Icons
-ACTIVE_CLOSE="red-icons-less-rounded/close-active.svg"
-ACTIVE_MAX="silver-icons-less-rounded/max-active.svg"
-ACTIVE_MAX_TOGGLED="$ACTIVE_MAX"
-ACTIVE_ICONIFY="silver-icons-less-rounded/iconify-active.svg"
-ACTIVE_MENU="silver-icons-less-rounded/menu-active.png"
+######################################################################
+# Normal
+MENU_ACTIVE="silver-icons-less-rounded/menu-active.png"
+ICONIFY_ACTIVE="silver-icons-less-rounded/iconify-active.svg"
+MAX_ACTIVE="silver-icons-less-rounded/max-active.svg"
+MAX_TOGGLED_ACTIVE="$MAX_ACTIVE"
+CLOSE_ACTIVE="red-icons-less-rounded/close-active-dark-border.svg"
 
+# Hover
+MENU_HOVER_ACTIVE="silver-icons-less-rounded/menu-active.png"
+ICONIFY_HOVER_ACTIVE="silver-icons-less-rounded/iconify-active.svg"
+MAX_HOVER_ACTIVE="silver-icons-less-rounded/max-active.svg"
+MAX_TOGGLED_HOVER_ACTIVE="$MAX_HOVER_ACTIVE"
+CLOSE_HOVER_ACTIVE="silver-icons-less-rounded/close-active.svg"
+
+######################################################################
 # Inactive Icons
-INACTIVE_CLOSE="black-icons-less-rounded/close-active.svg"
-INACTIVE_MAX="silver-icons-less-rounded/max-active.svg"
-INACTIVE_MAX_TOGGLED="$ACTIVE_MAX"
-INACTIVE_ICONIFY="silver-icons-less-rounded/iconify-active.svg"
-INACTIVE_MENU="silver-icons-less-rounded/menu-inactive.png"
+######################################################################
+# Normal
+MENU_INACTIVE="silver-icons-less-rounded/menu-inactive.png"
+ICONIFY_INACTIVE="silver-icons-less-rounded/iconify-active.svg"
+MAX_INACTIVE="silver-icons-less-rounded/max-active.svg"
+MAX_TOGGLED_INACTIVE="$MAX_INACTIVE"
+CLOSE_INACTIVE="black-icons-less-rounded/close-active-dark-border.svg"
+
+# Hover
+MENU_HOVER_INACTIVE="silver-icons-less-rounded/menu-inactive.png"
+ICONIFY_HOVER_INACTIVE="silver-icons-less-rounded/iconify-active.svg"
+MAX_HOVER_INACTIVE="silver-icons-less-rounded/max-active.svg"
+MAX_TOGGLED_HOVER_INACTIVE="$MAX_HOVER_INACTIVE"
+CLOSE_HOVER_INACTIVE="silver-icons-less-rounded/close-active.svg"
 
 icon_dir="$HOME/.themes/$THEME_NAME/labwc"
 
@@ -26,17 +46,37 @@ if [ ! -d "$icon_dir" ]; then
     exit 1
 fi
 
+######################################################################
 # Copy active Icons
-cp "$ACTIVE_CLOSE" "$icon_dir/close-active.svg"
-cp "$ACTIVE_MAX" "$icon_dir/max-active.svg"
-cp "$ACTIVE_MAX_TOGGLED" "$icon_dir/max_toggled-active.svg"
-cp "$ACTIVE_ICONIFY" "$icon_dir/iconify-active.svg"
-cp "$ACTIVE_MENU" "$icon_dir/menu-active.png"
+######################################################################
+# Normal
+cp "$MENU_ACTIVE" "$icon_dir/menu-active.png"
+cp "$ICONIFY_ACTIVE" "$icon_dir/iconify-active.svg"
+cp "$MAX_ACTIVE" "$icon_dir/max-active.svg"
+cp "$MAX_TOGGLED_ACTIVE" "$icon_dir/max_toggled-active.svg"
+cp "$CLOSE_ACTIVE" "$icon_dir/close-active.svg"
 
+# # Hover
+# cp "$MENU_HOVER_ACTIVE" "$icon_dir/menu_hover-active.png"
+# cp "$ICONIFY_HOVER_ACTIVE" "$icon_dir/iconify_hover-active.svg"
+# cp "$MAX_HOVER_ACTIVE" "$icon_dir/max_hover-active.svg"
+# cp "$MAX_TOGGLED_HOVER_ACTIVE" "$icon_dir/max_toggled_hover-active.svg"
+# cp "$CLOSE_HOVER_ACTIVE" "$icon_dir/close_hover-active.svg"
+
+######################################################################
 # Copy inactive icons
-cp "$INACTIVE_CLOSE" "$icon_dir/close-inactive.svg"
-cp "$INACTIVE_MAX" "$icon_dir/max-inactive.svg"
-cp "$INACTIVE_MAX_TOGGLED" "$icon_dir/max_toggled-inactive.svg"
-cp "$INACTIVE_ICONIFY" "$icon_dir/iconify-inactive.svg"
-cp "$INACTIVE_MENU" "$icon_dir/menu-inactive.png"
+######################################################################
+# Normal
+cp "$MENU_INACTIVE" "$icon_dir/menu-inactive.png"
+cp "$ICONIFY_INACTIVE" "$icon_dir/iconify-inactive.svg"
+cp "$MAX_INACTIVE" "$icon_dir/max-inactive.svg"
+cp "$MAX_TOGGLED_INACTIVE" "$icon_dir/max_toggled-inactive.svg"
+cp "$CLOSE_INACTIVE" "$icon_dir/close-inactive.svg"
+
+# # Hover
+# cp "$MENU_HOVER_INACTIVE" "$icon_dir/menu_hover-inactive.png"
+# cp "$ICONIFY_HOVER_INACTIVE" "$icon_dir/iconify_hover-inactive.svg"
+# cp "$MAX_HOVER_INACTIVE" "$icon_dir/max_hover-inactive.svg"
+# cp "$MAX_TOGGLED_HOVER_INACTIVE" "$icon_dir/max_toggled_hover-inactive.svg"
+# cp "$CLOSE_HOVER_INACTIVE" "$icon_dir/close_hover-inactive.svg"
 
