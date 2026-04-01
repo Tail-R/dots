@@ -1,0 +1,13 @@
+# Red
+#ffffff
+#964c67
+#532d46
+#e892b0
+
+# Black
+
+# Silver
+#ffffff
+#d8d7d8
+#a39da9
+#fcfafd

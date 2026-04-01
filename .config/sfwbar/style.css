@@ -17,24 +17,26 @@ grid#layout {
     min-height: 38px;
     background-image: linear-gradient(180deg, #c4c3d0, #ffffff);
 
-    border-top: 2px solid #ffffff;
-    border-bottom: 2px solid #c4c4c4;
-
-    margin-top: 8px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+    border-top: 1px solid #c4c4c4;
+    margin-top: 8px;
 }
 
-/*  Start button */
+/* Left */
+#left-section {
+    border-top: 2px solid #ffffff;
+}
+
 #start-button {
-    background-image: linear-gradient(180deg, #d6d7fc, #4a4a69, #4a4a69, #797a9b);
+    background-image: linear-gradient(180deg, #ffffff, #964c67, #532d46, #e892b0);
 
-    border-top: 1px solid #797a9b;
-    border-left: 1px solid #797a9b;
-    border-right: 2px solid #797a9b;
-    border-bottom: 2px solid #4a4a69;
+    border-top: 1px solid #964c67;
+    border-left: 1px solid #964c67;
+    border-right: 2px solid #964c67;
+    border-bottom: 2px solid #532d46;
 
-    border-top-right-radius: 18px 24px;
-    border-bottom-right-radius: 18px 24px;
+    border-top-right-radius: 16px 24px;
+    border-bottom-right-radius: 16px 24px;
 
     padding-right: 24px;
     padding-left: 12px;
@@ -54,7 +56,6 @@ grid#layout {
     min-width: 24px;
 }
 
-/* Launchers */
 #launchers {
     padding: 0px 6px 0px 6px;
     margin: 2px 0px 2px 0px;
@@ -69,9 +70,15 @@ grid#layout {
     margin: 0px 2px 0px 2px;
 }
 
-/* Taskbar */
+/* Middle */
+#middle-section {
+    border-top: 2px solid #ffffff;
+    border-right: 1px solid #a4a3af;
+}
+
 #taskbar {
-    padding: 2px 2px 2px 2px;
+    padding: 2px 6px 2px 2px;
+
 }
 
 #taskbar_item label {
@@ -85,6 +92,7 @@ grid#layout {
 
 button#taskbar_item {
     -GtkWidget-hexpand: true;
+    -GtkWidget-max-width: 240;
     font-family: "IBMPlexSansJP";
     font-size: 11pt;
 
@@ -121,7 +129,13 @@ button#taskbar_item label {
     padding-left: 5px;
 }
 
-/* Systray */
+/* Right */
+#right-section {
+    background-image: linear-gradient(180deg, #ffffff, #d3d2e0, #d3d2e0, #ffffff);
+
+    padding-left: 6px;
+}
+
 #systray {
     margin: 6px 0px 6px 6px;
 }
