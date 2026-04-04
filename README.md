@@ -22,4 +22,11 @@ My personal linux configurations
 </table>
 
 ### Labwc
+<table>
+
+<tr>
+<td><img src ="assets/screenshot_labwc_honey-oats.png"></td>
+</tr>
+
+</table>
 

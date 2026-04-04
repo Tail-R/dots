@@ -145,7 +145,7 @@ button#taskbar_item label {
 /* Right */
 #right-section {
     background-color: #e4e3f0;
-    background-image: linear-gradient(180deg, #ffffff, #e4e3f0 12%, #e4e3f0 88%, #ffffff);
+    background-image: linear-gradient(180deg, #ffffff, #e4e3f0 12%, #e4e3f0 88%, #868590);
 
     border-left: 1px solid #666666;
     border-radius: 0px 0px 0px 0px;
