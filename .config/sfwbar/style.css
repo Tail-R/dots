@@ -13,18 +13,24 @@ button {
 
 /* Top level grid */
 grid#layout {
-    -GtkWidget-max-height: 38;
-    min-height: 38px;
-    background-image: linear-gradient(180deg, #c4c3d0, #ffffff);
+    min-height: 42px;
+    background-image: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #9594a0 16%,
+        #9594a0 16%,
+        #ffffff 84%,
+        #ffffff 84%,
+        #9594a0
+    );
 
+    border: 1px solid #666666;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
-    border-top: 1px solid #c4c4c4;
     margin-top: 8px;
 }
 
 /* Left */
 #left-section {
-    border-top: 2px solid #ffffff;
 }
 
 #start-button {
@@ -35,18 +41,18 @@ grid#layout {
     border-right: 2px solid #964c67;
     border-bottom: 2px solid #532d46;
 
-    border-top-right-radius: 16px 24px;
-    border-bottom-right-radius: 16px 24px;
+    border-top-right-radius: 14px 24px;
+    border-bottom-right-radius: 14px 24px;
 
-    padding-right: 24px;
-    padding-left: 12px;
+    padding-right: 22px;
+    padding-left: 14px;
 }
 
 #start-button label {
-    color: #fafafa;
+    color: #ffffff;
     font-family: "MochiyPopOne";
     font-size: 11pt;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px silver;
 
     padding-left: 4px;
 }
@@ -56,8 +62,17 @@ grid#layout {
     min-width: 24px;
 }
 
+#launchers-decor {
+    -GtkWidget-halign: center;
+    -GtkWidget-valign: center;
+
+    min-width: 8px;
+    min-height: 28px;
+
+    margin: 0px 4px 0px 8px;
+}
+
 #launchers {
-    padding: 0px 6px 0px 6px;
     margin: 2px 0px 2px 0px;
 }
 
@@ -72,12 +87,10 @@ grid#layout {
 
 /* Middle */
 #middle-section {
-    border-top: 2px solid #ffffff;
-    border-right: 1px solid #a4a3af;
 }
 
 #taskbar {
-    padding: 2px 6px 2px 2px;
+    padding: 4px;
 
 }
 
@@ -97,30 +110,30 @@ button#taskbar_item {
     font-size: 11pt;
 
     border-radius: 4px;
-    padding: 2px 6px 2px 6px;
+    padding: 2px 12px 2px 6px;
     margin: 0px 1px 0px 0px;
 }
 
 button#taskbar_item {
     color: #24292f;
     text-shadow: 1px 1px 2px silver;
-    background-image: linear-gradient(180deg, #ffffff, #d3d2e0, #d3d2e0, #ffffff);
+    background-image: linear-gradient(180deg, #ffffff, #d3d2e0, #a4a3af, #e4e3f1);
 
     border-top: 1px solid #a4a3af;
     border-left: 1px solid #a4a3af;
     border-right: 2px solid #a4a3af;
-    border-bottom: 2px solid #808080;
+    border-bottom: 2px solid #686773;
 }
 
 button#taskbar_item.focused {
     color: #fafafa;
     text-shadow: 1px 1px 2px silver;
-    background-image: linear-gradient(180deg, #d6d7fc, #4a4a69, #4a4a69, #797a9b);
+    background-image: linear-gradient(180deg, #ffffff, #964c67, #532d46, #e892b0);
 
-    border-top: 1px solid #797a9b;
-    border-left: 1px solid #797a9b;
-    border-right: 2px solid #797a9b;
-    border-bottom: 2px solid #4a4a69;
+    border-top: 1px solid #964c67;
+    border-left: 1px solid #964c67;
+    border-right: 2px solid #964c67;
+    border-bottom: 2px solid #532d46;
 }
 
 button#taskbar_item.hover {}
@@ -131,9 +144,15 @@ button#taskbar_item label {
 
 /* Right */
 #right-section {
-    background-image: linear-gradient(180deg, #ffffff, #d3d2e0, #d3d2e0, #ffffff);
+    background-color: #e4e3f0;
+    background-image: linear-gradient(180deg, #ffffff, #e4e3f0 12%, #e4e3f0 88%, #ffffff);
+
+    border-left: 1px solid #666666;
+    border-radius: 0px 0px 0px 0px;
 
     padding-left: 6px;
+
+    box-shadow: -10px 0 10px -5px rgba(255, 255, 255, 0.75);
 }
 
 #systray {
@@ -150,11 +169,10 @@ button#taskbar_item label {
 }
 
 #clock {
-    color: #24292f;
-    font-family: "IBMPlexSansJP";
+    color: #686773;
+    font-family: "MochiyPopOne";
     font-size: 11pt;
 
-    padding-top: 3px;
     margin: 4px 12px 4px 4px;
 }
 

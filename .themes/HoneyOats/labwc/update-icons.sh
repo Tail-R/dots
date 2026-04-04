@@ -12,7 +12,7 @@ MENU_ACTIVE="silver-icons-less-rounded/menu-active.png"
 ICONIFY_ACTIVE="silver-icons-less-rounded/iconify-active.svg"
 MAX_ACTIVE="silver-icons-less-rounded/max-active.svg"
 MAX_TOGGLED_ACTIVE="$MAX_ACTIVE"
-CLOSE_ACTIVE="red-icons-less-rounded/close-active-dark-border.svg"
+CLOSE_ACTIVE="red-icons-less-rounded/close-active.svg"
 
 # Hover
 MENU_HOVER_ACTIVE="silver-icons-less-rounded/menu-active.png"
@@ -29,7 +29,7 @@ MENU_INACTIVE="silver-icons-less-rounded/menu-inactive.png"
 ICONIFY_INACTIVE="silver-icons-less-rounded/iconify-active.svg"
 MAX_INACTIVE="silver-icons-less-rounded/max-active.svg"
 MAX_TOGGLED_INACTIVE="$MAX_INACTIVE"
-CLOSE_INACTIVE="black-icons-less-rounded/close-active-dark-border.svg"
+CLOSE_INACTIVE="black-icons-less-rounded/close-active.svg"
 
 # Hover
 MENU_HOVER_INACTIVE="silver-icons-less-rounded/menu-inactive.png"

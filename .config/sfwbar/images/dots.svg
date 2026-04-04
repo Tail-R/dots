@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64mm"
+   height="224.00002mm"
+   viewBox="0 0 64 224.00002"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1">
+      <stop
+         style="stop-color:#666666;stop-opacity:0;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#666666;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-58.091721,-58.617943)" />
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2-7"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-26.091723,-26.617945)" />
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2-9"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-58.091721,5.3820534)" />
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2-9-1"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-26.091719,37.382049)" />
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2-9-1-8"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-58.091715,-58.617954)" />
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2-9-1-6"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-58.091718,69.382054)" />
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2-9-1-4"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-26.091717,101.38204)" />
+    <radialGradient
+       xlink:href="#linearGradient1"
+       id="radialGradient2-9-1-45"
+       cx="80.195869"
+       cy="80.09063"
+       fx="80.195869"
+       fy="80.09063"
+       r="16"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-58.091719,133.38206)" />
+  </defs>
+  <g
+     id="layer1">
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2);stroke-width:0.2"
+       id="path1"
+       cx="16"
+       cy="16"
+       r="16" />
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2-9);stroke-width:0.2"
+       id="path1-7"
+       cx="16"
+       cy="80"
+       r="16" />
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2-9-1);stroke-width:0.2"
+       id="path1-7-9"
+       cx="48"
+       cy="112"
+       r="16" />
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2-9-1-8);stroke-width:0.2"
+       id="path1-7-9-6"
+       cx="16"
+       cy="16"
+       r="16" />
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2-9-1-6);stroke-width:0.2"
+       id="path1-7-9-1"
+       cx="16"
+       cy="144"
+       r="16" />
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2-9-1-4);stroke-width:0.2"
+       id="path1-7-9-9"
+       cx="48"
+       cy="176"
+       r="16" />
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2-9-1-45);stroke-width:0.2"
+       id="path1-7-9-4"
+       cx="16"
+       cy="208"
+       r="16" />
+    <circle
+       style="opacity:0.886496;fill:url(#radialGradient2-7);stroke-width:0.2"
+       id="path1-3"
+       cx="48"
+       cy="48"
+       r="16" />
+  </g>
+</svg>

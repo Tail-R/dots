@@ -1,8 +1,8 @@
-border.width: 2
+border.width: 1
 window.titlebar.padding.width: 4
 window.titlebar.padding.height: 4
-window.active.border.color: #c4c4c4
-window.inactive.border.color: #c4c4c4
+window.active.border.color: #666666
+window.inactive.border.color: #666666
 
 # Active window
 window.active.title.bg: Gradient SplitVertical
